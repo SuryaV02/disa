@@ -162,49 +162,56 @@ def move_data(current_hhid, selected_rows, data_frame):
 
     return data_frame
 
+def merge_redcap_event_rows(filename: str):
+    """Runs the redcap event merge
+
+    Args:
+        filename (_type_): _description_
+    """
+    # Main execution code:
+
+    # Load the csv as a pandas dataframe that makes it easy to manipulate and query
+    # the data (we point out that the header is in row 0)
+    dataframe_original = pd.read_csv(, sep='\t', header=0)
 
 
-# Main execution code:
 
-# Load the csv as a pandas dataframe that makes it easy to manipulate and query
-# the data (we point out that the header is in row 0)
-dataframe_original = pd.read_csv('/root/sandbox/disa/data_v0004.tsv', sep='\t', header=0)
+    # To be changed later on but we are taking the first 50 rows as our testing data
+    df = dataframe_original #.head(50)
 
 
 
-# To be changed later on but we are taking the first 50 rows as our testing data
-df = dataframe_original #.head(50)
+    # Generate a list of all unique hhid's, we will be using these are the means to
+    # merge the rows
 
+    unique_hhids = df['hhid'].unique()
 
+    # Create a new dataframe where we store all the data
+    new_df = pd.DataFrame(columns=df.columns)
 
-# Generate a list of all unique hhid's, we will be using these are the means to
-# merge the rows
+    # Loop through each of the HHID's and then perform the merging for each hhid
+    for i, current_hhid in enumerate(unique_hhids):
+        print(current_hhid)
+        # Get the rows corresponding to the given hhid
+        selected_rows = df[df['hhid'] == current_hhid]
+        # Now merge the rows with the same HHID in the new Dataframe
+        new_row = merge_rows(selected_rows)
+        print(f"Appending the row for HHID: {new_row['hhid']}")
+        new_df = pd.concat([new_df, new_row], axis=0, ignore_index=True)
 
-unique_hhids = df['hhid'].unique()
+    # Extend all the columns
+    extended_df = extend_columns(new_df)
 
-# Create a new dataframe where we store all the data
-new_df = pd.DataFrame(columns=df.columns)
+    # Move all the data from columns marked to be deleted into their new columns,
+    trimmed_df = trim_columns(unique_hhids, df, extended_df)
 
-# Loop through each of the HHID's and then perform the merging for each hhid
-for i, current_hhid in enumerate(unique_hhids):
-    print(current_hhid)
-    # Get the rows corresponding to the given hhid
-    selected_rows = df[df['hhid'] == current_hhid]
-    # Now merge the rows with the same HHID in the new Dataframe
-    new_row = merge_rows(selected_rows)
-    print(f"Appending the row for HHID: {new_row['hhid']}")
-    new_df = pd.concat([new_df, new_row], axis=0, ignore_index=True)
+    date_time = datetime.now()
+    str_date_time = date_time.strftime("%d-%m-%Y-%H:%M:%S")
 
-# Extend all the columns
-extended_df = extend_columns(new_df)
+    # Now save the new dataframe as a csv
+    trimmed_df.to_csv(f'/root/sandbox/disa/data_merged_{str_date_time}.tsv', sep="\t", index=False)
 
-# Move all the data from columns marked to be deleted into their new columns,
-trimmed_df = trim_columns(unique_hhids, df, extended_df)
+    print("Deleted Columms:")
+    print(COLUMNS_TO_DELETE)
 
-date_time = datetime.now()
-str_date_time = date_time.strftime("%d-%m-%Y-%H:%M:%S")
-
-# Now save the new dataframe as a csv
-trimmed_df.to_csv(f'/root/sandbox/disa/data_merged_{str_date_time}.tsv', sep="\t", index=False)
-
-print(COLUMNS_TO_DELETE)
+    return trimmed_df
