@@ -172,7 +172,7 @@ def merge_redcap_event_rows(filename: str):
 
     # Load the csv as a pandas dataframe that makes it easy to manipulate and query
     # the data (we point out that the header is in row 0)
-    dataframe_original = pd.read_csv(, sep='\t', header=0)
+    dataframe_original = pd.read_csv(filename, sep='\t', header=0)
 
 
 
