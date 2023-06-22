@@ -1,4 +1,5 @@
 from pipeline.cleanup_h1 import (
+    calculate_h1_income_total,
     update_h1_exp_educ_amt,
     update_h1_exp_food,
     update_h1_exp_healthcare_amt,
@@ -29,6 +30,7 @@ def main():
     cleaned_df = merge_s4_village(cleaned_df)
 
     # h1 Study
+    cleaned_df = calculate_h1_income_total(cleaned_df)
     cleaned_df = update_h1_exp_food(cleaned_df)
     cleaned_df = update_h1_exp_water_amt(cleaned_df)
     cleaned_df = update_h1_exp_healthcare_amt(cleaned_df)
