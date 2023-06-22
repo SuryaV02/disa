@@ -1,3 +1,5 @@
+
+
 def calculate_h3_ownland(df):
     # Generate total land in number of acres. 1 acre = 100 cents
     raise NotImplementedError()
