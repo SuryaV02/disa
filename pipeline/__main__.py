@@ -1,4 +1,9 @@
-from pipeline.cleanup import merge_s4_cluster, cleanup_s4_hhcategory, merge_s4_gp
+from pipeline.cleanup_s4 import (
+    merge_s4_cluster,
+    cleanup_s4_hhcategory,
+    merge_s4_gp,
+    merge_s4_village,
+)
 from pipeline.merge import merge_redcap_event_rows
 import pandas as pd
 
@@ -11,6 +16,7 @@ def main():
     cleaned_df = cleanup_s4_hhcategory(merged_df)
     cleaned_df = merge_s4_cluster(cleaned_df)
     cleaned_df = merge_s4_gp(cleaned_df)
+    cleaned_df = merge_s4_village(cleaned_df)
     cleaned_df.to_csv("/root/sandbox/disa/data_cleaned.tsv", sep="\t", index=False)
 
 
