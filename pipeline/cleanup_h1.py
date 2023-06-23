@@ -65,17 +65,6 @@ def update_h1_exp_healthcare_amt(df):
     return df
 
 
-def convert_text_to_months(text):
-    pattern = r".*(\d+)\s*([m,M]onth|[y,Y]ear)"
-    match = re.search(pattern, text)
-    if match is None:
-        raise Exception("Could not extract month length from text: ", text)
-
-    base = int(match.group(1))
-    multiplier = 1 if match.group(2).lower() == "month" else 12
-    return base * multiplier
-
-
 def blank_ht_exp_phone_unit(df):
     # Blank out the phone amount values where we see an 'Other'
     print("Blanking out: \n", df[df["h1_exp_phone_unit"] == "Other"]["hhid"])
@@ -86,6 +75,17 @@ def blank_ht_exp_phone_unit(df):
 def update_h1_exp_phone_amt(df):
     # Phone amount needs to be monthly amount. Divide value by 2 if reported for
     # 2 months and 3 if reported for 3 months
+
+    def convert_text_to_months(text):
+        pattern = r".*(\d+)\s*([m,M]onth|[y,Y]ear)"
+        match = re.search(pattern, text)
+        if match is None:
+            raise Exception("Could not extract month length from text: ", text)
+
+        base = int(match.group(1))
+        multiplier = 1 if match.group(2).lower() == "month" else 12
+        return base * multiplier
+
     df["h1_exp_phone_amt"] = df.apply(
         lambda row: row["h1_exp_phone_amt"]
         / convert_text_to_months(row["h1_exp_phone_unit"])
@@ -105,4 +105,20 @@ def update_h1_exp_educ_amt(df):
 def update_h1_exp_rituals_amt(df):
     # divide by 6
     df["h1_exp_rituals_amt"] = df["h1_exp_rituals_amt"].div(6, fill_value=np.nan)
+    return df
+
+
+def add_exp_other_specify_to_h1_exp_substance_amt(df):
+    # There is one 'other' reported as 'Beedi'. Please move this to h1_exp_substance_amt
+
+    def fix_row(row):
+        # Note we can add more conditions for other values here
+        if row["h1_exp_other_specify"] == "Beedi":
+            row["h1_exp_substance_amt"] == row["h1_exp_other_amt"]
+            row["h1_exp_other_amt"] == np.nan
+            row["h1_exp_other_specify"] = np.nan
+            row["h1_exp_other"] = "No"
+
+    df = df.apply(fix_row, axis=1)
+
     return df

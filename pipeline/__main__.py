@@ -1,4 +1,5 @@
 from pipeline.cleanup_h1 import (
+    add_exp_other_specify_to_h1_exp_substance_amt,
     blank_ht_exp_phone_unit,
     calculate_h1_income_total,
     update_h1_exp_educ_amt,
@@ -43,6 +44,7 @@ def main():
     cleaned_df = update_h1_exp_phone_amt(cleaned_df)
     cleaned_df = update_h1_exp_educ_amt(cleaned_df)
     cleaned_df = update_h1_exp_rituals_amt(cleaned_df)
+    cleaned_df = add_exp_other_specify_to_h1_exp_substance_amt(cleaned_df)
 
     # h3 Study
     # This one computes all the dependencies automatically

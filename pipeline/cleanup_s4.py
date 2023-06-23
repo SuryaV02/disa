@@ -133,13 +133,6 @@ def merge_s4_village(df):
     return new_df
 
 
-
-
-def add_exp_other_specify_to_h1_exp_substance_amt(df):
-    # There is one 'other' reported as 'Beedi'. Please move this to h1_exp_substance_amt
-    raise NotImplementedError()
-
-
 def calculate_total_agwork(df):
     # Generate variables as total number of hours spent in each category based on
     #  table in 'time_use' sheet. Note that data are collected in 30 minute
@@ -166,5 +159,3 @@ def calculate_total_nonwork(df):
     #  table in 'time_use' sheet. Note that data are collected in 30 minute
     #  blocks
     raise NotImplementedError()
-
-
