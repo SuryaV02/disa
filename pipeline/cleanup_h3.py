@@ -24,7 +24,7 @@ def calculate_h3_farmsize(df):
     # Bin each farmer into categories: Marginal (<2.41 acres); Small (>2.41 but <4.94 acres); Medium (>4.94 but <9.88); Large (>9.88)
     bins = [0, 2.41, 4.94, 9.88, np.inf]
     labels = ["Marginal", "Small", "Medium", "Large"]
-    df["h3_farmsize"] = pd.cut(df["h3_ownland"], bins=bins, labels=labels, na=False)
+    df["h3_farmsize"] = pd.cut(df["h3_ownland"], bins=bins, labels=labels)
     return df
 
 

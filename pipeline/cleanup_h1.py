@@ -119,6 +119,9 @@ def add_exp_other_specify_to_h1_exp_substance_amt(df):
             row["h1_exp_other_specify"] = np.nan
             row["h1_exp_other"] = "No"
 
+        return row
+
+    # TODO - Need to output the implement the logging for these changes
     df = df.apply(fix_row, axis=1)
 
     return df

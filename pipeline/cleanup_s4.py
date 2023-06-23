@@ -1,3 +1,5 @@
+import re
+from typing import Dict
 import pandas
 
 
@@ -14,7 +16,7 @@ def cleanup_s4_hhcategory(df):
     print(f"Cleanup affecting {count} rows")
 
     # Do the replacement
-    df.loc[condition, "s4_hhcategory"] = "S2S (organic in at least one plot)"
+    df.loc[condition, "s4_current_hhcategory"] = "S2S (organic in at least one plot)"
     return df
 
 
@@ -131,31 +133,3 @@ def merge_s4_village(df):
         axis=1,
     )
     return new_df
-
-
-def calculate_total_agwork(df):
-    # Generate variables as total number of hours spent in each category based on
-    #  table in 'time_use' sheet. Note that data are collected in 30 minute
-    #  blocks
-    raise NotImplementedError()
-
-
-def calculate_total_otherwork(df):
-    # Generate variables as total number of hours spent in each category based on
-    #  table in 'time_use' sheet. Note that data are collected in 30 minute
-    #  blocks
-    raise NotImplementedError()
-
-
-def calculate_total_work(df):
-    # Generate variables as total number of hours spent in each category based on
-    #  table in 'time_use' sheet. Note that data are collected in 30 minute
-    #  blocks
-    raise NotImplementedError()
-
-
-def calculate_total_nonwork(df):
-    # Generate variables as total number of hours spent in each category based on
-    #  table in 'time_use' sheet. Note that data are collected in 30 minute
-    #  blocks
-    raise NotImplementedError()
