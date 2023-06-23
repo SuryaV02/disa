@@ -8,6 +8,7 @@ from pipeline.cleanup_h1 import (
     update_h1_exp_rituals_amt,
     update_h1_exp_water_amt,
 )
+from pipeline.cleanup_h3 import calculate_h3_farmsize
 from pipeline.cleanup_s4 import (
     merge_s4_cluster,
     cleanup_s4_hhcategory,
@@ -42,6 +43,14 @@ def main():
     cleaned_df = update_h1_exp_phone_amt(cleaned_df)
     cleaned_df = update_h1_exp_educ_amt(cleaned_df)
     cleaned_df = update_h1_exp_rituals_amt(cleaned_df)
+
+    # h3 Study
+    # This one computes all the dependencies automatically
+    # 1. calculate_h3_ownland()
+    # 2. calculate_h3_plot1land()
+    # 3. calculate_h3_plot2land()
+    # 4. calculate_h3_plot3land()
+    cleaned_df = calculate_h3_farmsize(cleaned_df)
 
     cleaned_df.to_csv("/root/sandbox/disa/data_cleaned.tsv", sep="\t", index=False)
 
