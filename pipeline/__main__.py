@@ -1,4 +1,5 @@
 from pipeline.cleanup_h1 import (
+    blank_ht_exp_phone_unit,
     calculate_h1_income_total,
     update_h1_exp_educ_amt,
     update_h1_exp_food,
@@ -34,7 +35,11 @@ def main():
     cleaned_df = update_h1_exp_food(cleaned_df)
     cleaned_df = update_h1_exp_water_amt(cleaned_df)
     cleaned_df = update_h1_exp_healthcare_amt(cleaned_df)
-    # cleaned_df = update_h1_exp_phone_amt(cleaned_df)
+
+    # Blanking out the exp_phone_unit when 'Other' is encountered
+    cleaned_df = blank_ht_exp_phone_unit(cleaned_df)
+
+    cleaned_df = update_h1_exp_phone_amt(cleaned_df)
     cleaned_df = update_h1_exp_educ_amt(cleaned_df)
     cleaned_df = update_h1_exp_rituals_amt(cleaned_df)
 

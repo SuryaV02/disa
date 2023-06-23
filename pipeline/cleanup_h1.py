@@ -1,4 +1,7 @@
+import re
 import numpy as np
+import pandas as pd
+import logging
 
 
 def calculate_h1_income_total(df):
@@ -62,10 +65,35 @@ def update_h1_exp_healthcare_amt(df):
     return df
 
 
+def convert_text_to_months(text):
+    pattern = r".*(\d+)\s*([m,M]onth|[y,Y]ear)"
+    match = re.search(pattern, text)
+    if match is None:
+        raise Exception("Could not extract month length from text: ", text)
+
+    base = int(match.group(1))
+    multiplier = 1 if match.group(2).lower() == "month" else 12
+    return base * multiplier
+
+
+def blank_ht_exp_phone_unit(df):
+    # Blank out the phone amount values where we see an 'Other'
+    print("Blanking out: \n", df[df["h1_exp_phone_unit"] == "Other"]["hhid"])
+    df.loc[df["h1_exp_phone_unit"] == "Other", "h1_exp_phone_amt"] = np.nan
+    return df
+
+
 def update_h1_exp_phone_amt(df):
     # Phone amount needs to be monthly amount. Divide value by 2 if reported for
     # 2 months and 3 if reported for 3 months
-    raise NotImplementedError()
+    df["h1_exp_phone_amt"] = df.apply(
+        lambda row: row["h1_exp_phone_amt"]
+        / convert_text_to_months(row["h1_exp_phone_unit"])
+        if (pd.notnull(row["h1_exp_phone_amt"]) and row["h1_exp_phone_unit"])
+        else np.nan,
+        axis=1,
+    )
+    return df
 
 
 def update_h1_exp_educ_amt(df):
