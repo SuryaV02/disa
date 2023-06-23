@@ -25,7 +25,7 @@ def parse_redcap_event(event_name: str) -> Tuple[int, int]:
     return int(matches.group(1)), int(matches.group(2))
 
 def generate_column_name(visit_number, arm_number, old_column_name) -> str:
-    return f"{old_column_name}_vist_{visit_number}_arm_{arm_number}"
+    return f"{old_column_name}_visit_{visit_number}_arm_{arm_number}"
 
 def merge_rows(selected_rows):
     # Overall Logic -  Merge the selected rows based on the logic:
