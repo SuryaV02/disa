@@ -28,6 +28,9 @@ def calculate_h1_income_total(df):
     h1_income_other_specify
     h1_income_other_amt
     """
+    # First reassign other amount:
+    df = reassign_h1_income_other_specify(df)
+
     df["h1_income_total"] = df[
         [
             "h1_income_cultivation_amt",
@@ -125,3 +128,57 @@ def add_exp_other_specify_to_h1_exp_substance_amt(df):
     df = df.apply(fix_row, axis=1)
 
     return df
+
+
+INCOME_REASSIGN_DICT = {
+    "Ammavadi": "h1_income_govt_amt",
+    "Auto": "h1_income_business",
+    "Bullero (auto)": "h1_income_business",
+    "Chakali ( battalu wash)": "h1_income_business",
+    "Chepalu pattadam": "h1_income_othagri",
+    "Cloths Iron": "h1_income_business",
+    "Contract worker": "h1_income_wages",
+    "Dairy": "h1_income_wages",
+    "Driver": "h1_income_business",
+    "Lari": "h1_income_business",
+    "Lari Driver": "h1_income_business",
+    "Lari driver": "h1_income_business",
+    "Millets&bullero": "h1_income_business",
+    "NREGS": "h1_income_wages",
+    "RMP Docter": "h1_income_business",
+    "Tailor": "h1_income_business",
+    "Tailoring": "h1_income_business",
+    "Track tar": "h1_income_business",
+    "Tracter": "h1_income_business",
+    "Tractor": "h1_income_business",
+    "Travels": "h1_income_business",
+}
+
+
+def reassign_h1_income_other_specify(df):
+    def fix_row(row, lookup_table):
+        # Look at the content and figure out where the stuff has to go
+        specified_other_category = row["h1_income_other_specify"]
+        # Check if this is somthing we need to do
+        if specified_other_category in lookup_table.key() and pd.isna(
+            specified_other_category is False
+        ):
+            value = row["h1_income_other_amt"]
+            reassignment_column_name = lookup_table[specified_other_category]
+            if row[reassignment_column_name].isna():
+                row[reassignment_column_name] = value
+            else:
+                row[reassignment_column_name] += value
+
+            # Blank out the old columns
+            row["h1_income_substance_amt"] == row["h1_income_other_amt"]
+            row["h1_income_other_amt"] == np.nan
+            row["h1_income_other_specify"] = np.nan
+            row["h1_income_other"] = "No"
+
+        return row
+
+    # Generic whitespace cleanup
+    df["h1_income_other_specify"] = df["h1_income_other_specify"].str.strip()
+
+    df = df.apply(fix_row, lookup_table=INCOME_REASSIGN_DICT)
