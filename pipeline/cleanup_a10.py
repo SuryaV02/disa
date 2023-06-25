@@ -68,7 +68,6 @@ def calculate_work_totals(df):
                 print(
                     f"Found missing time use data for: HHID - {row['hhid']} event - {event}"
                 )
-                print(row[column_list])
             else:
                 # Compute the total time metrics
                 totals_dict = {key: 0 for key in total_categories_list}

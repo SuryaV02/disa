@@ -43,6 +43,7 @@ def calculate_h1_income_total(df):
             "h1_income_govt_amt",
             "h1_income_remittances_amt",
             "h1_income_other_amt",
+            "h1_income_business_amt",
         ]
     ].sum(axis=1, skipna=True)
     return df
@@ -131,7 +132,7 @@ def add_exp_other_specify_to_h1_exp_substance_amt(df):
 
 
 INCOME_REASSIGN_DICT = {
-    "Ammavadi": "h1_income_govt_amt",
+    "Ammavadi": "h1_income_govt",
     "Auto": "h1_income_business",
     "Bullero (auto)": "h1_income_business",
     "Chakali ( battalu wash)": "h1_income_business",
@@ -156,29 +157,53 @@ INCOME_REASSIGN_DICT = {
 
 
 def reassign_h1_income_other_specify(df):
-    def fix_row(row, lookup_table):
-        # Look at the content and figure out where the stuff has to go
-        specified_other_category = row["h1_income_other_specify"]
-        # Check if this is somthing we need to do
-        if specified_other_category in lookup_table.key() and pd.isna(
-            specified_other_category is False
-        ):
-            value = row["h1_income_other_amt"]
-            reassignment_column_name = lookup_table[specified_other_category]
-            if row[reassignment_column_name].isna():
-                row[reassignment_column_name] = value
+    def fix_row(row, lookup_table, drop_list):
+        if pd.isna(row["h1_income_other_specify"]) is False:
+            # Look at the content and figure out where the stuff has to go
+            specified_other_category = row["h1_income_other_specify"]
+            # Check if this is somthing we need to do
+            value = float(row["h1_income_other_amt"])
+            if specified_other_category in lookup_table:
+                reassignment_category_column_name = lookup_table[
+                    specified_other_category
+                ]
             else:
-                row[reassignment_column_name] += value
+                # Add HHID to droplist
+                drop_list.append(row["hhid"])
+                return row
+            reassignment_amount_column_name = f"{reassignment_category_column_name}_amt"
+            # Set category to yes
+            row[reassignment_category_column_name] = "Yes"
+            if reassignment_amount_column_name not in row.index:
+                row[reassignment_amount_column_name] = value
+            elif pd.isna(row[reassignment_amount_column_name]):
+                row[reassignment_amount_column_name] = value
+            else:
+                row[reassignment_amount_column_name] += value
 
             # Blank out the old columns
-            row["h1_income_substance_amt"] == row["h1_income_other_amt"]
             row["h1_income_other_amt"] == np.nan
             row["h1_income_other_specify"] = np.nan
             row["h1_income_other"] = "No"
+
+            print(
+                f"Moved income_other_amt to {reassignment_amount_column_name} for HHID: {row['hhid']}"
+            )
 
         return row
 
     # Generic whitespace cleanup
     df["h1_income_other_specify"] = df["h1_income_other_specify"].str.strip()
+    drop_list = []
+    df = df.apply(
+        fix_row, lookup_table=INCOME_REASSIGN_DICT, drop_list=drop_list, axis=1
+    )
 
-    df = df.apply(fix_row, lookup_table=INCOME_REASSIGN_DICT)
+    # Drop all rows with the following HHIDs
+    print(
+        "Dropping the following rows becuase income_other_specify is not found in reassignment lookup table:",
+        drop_list,
+    )
+    df = df[~df["hhid"].isin(drop_list)]
+
+    return df

@@ -1,6 +1,17 @@
 import numpy as np
 import pandas as pd
 
+from pipeline.utils import purge_outliers
+
+
+def purge_h3_outliers(df):
+    mask = df["h3_pesticide"] > 200000
+    filtered_df = df[~mask]
+    dropped_ids = df[mask]["hhid"].unique()
+    for d_id in dropped_ids:
+        print(f"Dropped HHID : {d_id}")
+    return filtered_df
+
 
 def calculate_h3_ownland(df):
     # First cleanup the individual land data
@@ -33,7 +44,7 @@ def calculate_h3_cultivateland(df):
     raise NotImplementedError()
 
 
-def calculate_h3_fullyorganic(df):
+def classify_h3_fullyorganic(df):
     # Note that these can't be created until you've calculated organic status for each plot individually!
     # Generate binary variable: fully organic if all plots of land reported by farmer are organic, not organic otherwise
 
@@ -42,8 +53,9 @@ def calculate_h3_fullyorganic(df):
     raise NotImplementedError()
 
 
-def calculate_h3_fullyorganic2(df):
+def classify_h3_fullyorganic2(df):
     # Generate categorical variable: fully organic if all plots of land reported by farmer are organic, partially organic if at least one plot is organic, not organic otherwise
+    # Do all the other things first
     raise NotImplementedError()
 
 
@@ -97,14 +109,89 @@ def calculate_h3_plot3organic_calc(df):
 
 def calcualte_h3_costofcult(df):
     # sum of all cost variables below, including h3_otherorganic and h3_madecost, and seed cost for all five crops
-    raise NotImplementedError()
+    """
+    h3_soil
+    h3_fertilizer
+    h3_manure
+    h3_pesticide
+    h3_jeevamrutam
+    h3_biocides
+    h3_mechanicalpest
+    h3_diesel
+    h3_electricity
+    h3_mulchmaterial
+    h3_hlabour_mulch
+    h3_hlabour_plough
+    h3_hlabour_sow
+    h3_hlabour_weed
+    h3_hlabour_prune
+    h3_hlabour_spray
+    h3_hlabour_harvest
+    h3_labor
+    h3_irrigation
+    h3_maintenance
+    h3_machinery
+    h3_lease
+    """
+    # Calculate total seed and seed treat costs first
+    df = calculate_h3_seedcosttotal(df)
+    df = calculate_h3_seedtreattotal(df)
+
+    df["h3_costofcult"] = df[
+        [
+            "h3_soil",
+            "h3_fertilizer",
+            "h3_manure",
+            "h3_pesticide",
+            "h3_jeevamrutam",
+            "h3_biocides",
+            "h3_mechanicalpest",
+            "h3_diesel",
+            "h3_electricity",
+            "h3_mulchmaterial",
+            "h3_hlabour_mulch",
+            "h3_hlabour_plough",
+            "h3_hlabour_sow",
+            "h3_hlabour_weed",
+            "h3_hlabour_prune",
+            "h3_hlabour_spray",
+            "h3_hlabour_harvest",
+            # "h3_labor",
+            "h3_irrigation",
+            "h3_maintenance",
+            "h3_machinery",
+            "h3_lease",
+            "h3_otherorganic",
+            "h3_madecost",
+            "h3_seedcosttotal",
+            "h3_seedtreattotalcost",
+        ]
+    ].sum(axis=1, skipna=True)
+    return df
 
 
 def calculate_h3_seedcosttotal(df):
     # sum of all seed costs (five columns, one for each crop): h3_cropxseedcost
-    raise NotImplementedError()
+    # TODO: Replace with regex later
+    df["h3_seedcosttotal"] = (
+        df["h3_crop1seedcost"].fillna(0)
+        + df["h3_crop2seedcost"].fillna(0)
+        + df["h3_crop3seedcost"].fillna(0)
+        + df["h3_crop4seedcost"].fillna(0)
+        + df["h3_crop5seedcost"].fillna(0)
+    )
+    return df
 
 
 def calculate_h3_seedtreattotal(df):
     # sum of all seed treatment costs (five columns, one for each crop): h3_cropxseedtreatcost
-    raise NotImplementedError()
+    # TODO: Replace with regex later
+    df["h3_seedtreattotalcost"] = (
+        df["h3_crop1seedtreatcost"].fillna(0)
+        + df["h3_crop2seedtreatcost"].fillna(0)
+        + df["h3_crop3seedtreatcost"].fillna(0)
+        + df["h3_crop4seedtreatcost"].fillna(0)
+        + df["h3_crop5seedtreatcost"].fillna(0)
+    )
+
+    return df
