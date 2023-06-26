@@ -41,7 +41,12 @@ def calculate_h3_farmsize(df):
 
 def calculate_h3_cultivateland(df):
     # Generate total cultivated land in number of acres. 1 acre = 100 cents, 1 gunta = 2.5 cents
-    raise NotImplementedError()
+    df["h3_cultivateland"] = (
+        df["h3_cultivateacre"].fillna(0)
+        + df["h3_cultivatecent"].mul(0.01, fill_value=0)
+        + df["h3_cultivateguntas"].mul(0.025, fill_value=0)
+    )
+    return df
 
 
 def classify_h3_fullyorganic(df):
@@ -49,14 +54,23 @@ def classify_h3_fullyorganic(df):
     # Generate binary variable: fully organic if all plots of land reported by farmer are organic, not organic otherwise
 
     # Implement all dependent cleanup here
-
-    raise NotImplementedError()
-
-
-def classify_h3_fullyorganic2(df):
-    # Generate categorical variable: fully organic if all plots of land reported by farmer are organic, partially organic if at least one plot is organic, not organic otherwise
-    # Do all the other things first
-    raise NotImplementedError()
+    df = calculate_h3_plotNorganic_calc(df)
+    df.loc[
+        (
+            (df["h3_plot1organic_calc"] == "Organic")
+            | (pd.isna(df["h3_plot1organic_calc"]))
+        )
+        & (
+            (df["h3_plot2organic_calc"] == "Organic")
+            | (pd.isna(df["h3_plot2organic_calc"].isna()))
+        )
+        & (
+            (df["h3_plot3organic_calc"] == "Organic")
+            | (pd.isna(df["h3_plot3organic_calc"].isna()))
+        ),
+        "h3_fullyorganic",
+    ] = True
+    return df
 
 
 def calculate_h3_plot1land(df):
@@ -69,13 +83,6 @@ def calculate_h3_plot1land(df):
     return df
 
 
-def calculate_h3_plot1organic_calc(df):
-    # Generate categorical variable.'Organic' if h3_plot1fert and h3_plot1pest are not using synthetic
-    # fertilizers or pesticides (option 1), NPM if not using synthetic pesticides, and all other households
-    # as 'Conventional'
-    raise NotImplementedError()
-
-
 def calculate_h3_plot2land(df):
     # Generate total cultivated land in number of acres. 1 acre = 100 cents
     df["h3_plot2land"] = (
@@ -86,10 +93,45 @@ def calculate_h3_plot2land(df):
     return df
 
 
-def calculate_h3_plot1organic_calc(df):
+def calculate_h3_plotNorganic_calc(df):
     # Generate categorical variable.'Organic' if h3_plot2fert and h3_plot2pest are not using synthetic fertilizers
     # or pesticides (option 1), NPM if not using synthetic pesticides, and all other households as 'Conventional'
-    raise NotImplementedError()
+    # TODO: Refine implementation, currently checking if only the main option is checked or not (h3_plot1fert___1)
+    def classify_plotN(row, plot_number):
+        synthetic_fert_column_name = f"h3_plot{plot_number}fert___1"
+        classification_column_name = f"h3_plot{plot_number}organic_calc"
+        fert_other_column_name = f"h3_plot{plot_number}fert_other"
+        pesticide_column_name = f"h3_plot{plot_number}pest___1"
+        # TODO: Unsure if the current logic accounts for the other category correctly
+        if (
+            (
+                row[synthetic_fert_column_name] == 0
+                or row[synthetic_fert_column_name] == "Unchecked"
+            )
+            and (
+                row[fert_other_column_name] != "Checked"
+                and row[fert_other_column_name] != 1
+            )
+            and (
+                row[pesticide_column_name] != "Checked"
+                or row[pesticide_column_name] != 1
+            )
+        ):  # Adding the extra condition incase its labeled data
+            row[classification_column_name] = "Organic"
+        elif (
+            row[pesticide_column_name] != "Checked" or row[pesticide_column_name] != 1
+        ):  # Don't care logic for fertilizer
+            row[classification_column_name] = "NPM"
+        else:
+            row[classification_column_name] = "Conventional"
+
+        return row
+
+    df = df.apply(classify_plotN, plot_number=1, axis=1)
+    df = df.apply(classify_plotN, plot_number=2, axis=1)
+    df = df.apply(classify_plotN, plot_number=3, axis=1)
+
+    return df
 
 
 def calculate_h3_plot3land(df):
@@ -100,11 +142,6 @@ def calculate_h3_plot3land(df):
         + df["h3_plot3guntas"].mul(0.025, fill_value=0)
     )
     return df
-
-
-def calculate_h3_plot3organic_calc(df):
-    # Generate categorical variable.'Organic' if h3_plot3fert and h3_plot3pest are not using synthetic fertilizers or pesticides (option 1), NPM if not using synthetic pesticides, and all other households as 'Conventional'
-    raise NotImplementedError()
 
 
 def calcualte_h3_costofcult(df):
