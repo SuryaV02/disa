@@ -30,11 +30,7 @@ import pandas as pd
 
 def main():
     # merged_df = merge_redcap_event_rows('/root/sandbox/disa/data_v0004.tsv')
-    merged_df = pd.read_csv(
-        "/root/sandbox/disa/data_merged_23-06-2023-22:32:11.tsv",
-        sep="\t",
-        header=0,
-    )
+    merged_df = pd.read_csv("/root/sandbox/disa/data_v0004.tsv", sep="\t", header=0)
 
     # s4 Study
     cleaned_df = cleanup_s4_hhcategory(merged_df)
@@ -57,7 +53,7 @@ def main():
     cleaned_df = add_exp_other_specify_to_h1_exp_substance_amt(cleaned_df)
 
     # a10 Study
-    cleaned_df = calculate_work_totals(cleaned_df)
+    # cleaned_df = calculate_work_totals(cleaned_df)
 
     # h3 Study
     cleaned_df = purge_h3_outliers(cleaned_df)
