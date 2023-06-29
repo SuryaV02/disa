@@ -42,61 +42,52 @@ def calculate_work_totals(df):
     def calculate_totals(
         row,
         filtered_columns: List[str],
-        match_pattern: str,
         lookup_table: Dict[str, str],
-        summation_headers: List[str],
-        event_list: List[str],
         total_categories_list: List[str],
+        timeuse_df,
     ):
-        # Create dictionary for all column names for every event
-        event_lookup_dict: Dict[str, List[str]] = {}
-        # Loop through events that fit the pattern
-        for event in event_list:
-            # Go through all the columns that match the pattern
-            event_lookup_dict[event] = []
-
-        # Sort the columns into event lookup dict
-        for column_name in filtered_columns:
-            match = re.match(pattern, column_name)
-            event = match.group(1)
-            event_lookup_dict[event].append(column_name)
-        # print(event_lookup_dict)
-        # sys.exit()
         # Now check for each event and all the corresponding columns if the values are valid or if needs to be skipped
-        for event, column_list in event_lookup_dict.items():
-            if row[column_list].isna().any():
-                print(
-                    f"Found missing time use data for: HHID - {row['hhid']} event - {event}"
-                )
-            else:
-                # Compute the total time metrics
-                totals_dict = {key: 0 for key in total_categories_list}
-                for column_name in column_list:
-                    user_reported_work_type = row[column_name]
-                    computed_work_type = lookup_table[user_reported_work_type]
-                    match = re.match(match_pattern, column_name)
-                    totals_dict[computed_work_type] += 0.5
+        if row[filtered_columns].isna().any():
+            print(
+                f"Found missing time use data for: HHID - {row['hhid']} event - {row['redcap_event_name']}. Missing Count - {row[filtered_columns].isna().count()}"
+            )
+            timeuse_row = {
+                "hhid": row["hhid"],
+                "redcap_event_name": row["redcap_event_name"],
+                "missing_count": row[filtered_columns].isna().count(),
+            }
 
-                for work_type, value in totals_dict.items():
-                    row[f"total_{work_type}{event}"] = value
+            for column_name in filtered_columns:
+                timeuse_row[column_name] = row[column_name]
 
+            # print(timeuse_row)
+            new_df = pd.Series(timeuse_row)
+            # timeuse_df = timeuse_df.concat(timeuse_row, ignore_index=True)
+            timeuse_df = pd.concat([timeuse_df, new_df], axis=0, ignore_index=True)
+
+        else:
+            # Compute the total time metrics
+            totals_dict = {key: 0 for key in total_categories_list}
+            for column_name in filtered_columns:
+                user_reported_work_type = row[column_name]
+                computed_work_type = lookup_table[user_reported_work_type]
+                totals_dict[computed_work_type] += 0.5
+
+            for work_type, value in totals_dict.items():
+                row[f"total_{work_type}"] = value
+            print(
+                f"Computed total time use data for: HHID - {row['hhid']} event - {row['redcap_event_name']}",
+                totals_dict,
+            )
         return row
 
     # This is the regex pattern for the column
-    pattern = r"a10_\d{4}(_visit_(\d+)_arm_(\d+))?"
+    pattern = r"a10_\d{4}"
 
     filtered_columns = [column for column in df.columns if re.match(pattern, column)]
 
     # Eliminate all the empty columns
     # df = eliminate_undocumented_work_columns(df, filtered_columns)
-
-    # Generate all the event suffixes
-    event_set = set()
-    for column_name in filtered_columns:
-        match = re.match(pattern, column_name)
-        if match:
-            if match.group(1):
-                event_set.add(match.group(1))
 
     # Put all the summation categories into a set
     categories_set = set()
@@ -106,8 +97,7 @@ def calculate_work_totals(df):
     # Now generate all the possible summation column headers
     summation_headers = []
     for category in list(categories_set):
-        for suffix in event_set:
-            summation_headers.append(f"total_{category}{suffix}")
+        summation_headers.append(f"total_{category}")
 
     print("summation headers:")
     print(summation_headers)
@@ -121,15 +111,30 @@ def calculate_work_totals(df):
     # Concatenate the empty DataFrame with the original DataFrame
     extended_df = pd.concat([df, empty_df], axis=1)
 
+    print(filtered_columns)
+
+    timeuse_column_list = [
+        "hhid",
+        "redcap_event_name",
+        "missing_count",
+    ]
+    timeuse_column_list.extend(filtered_columns)
+
+    print(timeuse_column_list)
+    # Create timeuse data
+    timeuse_df = pd.DataFrame({key: [] for key in timeuse_column_list})
+
+    print(filtered_columns)
     df = extended_df.apply(
         calculate_totals,
         filtered_columns=filtered_columns,
-        match_pattern=pattern,
         lookup_table=TIME_USE_DICT,
-        summation_headers=summation_headers,
-        event_list=list(event_set),
         total_categories_list=list(categories_set),
+        timeuse_df=timeuse_df,
         axis=1,
     )
+
+    print("Final Dataframe:")
+    print(timeuse_df)
 
     return df
