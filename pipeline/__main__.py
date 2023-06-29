@@ -12,6 +12,7 @@ from pipeline.cleanup_h1 import (
 )
 from pipeline.cleanup_h3 import (
     calcualte_h3_costofcult,
+    calculate_h3_cropNland,
     calculate_h3_cultivateland,
     calculate_h3_farmsize,
     calculate_h3_plotNorganic_calc,
@@ -66,6 +67,8 @@ def main():
     cleaned_df = calculate_h3_cultivateland(cleaned_df)
     cleaned_df = calcualte_h3_costofcult(cleaned_df)
     cleaned_df = classify_h3_fullyorganic(cleaned_df)
+
+    cleaned_df = calculate_h3_cropNland(cleaned_df)
 
     cleaned_df.to_csv("/root/sandbox/disa/data_cleaned.tsv", sep="\t", index=False)
 

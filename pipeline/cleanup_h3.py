@@ -232,3 +232,39 @@ def calculate_h3_seedtreattotal(df):
     )
 
     return df
+
+
+def calculate_h3_cropNland(df):
+    # TODO: Make this a regex version for allowing N crops: h3_crop1_acre
+
+    df["h3_crop1land"] = (
+        df["h3_crop1_acre"].fillna(0)
+        + df["h3_crop1_cents"].mul(0.01, fill_value=0)
+        + df["h3_crop1_guntas"].mul(0.025, fill_value=0)
+    )
+
+    df["h3_crop2land"] = (
+        df["h3_crop2_acre"].fillna(0)
+        + df["h3_crop2_cents"].mul(0.01, fill_value=0)
+        + df["h3_crop2_guntas"].mul(0.025, fill_value=0)
+    )
+
+    df["h3_crop3land"] = (
+        df["h3_crop3_acre"].fillna(0)
+        + df["h3_crop3_cents"].mul(0.01, fill_value=0)
+        + df["h3_crop3_guntas"].mul(0.025, fill_value=0)
+    )
+
+    df["h3_crop4land"] = (
+        df["h3_crop4_acre"].fillna(0)
+        + df["h3_crop4_cents"].mul(0.01, fill_value=0)
+        + df["h3_crop4_guntas"].mul(0.025, fill_value=0)
+    )
+
+    df["h3_crop5land"] = (
+        df["h3_crop5_acre"].fillna(0)
+        + df["h3_crop5_cents"].mul(0.01, fill_value=0)
+        + df["h3_crop5_guntas"].mul(0.025, fill_value=0)
+    )
+
+    return df
