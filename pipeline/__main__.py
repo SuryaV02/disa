@@ -15,7 +15,7 @@ from pipeline.cleanup_h3 import (
     calculate_h3_cropNland,
     calculate_h3_cultivateland,
     calculate_h3_farmsize,
-    calculate_h3_plotNorganic_calc,
+    calculate_h3_plotNfert_synkg,
     classify_h3_fullyorganic,
     purge_h3_outliers,
 )
@@ -67,8 +67,10 @@ def main():
     cleaned_df = calculate_h3_cultivateland(cleaned_df)
     cleaned_df = calcualte_h3_costofcult(cleaned_df)
     cleaned_df = classify_h3_fullyorganic(cleaned_df)
-
+    # TODO: Figure out the order of operations here and potentially move it
     cleaned_df = calculate_h3_cropNland(cleaned_df)
+
+    cleaned_df = calculate_h3_plotNfert_synkg(cleaned_df)
 
     cleaned_df.to_csv("/root/sandbox/disa/data_cleaned.tsv", sep="\t", index=False)
 

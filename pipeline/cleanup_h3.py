@@ -54,22 +54,32 @@ def classify_h3_fullyorganic(df):
     # Generate binary variable: fully organic if all plots of land reported by farmer are organic, not organic otherwise
 
     # Implement all dependent cleanup here
+    # TODO: Make this for N plots
+    """ """
+
     df = calculate_h3_plotNorganic_calc(df)
-    df.loc[
+    conditions = [
+        # Fully organic condition
         (
-            (df["h3_plot1organic_calc"] == "Organic")
-            | (pd.isna(df["h3_plot1organic_calc"]))
-        )
-        & (
-            (df["h3_plot2organic_calc"] == "Organic")
-            | (pd.isna(df["h3_plot2organic_calc"].isna()))
-        )
-        & (
-            (df["h3_plot3organic_calc"] == "Organic")
-            | (pd.isna(df["h3_plot3organic_calc"].isna()))
+            ((df["h3_plot1organic_calc"] == "Organic"))
+            & ((df["h3_plot2organic_calc"] == "Organic"))
+            & ((df["h3_plot3organic_calc"] == "Organic")),
         ),
-        "h3_fullyorganic",
-    ] = True
+        # Partially organic condition
+        (
+            ((df["h3_plot1organic_calc"] == "Organic"))
+            | ((df["h3_plot2organic_calc"] == "Organic"))
+            | ((df["h3_plot3organic_calc"] == "Organic")),
+        ),
+    ]
+    categories = ["Fully Organic", "Partially Organic"]
+
+    # df["h3_fullyorganic"] = np.select(conditions, categories, default="Not Organic")
+
+    df["h3_fullyorganic"] = df.apply(
+        lambda row: np.select(conditions, categories, default="Not Organic"), axis=1
+    )
+
     return df
 
 
@@ -96,34 +106,76 @@ def calculate_h3_plot2land(df):
 def calculate_h3_plotNorganic_calc(df):
     # Generate categorical variable.'Organic' if h3_plot2fert and h3_plot2pest are not using synthetic fertilizers
     # or pesticides (option 1), NPM if not using synthetic pesticides, and all other households as 'Conventional'
-    # TODO: Refine implementation, currently checking if only the main option is checked or not (h3_plot1fert___1)
+    # TODO: Fix NPM logic since most are getting assigned NPM
+
+    """
+    Fill unchecked with ???? if eerything is unchecked, then drop them from calculation, generate the count with hhids
+
+    Organic:
+    C1: h3_plot{plot_number}fert___1 == Unchecked
+    C2: h3_plot{plot_number}fert_other != Checked (i.e. NaN, Unchecked)
+    C3: h3_plot{plot_number}pest___1 == Unchecked
+    C4: h3_plot{plot_number}pest_other == Checked (Note - Check how many C1 + C2 + C3 farmers have pest_other checked) # Don't care
+
+    NPM:
+    C3: h3_plot{plot_number}pest___1 == Unchecked
+    C4: h3_plot{plot_number}pest_other == Checked (Note - Check how many C1 + C2 + C3 farmers have pest_other checked) # Don't cae
+
+    Conventional:
+    C5: h3_plot{plot_number}pest___1 == Checked
+    C6: h3_plot{plot_number}fert___1 == Checked
+
+
+    What do I test:
+    1. the 3 of them adding up to the total number of plots
+
+
+
+    """
+
     def classify_plotN(row, plot_number):
         synthetic_fert_column_name = f"h3_plot{plot_number}fert___1"
         classification_column_name = f"h3_plot{plot_number}organic_calc"
         fert_other_column_name = f"h3_plot{plot_number}fert_other"
         pesticide_column_name = f"h3_plot{plot_number}pest___1"
+        pesticide_other_column_name = f"h3_plot{plot_number}pest___777"
         # TODO: Unsure if the current logic accounts for the other category correctly
+        # Skip all the full nans
         if (
-            (
-                row[synthetic_fert_column_name] == 0
-                or row[synthetic_fert_column_name] == "Unchecked"
+            row[
+                [
+                    synthetic_fert_column_name,
+                    fert_other_column_name,
+                    pesticide_column_name,
+                    pesticide_other_column_name,
+                ]
+            ]
+            .isnull()
+            .all()
+        ):
+            print(
+                f"Skipping row for organic classification: {row['hhid']}, event: {row['redcap_event_name']} since all values are null"
             )
-            and (
-                row[fert_other_column_name] != "Checked"
-                and row[fert_other_column_name] != 1
-            )
-            and (
-                row[pesticide_column_name] != "Checked"
-                or row[pesticide_column_name] != 1
-            )
+            return row
+
+        # First eliminate all the conventional
+        if (row[synthetic_fert_column_name] == "Checked") and (
+            row[pesticide_column_name] == "Checked"
+        ):
+            row[classification_column_name] = "Conventional"
+        elif (
+            (row[synthetic_fert_column_name] == "Unchecked")
+            and (row[fert_other_column_name] != "yes")
+            and (row[pesticide_column_name] != "Checked")  # Don't Care pesticide
         ):  # Adding the extra condition incase its labeled data
             row[classification_column_name] = "Organic"
         elif (
-            row[pesticide_column_name] != "Checked" or row[pesticide_column_name] != 1
+            row[pesticide_column_name] != "Checked"
+            or row[pesticide_other_column_name] == "Checked"
         ):  # Don't care logic for fertilizer
             row[classification_column_name] = "NPM"
         else:
-            row[classification_column_name] = "Conventional"
+            row[classification_column_name] = "Unknown"
 
         return row
 
@@ -267,4 +319,47 @@ def calculate_h3_cropNland(df):
         + df["h3_crop5_guntas"].mul(0.025, fill_value=0)
     )
 
+    return df
+
+
+def calculate_h3_cropN_yield_normalized(df):
+    ## TODO: Wrap up the rield calculations
+    def calcualte_yield_in_kg(df, N: int):
+        df[f"h3_crop{N}_yield_in_kg"] = df[f"h3_crop{N}yield"]
+        return df
+
+    def normailize_yield_area(df, N: int):
+        df[f"h3_crop{N}_yield_normalized"] = df[f"h3_crop{N}yield"].fillna(0) / df[
+            f"h3_crop{N}land"
+        ].fillna(0)
+        return df
+
+    df = normailize_yield_area(df, 1)
+    df = normailize_yield_area(df, 2)
+    df = normailize_yield_area(df, 3)
+    df = normailize_yield_area(df, 4)
+    df = normailize_yield_area(df, 5)
+    return df
+
+
+def calculate_h3_plotNfert_synkg(df):
+    def calculate(df, N):
+        output_column_template = f"h3_plot{N}fert_synkg"
+        # First covert the weight column into numeric
+        df[f"h3_plot{N}fert_synbagwt"] = (
+            df[f"h3_plot{N}fert_synbagwt"]
+            .fillna("")
+            .str.extract(r"(\d+).*", expand=False)
+            .astype(float)
+        )
+
+        # Calculate the total weight thingy
+        df[output_column_template] = df[f"h3_plot{N}fert_synbag"].multiply(
+            df[f"h3_plot{N}fert_synbagwt"]
+        )
+        return df
+
+    df = calculate(df, 1)
+    df = calculate(df, 2)
+    df = calculate(df, 3)
     return df
