@@ -1284,8 +1284,8 @@
   },
   "h3_crop1": {
     "1": "Paddy",
-    "2": "Othercereal",
-    "3": "Pulsepappurakam",
+    "2": "Other cereal",
+    "3": "Pulse (pappu rakam)",
     "4": "Cotton",
     "5": "Fruit",
     "6": "Vegetable",
@@ -1294,40 +1294,40 @@
     "777": "other"
   },
   "h3_crop1paddy": {
-    "6": "TellaHamsa",
+    "6": "Tella Hamsa",
     "7": "Sreerama",
     "9": "Navara",
     "10": "Kalabatti",
-    "11": "BarmaBlock",
+    "11": "Barma Block",
     "12": "Kalabatti",
-    "13": "Krishnavihri",
+    "13": "Krishna vihri",
     "14": "Kujipatalia",
     "15": "siddasannalu",
     "16": "indrani",
     "17": "Sugandhi",
-    "18": "Parimalasannalu",
-    "19": "RaktaSali",
+    "18": "Parimala sannalu",
+    "19": "Rakta Sali",
     "20": "Ratnachodi",
-    "21": "Mapillaisambha",
-    "22": "Bahuroopi",
-    "23": "Radhajigale",
+    "21": "Mapillai sambha",
+    "22": "Bahu roopi",
+    "23": "Radha jigale",
     "24": "Kudirath",
     "25": "HMT",
     "26": "Basmati",
-    "27": "Mysoormallika",
-    "28": "khetrimaharaj",
-    "29": "Chittimutyalu",
-    "30": "Manipoorblock",
-    "32": "Jinkrice",
-    "33": "Mitubudalu",
-    "47": "NDLR",
-    "58": "NDLR",
+    "27": "Mysoor mallika",
+    "28": "khetri maharaj",
+    "29": "Chitti mutyalu",
+    "30": "Manipoor block",
+    "32": "Jink rice",
+    "33": "Mitu budalu",
+    "4": "NDLR-7",
+    "5": "NDLR-8",
     "777": "Other",
-    "864": "IR",
-    "15204": "BPT",
-    "31121": "MTU",
-    "215048": "RNR",
-    "317029": "Swarna"
+    "8": "IR64",
+    "1": "BPT-5204",
+    "3": "MTU-1121",
+    "2": "RNR-15048",
+    "31": "Swarna7029"
   },
   "h3_crop1cereal": {
     "1": "Jowar",
@@ -1347,7 +1347,8 @@
     "5": "Alasanda",
     "6": "Anapakaya",
     "7": "Horsegram",
-    "8777": "Bengalgramother"
+    "8": "Bengalgram",
+    "777": "other"
   },
   "h3_crop1cotton": {
     "1": "Cotton",
@@ -1359,22 +1360,22 @@
     "2": "Mango",
     "3": "Guava",
     "4": "Sapota",
-    "5": "Sweetlime",
+    "5": "Sweet lime",
     "6": "Pomegranate",
     "7": "Papaya",
-    "8": "NereduJamun",
+    "8": "Neredu (Jamun)",
     "9": "Seethaphal",
     "10": "Watermelon",
     "11": "Cashew",
     "777": "other"
   },
   "h3_crop1vegetable": {
-    "1": "Redchilli",
+    "1": "Red chilli",
     "2": "Onion",
     "3": "Tomato",
     "4": "Lemon",
-    "5": "Greenleafyvegetable",
-    "6": "Mixedplot",
+    "5": "Green leafy vegetable",
+    "6": "Mixed plot",
     "7": "Brinjal",
     "777": "Other"
   },
@@ -1390,103 +1391,104 @@
     "1": "Chamanti",
     "2": "Mallepuvvu",
     "3": "Kanakambaram",
-    "46": "BanthiChendumalle",
+    "4": "Banthi",
+    "6": "Chendumalle",
     "777": "other"
   },
   "h3_crop1jowar": {
     "1": "Tellajonna",
     "2": "Pacchajonna",
-    "3": "Biscuitjona",
-    "4": "Muddakankijonna",
-    "5": "Seethammajonna",
-    "720": "CSV",
+    "3": "Biscuit jona",
+    "4": "Muddakanki jonna",
+    "5": "Seethamma jonna",
+    "7": "CSV20",
     "777": "other",
-    "823": "CSV",
-    "62647": "NTJ"
+    "8": "CSV23",
+    "6": "NTJ2647"
   },
   "h3_crop1korra": {
     "1": "Jadakorra",
-    "2": "MuddaKorra",
+    "2": "Mudda Korra",
     "4": "Suryanandi",
     "5": "Sreelakshmi",
     "6": "Yerrakorra",
     "10": "Kdaraya",
-    "11": "NavariKorra",
+    "11": "Navari Korra",
     "777": "other",
-    "33088": "NDLR",
-    "73156": "SIA",
-    "83222": "SIA",
-    "93085": "SIA"
+    "3": "NDLR-3088",
+    "7": "SIA3156",
+    "8": "SIA3222",
+    "9": "SIA3085"
   },
   "h3_crop1ragi": {
     "1": "Vakula",
     "2": "Vennamdud",
     "3": "Kurva",
     "4": "Klayani",
-    "5": "Kuravaragi",
-    "6": "Karnatakaragi"
+    "5": "Kurava ragi",
+    "6": "Karnataka ragi"
   },
   "h3_crop1samalu": {
-    "4": "Localdesi",
+    "4": "Local (desi)",
     "777": "other",
-    "1900": "VK",
-    "2834": "VK",
-    "3762": "VK"
+    "1": "VK900",
+    "2": "VK834",
+    "3": "VK762"
   },
   "h3_crop1arikelu": {
-    "1": "LocaldesiPacchaVrigaluTellavarigalu",
+    "1": "Local (desi) Paccha Vrigalu Tella varigalu",
     "777": "other"
   },
   "h3_crop1varigalu": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop1oodalu": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop1kandi": {
     "4": "Kolambo",
-    "5": "Tellakandi",
-    "6": "Macchalakandi",
+    "5": "Tella kandi",
+    "6": "Macchala kandi",
     "7": "richa",
     "8": "Kudurath",
     "9": "Asha",
     "11": "Asha",
     "12": "Laxmi",
-    "141": "LRG",
-    "252": "LRG",
-    "307": "BRG",
+    "1": "LRG-41",
+    "2": "LRG-52",
+    "3": "BRG-07",
     "777": "other",
-    "10176": "PRG",
-    "138711": "ICPL"
+    "10": "PRG-176",
+    "13": "ICPL-8711"
   },
   "h3_crop1minumulu": {
-    "4": "TBGTirupathi",
-    "5": "GBGGuntur",
-    "6": "NRIMaruthi",
+    "4": "TBG Tirupathi",
+    "5": "GBG Guntur",
+    "6": "NRI-Maruthi",
     "7": "Moddu",
     "9": "Kuwait",
-    "39": "Tsiddarth",
-    "231": "PU",
+    "3": "T9-siddarth",
+    "2": "PU-31",
     "777": "other",
-    "1104": "TBG",
-    "82043": "IPU"
+    "1": "TBG104",
+    "8": "IPU2-043"
   },
   "h3_crop1pesara": {
     "4": "Amulya",
     "5": "Siddarth",
     "777": "other",
-    "1295": "MGG",
-    "2460": "LGG",
-    "3425": "WGG",
-    "6267": "ML",
-    "7203": "IPM",
-    "8214": "IPM"
+    "1": "MGG-295",
+    "2": "LGG-460",
+    "3": "WGG-425",
+    "6": "ML-267",
+    "7": "IPM2-03",
+    "8": "IPM2-14"
   },
   "h3_crop1pappusenaga": {
     "2": "Gulabi",
-    "111": "J",
+    "1": "J-11",
     "777": "other"
   },
   "h3_crop1alasanda": {
@@ -1495,8 +1497,8 @@
     "777": "other"
   },
   "h3_crop1anapakaya": {
-    "1": "Peddaanapa",
-    "2": "Chinnaanapa",
+    "1": "Pedda anapa",
+    "2": "Chinna anapa",
     "777": "other"
   },
   "h3_crop1cottontype": {
@@ -1506,7 +1508,7 @@
     "4": "Nandhini",
     "7": "Asha",
     "8": "Sadanand",
-    "9": "Rasimagic",
+    "9": "Rasi magic",
     "10": "Dhamaka",
     "11": "Revanth",
     "12": "US",
@@ -1515,29 +1517,30 @@
     "16": "Kaveri",
     "18": "Ajith",
     "19": "Kranthi",
-    "20": "Srirama",
+    "20": "Sri rama",
     "21": "Narsimha",
-    "56": "ShaktiBaswam",
+    "5": "Shakti",
+    "6": "Baswam",
     "777": "other",
-    "1399": "JK",
-    "17659": "Rasi"
+    "13": "JK99",
+    "17": "Rasi659"
   },
   "h3_crop1banana": {
     "1": "AC",
     "3": "Jain",
     "4": "Kadali",
-    "29": "G",
+    "2": "G9",
     "777": "other"
   },
   "h3_crop1mango": {
     "1": "Benishan",
     "2": "Bangalore",
     "3": "Malligubba",
-    "4": "Nujividurasalu",
+    "4": "Nujividu rasalu",
     "5": "Alphonso",
     "6": "Neelam",
     "7": "Kuddus",
-    "8": "ImamPasand",
+    "8": "Imam Pasand",
     "9": "Mallika",
     "10": "Ynuguntala",
     "11": "Ratnagiri",
@@ -1547,16 +1550,16 @@
     "777": "other"
   },
   "h3_crop1guava": {
-    "1": "AllahabadSafeda",
+    "1": "Allahabad Safeda",
     "2": "Lalith",
-    "3": "TaiwanPink",
-    "4": "TaiwanWhite",
-    "5": "ArkaKiranred",
-    "649": "L",
+    "3": "Taiwan Pink",
+    "4": "Taiwan White",
+    "5": "Arka Kiran red",
+    "6": "L49",
     "777": "other"
   },
   "h3_crop1sapota": {
-    "1": "Cricketball",
+    "1": "Cricket ball",
     "2": "Kalapathi",
     "3": "Palasapota",
     "4": "Badoli",
@@ -1569,31 +1572,31 @@
   },
   "h3_crop1pomogranate": {
     "1": "Bhagavan",
-    "2": "GaneshKesar",
+    "2": "Ganesh Kesar",
     "777": "other"
   },
   "h3_crop1papaya": {
     "1": "Taiwan",
-    "2": "Taiwanredlady",
-    "3": "Pusagiant",
-    "4": "Pusadelicious",
-    "5": "Localdesi",
+    "2": "Taiwan (red lady)",
+    "3": "Pusa giant",
+    "4": "Pusa-delicious",
+    "5": "Local (desi)",
     "777": "other"
   },
   "h3_crop1neredu": {
-    "1": "Localdesi",
-    "2": "Allaneredusapling",
+    "1": "Local (desi)",
+    "2": "Allaneredu sapling",
     "3": "Bahubali",
     "777": "other"
   },
   "h3_crop1seethaphal": {
     "1": "Balanagar",
-    "2": "NMKGold",
-    "3": "RedSeethaphal",
+    "2": "NMK Gold",
+    "3": "Red Seethaphal",
     "777": "other"
   },
   "h3_crop1watermelon": {
-    "1": "Nallakalingara",
+    "1": "Nalla kalingara",
     "2": "Sarakallingara",
     "777": "other"
   },
@@ -1610,20 +1613,20 @@
     "2": "Teja",
     "4": "Byadgi",
     "6": "Syngenta",
-    "7": "Devanurdelux",
+    "7": "Devanur delux",
     "8": "Dharma",
     "10": "Lali",
     "11": "Bangaram",
     "12": "Priyanka",
     "13": "VNR",
-    "14": "PUSAjwala",
-    "510": "Super",
+    "14": "PUSA jwala",
+    "5": "Super10",
     "777": "other",
     "3": "Aspire 144",
     "9": "244"
   },
   "h3_crop1onion": {
-    "1": "Eastwest",
+    "1": "East west",
     "2": "Mahi",
     "3": "Virat",
     "4": "Vijay",
@@ -1631,7 +1634,7 @@
     "6": "Leadveter",
     "7": "Panchaganga",
     "8": "Namdhari",
-    "9": "Chinnaballari",
+    "9": "Chinna ballari",
     "10": "AFLR",
     "777": "other"
   },
@@ -1656,34 +1659,34 @@
     "4": "Chukkakur",
     "5": "Palakalaku",
     "6": "Palak",
-    "7": "CurryLeaf",
+    "7": "Curry Leaf",
     "8": "Gongura",
-    "9": "Ponagantiaaku",
-    "10": "PatnamGogaku",
+    "9": "Ponaganti aaku",
+    "10": "Patnam Gogaku",
     "11": "Cheemagogaku",
     "777": "other"
   },
   "h3_crop1mixed": {
     "1": "Onion",
     "2": "Tomato",
-    "3": "Clusterbean",
+    "3": "Cluster bean",
     "4": "Ladyfinger",
     "5": "Munaga",
     "6": "Brinjal",
     "7": "Kakara",
-    "8": "Anapasorakaya",
+    "8": "Anapa/sorakaya",
     "9": "Dosakaya",
     "10": "Keeradosa",
-    "11": "Greenchilli",
+    "11": "Green chilli",
     "12": "Gummadi",
-    "13": "Buddigummadi",
+    "13": "Buddi gummadi",
     "777": "other"
   },
   "h3_crop1groundnut": {
     "4": "Dharani",
-    "6": "TirupatiNarayani",
+    "6": "Tirupati Narayani",
     "7": "Amaravathi",
-    "11": "KadiriBold",
+    "11": "Kadiri Bold",
     "12": "Teegakaya",
     "1": "K-6",
     "2": "K-9",
@@ -1696,7 +1699,7 @@
   },
   "h3_crop1sunflower": {
     "1": "Kaveri",
-    "2": "Gangakaveri",
+    "2": "Ganga-kaveri",
     "3": "Sumitra",
     "4": "Gowri",
     "5": "Kanchana",
@@ -1704,49 +1707,49 @@
     "6": "NDSH 1012"
   },
   "h3_crop1castor": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop1safflower": {
-    "1": "Mullakusama",
-    "2": "Tellakusuma",
-    "3": "Budidakusuma",
+    "1": "Mulla kusama",
+    "2": "Tella kusuma",
+    "3": "Budida kusuma",
     "777": "other"
   },
   "h3_crop1sesamum": {
-    "1": "Nallanuvvulu",
-    "2": "Telanuvvulu",
-    "3": "Verrinuvvulu",
+    "1": "Nalla nuvvulu",
+    "2": "Tela nuvvulu",
+    "3": "Verri nuvvulu",
     "777": "other"
   },
   "h3_crop1chamanthi": {
-    "1": "Yellowgold",
-    "2": "Redgold",
+    "1": "Yellow gold",
+    "2": "Red gold",
     "3": "Button",
     "4": "Raichur",
     "5": "Silper",
     "777": "other"
   },
   "h3_crop1mallepuvvu": {
-    "1": "Sannamall",
-    "2": "Jajimall",
-    "3": "Gundumall",
-    "4": "Sentujagi",
-    "5": "Muddamall",
+    "1": "Sanna mall",
+    "2": "Jaji mall",
+    "3": "Gundu mall",
+    "4": "Sentu jagi",
+    "5": "Mudda mall",
     "777": "other"
   },
   "h3_crop1kanakambaram": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop1banthi": {
-    "1": "Ashokaroyalyellow",
+    "1": "Ashoka royal yellow",
     "777": "other"
   },
   "h3_crop1chendumalle": {
-    "1": "Gunduchendumalle",
-    "2": "NeelamChamanti",
-    "3": "YerraChamanti",
+    "1": "Gundu chendumalle",
+    "2": "Neelam Chamanti",
+    "3": "Yerra Chamanti",
     "777": "other"
   },
   "h3_crop1plot": {
@@ -1870,57 +1873,59 @@
     "777": "Otherspecify"
   },
   "h3_crop1_whensell": {
-    "1": "immediatelysold",
-    "2777": "IstoppedforabetterpriceOtherstoppedduetootherreasons"
+    "1": "immediately sold",
+    "2": "I stopped for a better price",
+    "777": "Other stopped due too other reasons"
   },
   "h3_crop1_advicesell": {
-    "1": "AdvicefromKVKRBKorotherGovt",
-    "2": "AdvicefromFPONGO",
-    "3": "advicefromfamilyorotherfarmer",
-    "4": "Noadviceduetoownexperience",
-    "5": "Byviewinginthemediaegnewspapersocialmedia"
+    "1": "Advice from KVK RBK or other Govt",
+    "2": "Advice from FPO/NGO",
+    "3": "advice from family or other farmer",
+    "4": "No advice due to own experience",
+    "5": "By viewing in the media eg newspaper social media"
   },
   "h3_crop1_store": {
-    "1": "athome",
-    "2": "privatewarehouse",
-    "3": "GovernmentWarehouse",
-    "4": "FPONGOWarehouse",
-    "5777": "inthefieldMisc"
+    "1": "at home",
+    "2": "private warehouse",
+    "3": "Government Warehouse",
+    "4": "FPO/NGO Warehouse",
+    "5": "in the field",
+    "777": "Misc"
   },
   "h3_crop1_whosell": {
-    "1": "directlytoAPMCMandi",
-    "2": "FarmerAssuranceCentersatMSPprice",
+    "1": "directly to APMC Mandi",
+    "2": "Farmer Assurance Centers at MSP price",
     "3": "FPOs",
-    "4": "PrivateAgentTrader",
-    "5": "VillageLevelMarket",
-    "6": "FarmersMarkets",
-    "7": "directtoconsumers",
-    "8": "Purchaseagreementwithshopkeeperorcontractor",
-    "9": "factoryormill",
+    "4": "Private Agent/Trader",
+    "5": "Village Level Market",
+    "6": "Farmers' Markets",
+    "7": "direct to consumers",
+    "8": "Purchase agreement with shopkeeper or contractor",
+    "9": "factory or mill",
     "777": "Misc"
   },
   "h3_crop1_assistwho": {
     "1": "FPO",
-    "2": "RBKIKPorothergovernmentagency",
+    "2": "RBK IKP or other government agency",
     "3": "other"
   },
   "h3_crop1_payment": {
-    "1": "moneyhandedover",
-    "4": "intheformofanyobject",
-    "23": "depositedinthebankDebtpayment",
+    "1": "money handed over",
+    "4": "in the form of any object",
+    "23": "deposited in the bank Debt payment",
     "777": "Misc"
   },
   "h3_crop1_process": {
-    "1": "toentice",
+    "1": "to entice",
     "2": "drying",
     "3": "Milling",
-    "4": "CanningTinning",
-    "5": "BrandingPackaging"
+    "4": "Canning/Tinning",
+    "5": "Branding/Packaging"
   },
   "h3_crop2": {
     "1": "Paddy",
-    "2": "Othercereal",
-    "3": "Pulsepappurakam",
+    "2": "Other cereal",
+    "3": "Pulse (pappu rakam)",
     "4": "Cotton",
     "5": "Fruit",
     "6": "Vegetable",
@@ -1929,40 +1934,40 @@
     "777": "other"
   },
   "h3_crop2paddy": {
-    "6": "TellaHamsa",
+    "6": "Tella Hamsa",
     "7": "Sreerama",
     "9": "Navara",
     "10": "Kalabatti",
-    "11": "BarmaBlock",
+    "11": "Barma Block",
     "12": "Kalabatti",
-    "13": "Krishnavihri",
+    "13": "Krishna vihri",
     "14": "Kujipatalia",
     "15": "siddasannalu",
     "16": "indrani",
     "17": "Sugandhi",
-    "18": "Parimalasannalu",
-    "19": "RaktaSali",
+    "18": "Parimala sannalu",
+    "19": "Rakta Sali",
     "20": "Ratnachodi",
-    "21": "Mapillaisambha",
-    "22": "Bahuroopi",
-    "23": "Radhajigale",
+    "21": "Mapillai sambha",
+    "22": "Bahu roopi",
+    "23": "Radha jigale",
     "24": "Kudirath",
     "25": "HMT",
     "26": "Basmati",
-    "27": "Mysoormallika",
-    "28": "khetrimaharaj",
-    "29": "Chittimutyalu",
-    "30": "Manipoorblock",
-    "32": "Jinkrice",
-    "33": "Mitubudalu",
-    "47": "NDLR",
-    "58": "NDLR",
+    "27": "Mysoor mallika",
+    "28": "khetri maharaj",
+    "29": "Chitti mutyalu",
+    "30": "Manipoor block",
+    "32": "Jink rice",
+    "33": "Mitu budalu",
+    "4": "NDLR-7",
+    "5": "NDLR-8",
     "777": "Other",
-    "864": "IR",
-    "15204": "BPT",
-    "31121": "MTU",
-    "215048": "RNR",
-    "317029": "Swarna"
+    "8": "IR64",
+    "1": "BPT-5204",
+    "3": "MTU-1121",
+    "2": "RNR-15048",
+    "31": "Swarna7029"
   },
   "h3_crop2cereal": {
     "1": "Jowar",
@@ -1982,7 +1987,8 @@
     "5": "Alasanda",
     "6": "Anapakaya",
     "7": "Horsegram",
-    "8777": "Bengalgramother"
+    "8": "Bengalgram",
+    "777": "other"
   },
   "h3_crop2cotton": {
     "1": "Cotton",
@@ -1994,22 +2000,22 @@
     "2": "Mango",
     "3": "Guava",
     "4": "Sapota",
-    "5": "Sweetlime",
+    "5": "Sweet lime",
     "6": "Pomegranate",
     "7": "Papaya",
-    "8": "NereduJamun",
+    "8": "Neredu (Jamun)",
     "9": "Seethaphal",
     "10": "Watermelon",
     "11": "Cashew",
     "777": "other"
   },
   "h3_crop2vegetable": {
-    "1": "Redchilli",
+    "1": "Red chilli",
     "2": "Onion",
     "3": "Tomato",
     "4": "Lemon",
-    "5": "Greenleafyvegetable",
-    "6": "Mixedplot",
+    "5": "Green leafy vegetable",
+    "6": "Mixed plot",
     "7": "Brinjal",
     "777": "Other"
   },
@@ -2025,103 +2031,104 @@
     "1": "Chamanti",
     "2": "Mallepuvvu",
     "3": "Kanakambaram",
-    "46": "BanthiChendumalle",
+    "4": "Banthi",
+    "6": "Chendumalle",
     "777": "other"
   },
   "h3_crop2jowar": {
     "1": "Tellajonna",
     "2": "Pacchajonna",
-    "3": "Biscuitjona",
-    "4": "Muddakankijonna",
-    "5": "Seethammajonna",
-    "720": "CSV",
+    "3": "Biscuit jona",
+    "4": "Muddakanki jonna",
+    "5": "Seethamma jonna",
+    "7": "CSV20",
     "777": "other",
-    "823": "CSV",
-    "62647": "NTJ"
+    "8": "CSV23",
+    "6": "NTJ2647"
   },
   "h3_crop2korra": {
     "1": "Jadakorra",
-    "2": "MuddaKorra",
+    "2": "Mudda Korra",
     "4": "Suryanandi",
     "5": "Sreelakshmi",
     "6": "Yerrakorra",
     "10": "Kdaraya",
-    "11": "NavariKorra",
+    "11": "Navari Korra",
     "777": "other",
-    "33088": "NDLR",
-    "73156": "SIA",
-    "83222": "SIA",
-    "93085": "SIA"
+    "3": "NDLR-3088",
+    "7": "SIA3156",
+    "8": "SIA3222",
+    "9": "SIA3085"
   },
   "h3_crop2ragi": {
     "1": "Vakula",
     "2": "Vennamdud",
     "3": "Kurva",
     "4": "Klayani",
-    "5": "Kuravaragi",
-    "6": "Karnatakaragi"
+    "5": "Kurava ragi",
+    "6": "Karnataka ragi"
   },
   "h3_crop2samalu": {
-    "4": "Localdesi",
+    "4": "Local (desi)",
     "777": "other",
-    "1900": "VK",
-    "2834": "VK",
-    "3762": "VK"
+    "1": "VK900",
+    "2": "VK834",
+    "3": "VK762"
   },
   "h3_crop2arikelu": {
-    "1": "LocaldesiPacchaVrigaluTellavarigalu",
+    "1": "Local (desi) Paccha Vrigalu Tella varigalu",
     "777": "other"
   },
   "h3_crop2varigalu": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop2oodalu": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop2kandi": {
     "4": "Kolambo",
-    "5": "Tellakandi",
-    "6": "Macchalakandi",
+    "5": "Tella kandi",
+    "6": "Macchala kandi",
     "7": "richa",
     "8": "Kudurath",
     "9": "Asha",
     "11": "Asha",
     "12": "Laxmi",
-    "141": "LRG",
-    "252": "LRG",
-    "307": "BRG",
+    "1": "LRG-41",
+    "2": "LRG-52",
+    "3": "BRG-07",
     "777": "other",
-    "10176": "PRG",
-    "138711": "ICPL"
+    "10": "PRG-176",
+    "13": "ICPL-8711"
   },
   "h3_crop2minumulu": {
-    "4": "TBGTirupathi",
-    "5": "GBGGuntur",
-    "6": "NRIMaruthi",
+    "4": "TBG Tirupathi",
+    "5": "GBG Guntur",
+    "6": "NRI-Maruthi",
     "7": "Moddu",
     "9": "Kuwait",
-    "39": "Tsiddarth",
-    "231": "PU",
+    "3": "T9-siddarth",
+    "2": "PU-31",
     "777": "other",
-    "1104": "TBG",
-    "82043": "IPU"
+    "1": "TBG104",
+    "8": "IPU2-043"
   },
   "h3_crop2pesara": {
     "4": "Amulya",
     "5": "Siddarth",
     "777": "other",
-    "1295": "MGG",
-    "2460": "LGG",
-    "3425": "WGG",
-    "6267": "ML",
-    "7203": "IPM",
-    "8214": "IPM"
+    "1": "MGG-295",
+    "2": "LGG-460",
+    "3": "WGG-425",
+    "6": "ML-267",
+    "7": "IPM2-03",
+    "8": "IPM2-14"
   },
   "h3_crop2pappusenaga": {
     "2": "Gulabi",
-    "111": "J",
+    "1": "J-11",
     "777": "other"
   },
   "h3_crop2alasanda": {
@@ -2130,8 +2137,8 @@
     "777": "other"
   },
   "h3_crop2anapakaya": {
-    "1": "Peddaanapa",
-    "2": "Chinnaanapa",
+    "1": "Pedda anapa",
+    "2": "Chinna anapa",
     "777": "other"
   },
   "h3_crop2cottontype": {
@@ -2141,7 +2148,7 @@
     "4": "Nandhini",
     "7": "Asha",
     "8": "Sadanand",
-    "9": "Rasimagic",
+    "9": "Rasi magic",
     "10": "Dhamaka",
     "11": "Revanth",
     "12": "US",
@@ -2150,29 +2157,30 @@
     "16": "Kaveri",
     "18": "Ajith",
     "19": "Kranthi",
-    "20": "Srirama",
+    "20": "Sri rama",
     "21": "Narsimha",
-    "56": "ShaktiBaswam",
+    "5": "Shakti",
+    "6": "Baswam",
     "777": "other",
-    "1399": "JK",
-    "17659": "Rasi"
+    "13": "JK99",
+    "17": "Rasi659"
   },
   "h3_crop2banana": {
     "1": "AC",
     "3": "Jain",
     "4": "Kadali",
-    "29": "G",
+    "2": "G9",
     "777": "other"
   },
   "h3_crop2mango": {
     "1": "Benishan",
     "2": "Bangalore",
     "3": "Malligubba",
-    "4": "Nujividurasalu",
+    "4": "Nujividu rasalu",
     "5": "Alphonso",
     "6": "Neelam",
     "7": "Kuddus",
-    "8": "ImamPasand",
+    "8": "Imam Pasand",
     "9": "Mallika",
     "10": "Ynuguntala",
     "11": "Ratnagiri",
@@ -2182,16 +2190,16 @@
     "777": "other"
   },
   "h3_crop2guava": {
-    "1": "AllahabadSafeda",
+    "1": "Allahabad Safeda",
     "2": "Lalith",
-    "3": "TaiwanPink",
-    "4": "TaiwanWhite",
-    "5": "ArkaKiranred",
-    "649": "L",
+    "3": "Taiwan Pink",
+    "4": "Taiwan White",
+    "5": "Arka Kiran red",
+    "6": "L49",
     "777": "other"
   },
   "h3_crop2sapota": {
-    "1": "Cricketball",
+    "1": "Cricket ball",
     "2": "Kalapathi",
     "3": "Palasapota",
     "4": "Badoli",
@@ -2204,31 +2212,31 @@
   },
   "h3_crop2pomogranate": {
     "1": "Bhagavan",
-    "2": "GaneshKesar",
+    "2": "Ganesh Kesar",
     "777": "other"
   },
   "h3_crop2papaya": {
     "1": "Taiwan",
-    "2": "Taiwanredlady",
-    "3": "Pusagiant",
-    "4": "Pusadelicious",
-    "5": "Localdesi",
+    "2": "Taiwan (red lady)",
+    "3": "Pusa giant",
+    "4": "Pusa-delicious",
+    "5": "Local (desi)",
     "777": "other"
   },
   "h3_crop2neredu": {
-    "1": "Localdesi",
-    "2": "Allaneredusapling",
+    "1": "Local (desi)",
+    "2": "Allaneredu sapling",
     "3": "Bahubali",
     "777": "other"
   },
   "h3_crop2seethaphal": {
     "1": "Balanagar",
-    "2": "NMKGold",
-    "3": "RedSeethaphal",
+    "2": "NMK Gold",
+    "3": "Red Seethaphal",
     "777": "other"
   },
   "h3_crop2watermelon": {
-    "1": "Nallakalingara",
+    "1": "Nalla kalingara",
     "2": "Sarakallingara",
     "777": "other"
   },
@@ -2245,20 +2253,20 @@
     "2": "Teja",
     "4": "Byadgi",
     "6": "Syngenta",
-    "7": "Devanurdelux",
+    "7": "Devanur delux",
     "8": "Dharma",
     "10": "Lali",
     "11": "Bangaram",
     "12": "Priyanka",
     "13": "VNR",
-    "14": "PUSAjwala",
-    "510": "Super",
+    "14": "PUSA jwala",
+    "5": "Super10",
     "777": "other",
     "3": "Aspire 144",
     "9": "244"
   },
   "h3_crop2onion": {
-    "1": "Eastwest",
+    "1": "East west",
     "2": "Mahi",
     "3": "Virat",
     "4": "Vijay",
@@ -2266,7 +2274,7 @@
     "6": "Leadveter",
     "7": "Panchaganga",
     "8": "Namdhari",
-    "9": "Chinnaballari",
+    "9": "Chinna ballari",
     "10": "AFLR",
     "777": "other"
   },
@@ -2291,34 +2299,34 @@
     "4": "Chukkakur",
     "5": "Palakalaku",
     "6": "Palak",
-    "7": "CurryLeaf",
+    "7": "Curry Leaf",
     "8": "Gongura",
-    "9": "Ponagantiaaku",
-    "10": "PatnamGogaku",
+    "9": "Ponaganti aaku",
+    "10": "Patnam Gogaku",
     "11": "Cheemagogaku",
     "777": "other"
   },
   "h3_crop2mixed": {
     "1": "Onion",
     "2": "Tomato",
-    "3": "Clusterbean",
+    "3": "Cluster bean",
     "4": "Ladyfinger",
     "5": "Munaga",
     "6": "Brinjal",
     "7": "Kakara",
-    "8": "Anapasorakaya",
+    "8": "Anapa/sorakaya",
     "9": "Dosakaya",
     "10": "Keeradosa",
-    "11": "Greenchilli",
+    "11": "Green chilli",
     "12": "Gummadi",
-    "13": "Buddigummadi",
+    "13": "Buddi gummadi",
     "777": "other"
   },
   "h3_crop2groundnut": {
     "4": "Dharani",
-    "6": "TirupatiNarayani",
+    "6": "Tirupati Narayani",
     "7": "Amaravathi",
-    "11": "KadiriBold",
+    "11": "Kadiri Bold",
     "12": "Teegakaya",
     "1": "K-6",
     "2": "K-9",
@@ -2331,7 +2339,7 @@
   },
   "h3_crop2sunflower": {
     "1": "Kaveri",
-    "2": "Gangakaveri",
+    "2": "Ganga-kaveri",
     "3": "Sumitra",
     "4": "Gowri",
     "5": "Kanchana",
@@ -2339,49 +2347,49 @@
     "6": "NDSH 1012"
   },
   "h3_crop2castor": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop2safflower": {
-    "1": "Mullakusama",
-    "2": "Tellakusuma",
-    "3": "Budidakusuma",
+    "1": "Mulla kusama",
+    "2": "Tella kusuma",
+    "3": "Budida kusuma",
     "777": "other"
   },
   "h3_crop2sesamum": {
-    "1": "Nallanuvvulu",
-    "2": "Telanuvvulu",
-    "3": "Verrinuvvulu",
+    "1": "Nalla nuvvulu",
+    "2": "Tela nuvvulu",
+    "3": "Verri nuvvulu",
     "777": "other"
   },
   "h3_crop2chamanthi": {
-    "1": "Yellowgold",
-    "2": "Redgold",
+    "1": "Yellow gold",
+    "2": "Red gold",
     "3": "Button",
     "4": "Raichur",
     "5": "Silper",
     "777": "other"
   },
   "h3_crop2mallepuvvu": {
-    "1": "Sannamall",
-    "2": "Jajimall",
-    "3": "Gundumall",
-    "4": "Sentujagi",
-    "5": "Muddamall",
+    "1": "Sanna mall",
+    "2": "Jaji mall",
+    "3": "Gundu mall",
+    "4": "Sentu jagi",
+    "5": "Mudda mall",
     "777": "other"
   },
   "h3_crop2kanakambaram": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop2banthi": {
-    "1": "Ashokaroyalyellow",
+    "1": "Ashoka royal yellow",
     "777": "other"
   },
   "h3_crop2chendumalle": {
-    "1": "Gunduchendumalle",
-    "2": "NeelamChamanti",
-    "3": "YerraChamanti",
+    "1": "Gundu chendumalle",
+    "2": "Neelam Chamanti",
+    "3": "Yerra Chamanti",
     "777": "other"
   },
   "h3_crop2plot": {
@@ -2505,57 +2513,59 @@
     "777": "Otherspecify"
   },
   "h3_crop2_whensell": {
-    "1": "immediatelysold",
-    "2777": "IstoppedforabetterpriceOtherstoppedduetootherreasons"
+    "1": "immediately sold",
+    "2": "I stopped for a better price",
+    "777": "Other stopped due too other reasons"
   },
   "h3_crop2_advicesell": {
-    "1": "AdvicefromKVKRBKorotherGovt",
-    "2": "AdvicefromFPONGO",
-    "3": "advicefromfamilyorotherfarmer",
-    "4": "Noadviceduetoownexperience",
-    "5": "Byviewinginthemediaegnewspapersocialmedia"
+    "1": "Advice from KVK RBK or other Govt",
+    "2": "Advice from FPO/NGO",
+    "3": "advice from family or other farmer",
+    "4": "No advice due to own experience",
+    "5": "By viewing in the media eg newspaper social media"
   },
   "h3_crop2_store": {
-    "1": "athome",
-    "2": "privatewarehouse",
-    "3": "GovernmentWarehouse",
-    "4": "FPONGOWarehouse",
-    "5777": "inthefieldMisc"
+    "1": "at home",
+    "2": "private warehouse",
+    "3": "Government Warehouse",
+    "4": "FPO/NGO Warehouse",
+    "5": "in the field",
+    "777": "Misc"
   },
   "h3_crop2_whosell": {
-    "1": "directlytoAPMCMandi",
-    "2": "FarmerAssuranceCentersatMSPprice",
+    "1": "directly to APMC Mandi",
+    "2": "Farmer Assurance Centers at MSP price",
     "3": "FPOs",
-    "4": "PrivateAgentTrader",
-    "5": "VillageLevelMarket",
-    "6": "FarmersMarkets",
-    "7": "directtoconsumers",
-    "8": "Purchaseagreementwithshopkeeperorcontractor",
-    "9": "factoryormill",
+    "4": "Private Agent/Trader",
+    "5": "Village Level Market",
+    "6": "Farmers' Markets",
+    "7": "direct to consumers",
+    "8": "Purchase agreement with shopkeeper or contractor",
+    "9": "factory or mill",
     "777": "Misc"
   },
   "h3_crop2_assistwho": {
     "1": "FPO",
-    "2": "RBKIKPorothergovernmentagency",
+    "2": "RBK IKP or other government agency",
     "3": "other"
   },
   "h3_crop2_payment": {
-    "1": "moneyhandedover",
-    "4": "intheformofanyobject",
-    "23": "depositedinthebankDebtpayment",
+    "1": "money handed over",
+    "4": "in the form of any object",
+    "23": "deposited in the bank Debt payment",
     "777": "Misc"
   },
   "h3_crop2_process": {
-    "1": "toentice",
+    "1": "to entice",
     "2": "drying",
     "3": "Milling",
-    "4": "CanningTinning",
-    "5": "BrandingPackaging"
+    "4": "Canning/Tinning",
+    "5": "Branding/Packaging"
   },
   "h3_crop3": {
     "1": "Paddy",
-    "2": "Othercereal",
-    "3": "Pulsepappurakam",
+    "2": "Other cereal",
+    "3": "Pulse (pappu rakam)",
     "4": "Cotton",
     "5": "Fruit",
     "6": "Vegetable",
@@ -2564,40 +2574,40 @@
     "777": "other"
   },
   "h3_crop3paddy": {
-    "6": "TellaHamsa",
+    "6": "Tella Hamsa",
     "7": "Sreerama",
     "9": "Navara",
     "10": "Kalabatti",
-    "11": "BarmaBlock",
+    "11": "Barma Block",
     "12": "Kalabatti",
-    "13": "Krishnavihri",
+    "13": "Krishna vihri",
     "14": "Kujipatalia",
     "15": "siddasannalu",
     "16": "indrani",
     "17": "Sugandhi",
-    "18": "Parimalasannalu",
-    "19": "RaktaSali",
+    "18": "Parimala sannalu",
+    "19": "Rakta Sali",
     "20": "Ratnachodi",
-    "21": "Mapillaisambha",
-    "22": "Bahuroopi",
-    "23": "Radhajigale",
+    "21": "Mapillai sambha",
+    "22": "Bahu roopi",
+    "23": "Radha jigale",
     "24": "Kudirath",
     "25": "HMT",
     "26": "Basmati",
-    "27": "Mysoormallika",
-    "28": "khetrimaharaj",
-    "29": "Chittimutyalu",
-    "30": "Manipoorblock",
-    "32": "Jinkrice",
-    "33": "Mitubudalu",
-    "47": "NDLR",
-    "58": "NDLR",
+    "27": "Mysoor mallika",
+    "28": "khetri maharaj",
+    "29": "Chitti mutyalu",
+    "30": "Manipoor block",
+    "32": "Jink rice",
+    "33": "Mitu budalu",
+    "4": "NDLR-7",
+    "5": "NDLR-8",
     "777": "Other",
-    "864": "IR",
-    "15204": "BPT",
-    "31121": "MTU",
-    "215048": "RNR",
-    "317029": "Swarna"
+    "8": "IR64",
+    "1": "BPT-5204",
+    "3": "MTU-1121",
+    "2": "RNR-15048",
+    "31": "Swarna7029"
   },
   "h3_crop3cereal": {
     "1": "Jowar",
@@ -2617,7 +2627,8 @@
     "5": "Alasanda",
     "6": "Anapakaya",
     "7": "Horsegram",
-    "8777": "Bengalgramother"
+    "8": "Bengalgram",
+    "777": "other"
   },
   "h3_crop3cotton": {
     "1": "Cotton",
@@ -2629,22 +2640,22 @@
     "2": "Mango",
     "3": "Guava",
     "4": "Sapota",
-    "5": "Sweetlime",
+    "5": "Sweet lime",
     "6": "Pomegranate",
     "7": "Papaya",
-    "8": "NereduJamun",
+    "8": "Neredu (Jamun)",
     "9": "Seethaphal",
     "10": "Watermelon",
     "11": "Cashew",
     "777": "other"
   },
   "h3_crop3vegetable": {
-    "1": "Redchilli",
+    "1": "Red chilli",
     "2": "Onion",
     "3": "Tomato",
     "4": "Lemon",
-    "5": "Greenleafyvegetable",
-    "6": "Mixedplot",
+    "5": "Green leafy vegetable",
+    "6": "Mixed plot",
     "7": "Brinjal",
     "777": "Other"
   },
@@ -2660,103 +2671,104 @@
     "1": "Chamanti",
     "2": "Mallepuvvu",
     "3": "Kanakambaram",
-    "46": "BanthiChendumalle",
+    "4": "Banthi",
+    "6": "Chendumalle",
     "777": "other"
   },
   "h3_crop3jowar": {
     "1": "Tellajonna",
     "2": "Pacchajonna",
-    "3": "Biscuitjona",
-    "4": "Muddakankijonna",
-    "5": "Seethammajonna",
-    "720": "CSV",
+    "3": "Biscuit jona",
+    "4": "Muddakanki jonna",
+    "5": "Seethamma jonna",
+    "7": "CSV20",
     "777": "other",
-    "823": "CSV",
-    "62647": "NTJ"
+    "8": "CSV23",
+    "6": "NTJ2647"
   },
   "h3_crop3korra": {
     "1": "Jadakorra",
-    "2": "MuddaKorra",
+    "2": "Mudda Korra",
     "4": "Suryanandi",
     "5": "Sreelakshmi",
     "6": "Yerrakorra",
     "10": "Kdaraya",
-    "11": "NavariKorra",
+    "11": "Navari Korra",
     "777": "other",
-    "33088": "NDLR",
-    "73156": "SIA",
-    "83222": "SIA",
-    "93085": "SIA"
+    "3": "NDLR-3088",
+    "7": "SIA3156",
+    "8": "SIA3222",
+    "9": "SIA3085"
   },
   "h3_crop3ragi": {
     "1": "Vakula",
     "2": "Vennamdud",
     "3": "Kurva",
     "4": "Klayani",
-    "5": "Kuravaragi",
-    "6": "Karnatakaragi"
+    "5": "Kurava ragi",
+    "6": "Karnataka ragi"
   },
   "h3_crop3samalu": {
-    "4": "Localdesi",
+    "4": "Local (desi)",
     "777": "other",
-    "1900": "VK",
-    "2834": "VK",
-    "3762": "VK"
+    "1": "VK900",
+    "2": "VK834",
+    "3": "VK762"
   },
   "h3_crop3arikelu": {
-    "1": "LocaldesiPacchaVrigaluTellavarigalu",
+    "1": "Local (desi) Paccha Vrigalu Tella varigalu",
     "777": "other"
   },
   "h3_crop3varigalu": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop3oodalu": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop3kandi": {
     "4": "Kolambo",
-    "5": "Tellakandi",
-    "6": "Macchalakandi",
+    "5": "Tella kandi",
+    "6": "Macchala kandi",
     "7": "richa",
     "8": "Kudurath",
     "9": "Asha",
     "11": "Asha",
     "12": "Laxmi",
-    "141": "LRG",
-    "252": "LRG",
-    "307": "BRG",
+    "1": "LRG-41",
+    "2": "LRG-52",
+    "3": "BRG-07",
     "777": "other",
-    "10176": "PRG",
-    "138711": "ICPL"
+    "10": "PRG-176",
+    "13": "ICPL-8711"
   },
   "h3_crop3minumulu": {
-    "4": "TBGTirupathi",
-    "5": "GBGGuntur",
-    "6": "NRIMaruthi",
+    "4": "TBG Tirupathi",
+    "5": "GBG Guntur",
+    "6": "NRI-Maruthi",
     "7": "Moddu",
     "9": "Kuwait",
-    "39": "Tsiddarth",
-    "231": "PU",
+    "3": "T9-siddarth",
+    "2": "PU-31",
     "777": "other",
-    "1104": "TBG",
-    "82043": "IPU"
+    "1": "TBG104",
+    "8": "IPU2-043"
   },
   "h3_crop3pesara": {
     "4": "Amulya",
     "5": "Siddarth",
     "777": "other",
-    "1295": "MGG",
-    "2460": "LGG",
-    "3425": "WGG",
-    "6267": "ML",
-    "7203": "IPM",
-    "8214": "IPM"
+    "1": "MGG-295",
+    "2": "LGG-460",
+    "3": "WGG-425",
+    "6": "ML-267",
+    "7": "IPM2-03",
+    "8": "IPM2-14"
   },
   "h3_crop3pappusenaga": {
     "2": "Gulabi",
-    "111": "J",
+    "1": "J-11",
     "777": "other"
   },
   "h3_crop3alasanda": {
@@ -2765,8 +2777,8 @@
     "777": "other"
   },
   "h3_crop3anapakaya": {
-    "1": "Peddaanapa",
-    "2": "Chinnaanapa",
+    "1": "Pedda anapa",
+    "2": "Chinna anapa",
     "777": "other"
   },
   "h3_crop3cottontype": {
@@ -2776,7 +2788,7 @@
     "4": "Nandhini",
     "7": "Asha",
     "8": "Sadanand",
-    "9": "Rasimagic",
+    "9": "Rasi magic",
     "10": "Dhamaka",
     "11": "Revanth",
     "12": "US",
@@ -2785,29 +2797,30 @@
     "16": "Kaveri",
     "18": "Ajith",
     "19": "Kranthi",
-    "20": "Srirama",
+    "20": "Sri rama",
     "21": "Narsimha",
-    "56": "ShaktiBaswam",
+    "5": "Shakti",
+    "6": "Baswam",
     "777": "other",
-    "1399": "JK",
-    "17659": "Rasi"
+    "13": "JK99",
+    "17": "Rasi659"
   },
   "h3_crop3banana": {
     "1": "AC",
     "3": "Jain",
     "4": "Kadali",
-    "29": "G",
+    "2": "G9",
     "777": "other"
   },
   "h3_crop3mango": {
     "1": "Benishan",
     "2": "Bangalore",
     "3": "Malligubba",
-    "4": "Nujividurasalu",
+    "4": "Nujividu rasalu",
     "5": "Alphonso",
     "6": "Neelam",
     "7": "Kuddus",
-    "8": "ImamPasand",
+    "8": "Imam Pasand",
     "9": "Mallika",
     "10": "Ynuguntala",
     "11": "Ratnagiri",
@@ -2817,16 +2830,16 @@
     "777": "other"
   },
   "h3_crop3guava": {
-    "1": "AllahabadSafeda",
+    "1": "Allahabad Safeda",
     "2": "Lalith",
-    "3": "TaiwanPink",
-    "4": "TaiwanWhite",
-    "5": "ArkaKiranred",
-    "649": "L",
+    "3": "Taiwan Pink",
+    "4": "Taiwan White",
+    "5": "Arka Kiran red",
+    "6": "L49",
     "777": "other"
   },
   "h3_crop3sapota": {
-    "1": "Cricketball",
+    "1": "Cricket ball",
     "2": "Kalapathi",
     "3": "Palasapota",
     "4": "Badoli",
@@ -2839,31 +2852,31 @@
   },
   "h3_crop3pomogranate": {
     "1": "Bhagavan",
-    "2": "GaneshKesar",
+    "2": "Ganesh Kesar",
     "777": "other"
   },
   "h3_crop3papaya": {
     "1": "Taiwan",
-    "2": "Taiwanredlady",
-    "3": "Pusagiant",
-    "4": "Pusadelicious",
-    "5": "Localdesi",
+    "2": "Taiwan (red lady)",
+    "3": "Pusa giant",
+    "4": "Pusa-delicious",
+    "5": "Local (desi)",
     "777": "other"
   },
   "h3_crop3neredu": {
-    "1": "Localdesi",
-    "2": "Allaneredusapling",
+    "1": "Local (desi)",
+    "2": "Allaneredu sapling",
     "3": "Bahubali",
     "777": "other"
   },
   "h3_crop3seethaphal": {
     "1": "Balanagar",
-    "2": "NMKGold",
-    "3": "RedSeethaphal",
+    "2": "NMK Gold",
+    "3": "Red Seethaphal",
     "777": "other"
   },
   "h3_crop3watermelon": {
-    "1": "Nallakalingara",
+    "1": "Nalla kalingara",
     "2": "Sarakallingara",
     "777": "other"
   },
@@ -2880,20 +2893,20 @@
     "2": "Teja",
     "4": "Byadgi",
     "6": "Syngenta",
-    "7": "Devanurdelux",
+    "7": "Devanur delux",
     "8": "Dharma",
     "10": "Lali",
     "11": "Bangaram",
     "12": "Priyanka",
     "13": "VNR",
-    "14": "PUSAjwala",
-    "510": "Super",
+    "14": "PUSA jwala",
+    "5": "Super10",
     "777": "other",
     "3": "Aspire 144",
     "9": "244"
   },
   "h3_crop3onion": {
-    "1": "Eastwest",
+    "1": "East west",
     "2": "Mahi",
     "3": "Virat",
     "4": "Vijay",
@@ -2901,7 +2914,7 @@
     "6": "Leadveter",
     "7": "Panchaganga",
     "8": "Namdhari",
-    "9": "Chinnaballari",
+    "9": "Chinna ballari",
     "10": "AFLR",
     "777": "other"
   },
@@ -2926,34 +2939,34 @@
     "4": "Chukkakur",
     "5": "Palakalaku",
     "6": "Palak",
-    "7": "CurryLeaf",
+    "7": "Curry Leaf",
     "8": "Gongura",
-    "9": "Ponagantiaaku",
-    "10": "PatnamGogaku",
+    "9": "Ponaganti aaku",
+    "10": "Patnam Gogaku",
     "11": "Cheemagogaku",
     "777": "other"
   },
   "h3_crop3mixed": {
     "1": "Onion",
     "2": "Tomato",
-    "3": "Clusterbean",
+    "3": "Cluster bean",
     "4": "Ladyfinger",
     "5": "Munaga",
     "6": "Brinjal",
     "7": "Kakara",
-    "8": "Anapasorakaya",
+    "8": "Anapa/sorakaya",
     "9": "Dosakaya",
     "10": "Keeradosa",
-    "11": "Greenchilli",
+    "11": "Green chilli",
     "12": "Gummadi",
-    "13": "Buddigummadi",
+    "13": "Buddi gummadi",
     "777": "other"
   },
   "h3_crop3groundnut": {
     "4": "Dharani",
-    "6": "TirupatiNarayani",
+    "6": "Tirupati Narayani",
     "7": "Amaravathi",
-    "11": "KadiriBold",
+    "11": "Kadiri Bold",
     "12": "Teegakaya",
     "1": "K-6",
     "2": "K-9",
@@ -2966,7 +2979,7 @@
   },
   "h3_crop3sunflower": {
     "1": "Kaveri",
-    "2": "Gangakaveri",
+    "2": "Ganga-kaveri",
     "3": "Sumitra",
     "4": "Gowri",
     "5": "Kanchana",
@@ -2974,49 +2987,49 @@
     "6": "NDSH 1012"
   },
   "h3_crop3caster": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop3safflower": {
-    "1": "Mullakusama",
-    "2": "Tellakusuma",
-    "3": "Budidakusuma",
+    "1": "Mulla kusama",
+    "2": "Tella kusuma",
+    "3": "Budida kusuma",
     "777": "other"
   },
   "h3_crop3sesamum": {
-    "1": "Nallanuvvulu",
-    "2": "Telanuvvulu",
-    "3": "Verrinuvvulu",
+    "1": "Nalla nuvvulu",
+    "2": "Tela nuvvulu",
+    "3": "Verri nuvvulu",
     "777": "other"
   },
   "h3_crop3chamanthi": {
-    "1": "Yellowgold",
-    "2": "Redgold",
+    "1": "Yellow gold",
+    "2": "Red gold",
     "3": "Button",
     "4": "Raichur",
     "5": "Silper",
     "777": "other"
   },
   "h3_crop3mallepuvvu": {
-    "1": "Sannamall",
-    "2": "Jajimall",
-    "3": "Gundumall",
-    "4": "Sentujagi",
-    "5": "Muddamall",
+    "1": "Sanna mall",
+    "2": "Jaji mall",
+    "3": "Gundu mall",
+    "4": "Sentu jagi",
+    "5": "Mudda mall",
     "777": "other"
   },
   "h3_crop3kanakambaram": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop3banthi": {
-    "1": "Ashokaroyalyellow",
+    "1": "Ashoka royal yellow",
     "777": "other"
   },
   "h3_crop3chendumalle": {
-    "1": "Gunduchendumalle",
-    "2": "NeelamChamanti",
-    "3": "YerraChamanti",
+    "1": "Gundu chendumalle",
+    "2": "Neelam Chamanti",
+    "3": "Yerra Chamanti",
     "777": "other"
   },
   "h3_crop3plot": {
@@ -3141,57 +3154,59 @@
     "777": "Otherspecify"
   },
   "h3_crop3_whensell": {
-    "1": "immediatelysold",
-    "2777": "IstoppedforabetterpriceOtherstoppedduetootherreasons"
+    "1": "immediately sold",
+    "2": "I stopped for a better price",
+    "777": "Other stopped due too other reasons"
   },
   "h3_crop3_advicesell": {
-    "1": "AdvicefromKVKRBKorotherGovt",
-    "2": "AdvicefromFPONGO",
-    "3": "advicefromfamilyorotherfarmer",
-    "4": "Noadviceduetoownexperience",
-    "5": "Byviewinginthemediaegnewspapersocialmedia"
+    "1": "Advice from KVK RBK or other Govt",
+    "2": "Advice from FPO/NGO",
+    "3": "advice from family or other farmer",
+    "4": "No advice due to own experience",
+    "5": "By viewing in the media eg newspaper social media"
   },
   "h3_crop3_store": {
-    "1": "athome",
-    "2": "privatewarehouse",
-    "3": "GovernmentWarehouse",
-    "4": "FPONGOWarehouse",
-    "5777": "inthefieldMisc"
+    "1": "at home",
+    "2": "private warehouse",
+    "3": "Government Warehouse",
+    "4": "FPO/NGO Warehouse",
+    "5": "in the field",
+    "777": "Misc"
   },
   "h3_crop3_whosell": {
-    "1": "directlytoAPMCMandi",
-    "2": "FarmerAssuranceCentersatMSPprice",
+    "1": "directly to APMC Mandi",
+    "2": "Farmer Assurance Centers at MSP price",
     "3": "FPOs",
-    "4": "PrivateAgentTrader",
-    "5": "VillageLevelMarket",
-    "6": "FarmersMarkets",
-    "7": "directtoconsumers",
-    "8": "Purchaseagreementwithshopkeeperorcontractor",
-    "9": "factoryormill",
+    "4": "Private Agent/Trader",
+    "5": "Village Level Market",
+    "6": "Farmers' Markets",
+    "7": "direct to consumers",
+    "8": "Purchase agreement with shopkeeper or contractor",
+    "9": "factory or mill",
     "777": "Misc"
   },
   "h3_crop3_assistwho": {
     "1": "FPO",
-    "2": "RBKIKPorothergovernmentagency",
+    "2": "RBK IKP or other government agency",
     "3": "other"
   },
   "h3_crop3_payment": {
-    "1": "moneyhandedover",
-    "4": "intheformofanyobject",
-    "23": "depositedinthebankDebtpayment",
+    "1": "money handed over",
+    "4": "in the form of any object",
+    "23": "deposited in the bank Debt payment",
     "777": "Misc"
   },
   "h3_crop3_process": {
-    "1": "toentice",
+    "1": "to entice",
     "2": "drying",
     "3": "Milling",
-    "4": "CanningTinning",
-    "5": "BrandingPackaging"
+    "4": "Canning/Tinning",
+    "5": "Branding/Packaging"
   },
   "h3_crop4": {
     "1": "Paddy",
-    "2": "Othercereal",
-    "3": "Pulsepappurakam",
+    "2": "Other cereal",
+    "3": "Pulse (pappu rakam)",
     "4": "Cotton",
     "5": "Fruit",
     "6": "Vegetable",
@@ -3200,40 +3215,40 @@
     "777": "other"
   },
   "h3_crop4paddy": {
-    "6": "TellaHamsa",
+    "6": "Tella Hamsa",
     "7": "Sreerama",
     "9": "Navara",
     "10": "Kalabatti",
-    "11": "BarmaBlock",
+    "11": "Barma Block",
     "12": "Kalabatti",
-    "13": "Krishnavihri",
+    "13": "Krishna vihri",
     "14": "Kujipatalia",
     "15": "siddasannalu",
     "16": "indrani",
     "17": "Sugandhi",
-    "18": "Parimalasannalu",
-    "19": "RaktaSali",
+    "18": "Parimala sannalu",
+    "19": "Rakta Sali",
     "20": "Ratnachodi",
-    "21": "Mapillaisambha",
-    "22": "Bahuroopi",
-    "23": "Radhajigale",
+    "21": "Mapillai sambha",
+    "22": "Bahu roopi",
+    "23": "Radha jigale",
     "24": "Kudirath",
     "25": "HMT",
     "26": "Basmati",
-    "27": "Mysoormallika",
-    "28": "khetrimaharaj",
-    "29": "Chittimutyalu",
-    "30": "Manipoorblock",
-    "32": "Jinkrice",
-    "33": "Mitubudalu",
-    "47": "NDLR",
-    "58": "NDLR",
+    "27": "Mysoor mallika",
+    "28": "khetri maharaj",
+    "29": "Chitti mutyalu",
+    "30": "Manipoor block",
+    "32": "Jink rice",
+    "33": "Mitu budalu",
+    "4": "NDLR-7",
+    "5": "NDLR-8",
     "777": "Other",
-    "864": "IR",
-    "15204": "BPT",
-    "31121": "MTU",
-    "215048": "RNR",
-    "317029": "Swarna"
+    "8": "IR64",
+    "1": "BPT-5204",
+    "3": "MTU-1121",
+    "2": "RNR-15048",
+    "31": "Swarna7029"
   },
   "h3_crop4cereal": {
     "1": "Jowar",
@@ -3253,7 +3268,8 @@
     "5": "Alasanda",
     "6": "Anapakaya",
     "7": "Horsegram",
-    "8777": "Bengalgramother"
+    "8": "Bengalgram",
+    "777": "other"
   },
   "h3_crop4cotton": {
     "1": "Cotton",
@@ -3265,22 +3281,22 @@
     "2": "Mango",
     "3": "Guava",
     "4": "Sapota",
-    "5": "Sweetlime",
+    "5": "Sweet lime",
     "6": "Pomegranate",
     "7": "Papaya",
-    "8": "NereduJamun",
+    "8": "Neredu (Jamun)",
     "9": "Seethaphal",
     "10": "Watermelon",
     "11": "Cashew",
     "777": "other"
   },
   "h3_crop4vegetable": {
-    "1": "Redchilli",
+    "1": "Red chilli",
     "2": "Onion",
     "3": "Tomato",
     "4": "Lemon",
-    "5": "Greenleafyvegetable",
-    "6": "Mixedplot",
+    "5": "Green leafy vegetable",
+    "6": "Mixed plot",
     "7": "Brinjal",
     "777": "Other"
   },
@@ -3296,103 +3312,104 @@
     "1": "Chamanti",
     "2": "Mallepuvvu",
     "3": "Kanakambaram",
-    "46": "BanthiChendumalle",
+    "4": "Banthi",
+    "6": "Chendumalle",
     "777": "other"
   },
   "h3_crop4jowar": {
     "1": "Tellajonna",
     "2": "Pacchajonna",
-    "3": "Biscuitjona",
-    "4": "Muddakankijonna",
-    "5": "Seethammajonna",
-    "720": "CSV",
+    "3": "Biscuit jona",
+    "4": "Muddakanki jonna",
+    "5": "Seethamma jonna",
+    "7": "CSV20",
     "777": "other",
-    "823": "CSV",
-    "62647": "NTJ"
+    "8": "CSV23",
+    "6": "NTJ2647"
   },
   "h3_crop4korra": {
     "1": "Jadakorra",
-    "2": "MuddaKorra",
+    "2": "Mudda Korra",
     "4": "Suryanandi",
     "5": "Sreelakshmi",
     "6": "Yerrakorra",
     "10": "Kdaraya",
-    "11": "NavariKorra",
+    "11": "Navari Korra",
     "777": "other",
-    "33088": "NDLR",
-    "73156": "SIA",
-    "83222": "SIA",
-    "93085": "SIA"
+    "3": "NDLR-3088",
+    "7": "SIA3156",
+    "8": "SIA3222",
+    "9": "SIA3085"
   },
   "h3_crop4ragi": {
     "1": "Vakula",
     "2": "Vennamdud",
     "3": "Kurva",
     "4": "Klayani",
-    "5": "Kuravaragi",
-    "6": "Karnatakaragi"
+    "5": "Kurava ragi",
+    "6": "Karnataka ragi"
   },
   "h3_crop4samalu": {
-    "4": "Localdesi",
+    "4": "Local (desi)",
     "777": "other",
-    "1900": "VK",
-    "2834": "VK",
-    "3762": "VK"
+    "1": "VK900",
+    "2": "VK834",
+    "3": "VK762"
   },
   "h3_crop4arikelu": {
-    "1": "LocaldesiPacchaVrigaluTellavarigalu",
+    "1": "Local (desi) Paccha Vrigalu Tella varigalu",
     "777": "other"
   },
   "h3_crop4varigalu": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop4oodalu": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop4kandi": {
     "4": "Kolambo",
-    "5": "Tellakandi",
-    "6": "Macchalakandi",
+    "5": "Tella kandi",
+    "6": "Macchala kandi",
     "7": "richa",
     "8": "Kudurath",
     "9": "Asha",
     "11": "Asha",
     "12": "Laxmi",
-    "141": "LRG",
-    "252": "LRG",
-    "307": "BRG",
+    "1": "LRG-41",
+    "2": "LRG-52",
+    "3": "BRG-07",
     "777": "other",
-    "10176": "PRG",
-    "138711": "ICPL"
+    "10": "PRG-176",
+    "13": "ICPL-8711"
   },
   "h3_crop4minumulu": {
-    "4": "TBGTirupathi",
-    "5": "GBGGuntur",
-    "6": "NRIMaruthi",
+    "4": "TBG Tirupathi",
+    "5": "GBG Guntur",
+    "6": "NRI-Maruthi",
     "7": "Moddu",
     "9": "Kuwait",
-    "39": "Tsiddarth",
-    "231": "PU",
+    "3": "T9-siddarth",
+    "2": "PU-31",
     "777": "other",
-    "1104": "TBG",
-    "82043": "IPU"
+    "1": "TBG104",
+    "8": "IPU2-043"
   },
   "h3_crop4pesara": {
     "4": "Amulya",
     "5": "Siddarth",
     "777": "other",
-    "1295": "MGG",
-    "2460": "LGG",
-    "3425": "WGG",
-    "6267": "ML",
-    "7203": "IPM",
-    "8214": "IPM"
+    "1": "MGG-295",
+    "2": "LGG-460",
+    "3": "WGG-425",
+    "6": "ML-267",
+    "7": "IPM2-03",
+    "8": "IPM2-14"
   },
   "h3_crop4pappusenaga": {
     "2": "Gulabi",
-    "111": "J",
+    "1": "J-11",
     "777": "other"
   },
   "h3_crop4alasanda": {
@@ -3401,8 +3418,8 @@
     "777": "other"
   },
   "h3_crop4anapakaya": {
-    "1": "Peddaanapa",
-    "2": "Chinnaanapa",
+    "1": "Pedda anapa",
+    "2": "Chinna anapa",
     "777": "other"
   },
   "h3_crop4cottontype": {
@@ -3412,7 +3429,7 @@
     "4": "Nandhini",
     "7": "Asha",
     "8": "Sadanand",
-    "9": "Rasimagic",
+    "9": "Rasi magic",
     "10": "Dhamaka",
     "11": "Revanth",
     "12": "US",
@@ -3421,29 +3438,30 @@
     "16": "Kaveri",
     "18": "Ajith",
     "19": "Kranthi",
-    "20": "Srirama",
+    "20": "Sri rama",
     "21": "Narsimha",
-    "56": "ShaktiBaswam",
+    "5": "Shakti",
+    "6": "Baswam",
     "777": "other",
-    "1399": "JK",
-    "17659": "Rasi"
+    "13": "JK99",
+    "17": "Rasi659"
   },
   "h3_crop4banana": {
     "1": "AC",
     "3": "Jain",
     "4": "Kadali",
-    "29": "G",
+    "2": "G9",
     "777": "other"
   },
   "h3_crop4mango": {
     "1": "Benishan",
     "2": "Bangalore",
     "3": "Malligubba",
-    "4": "Nujividurasalu",
+    "4": "Nujividu rasalu",
     "5": "Alphonso",
     "6": "Neelam",
     "7": "Kuddus",
-    "8": "ImamPasand",
+    "8": "Imam Pasand",
     "9": "Mallika",
     "10": "Ynuguntala",
     "11": "Ratnagiri",
@@ -3453,16 +3471,16 @@
     "777": "other"
   },
   "h3_crop4guava": {
-    "1": "AllahabadSafeda",
+    "1": "Allahabad Safeda",
     "2": "Lalith",
-    "3": "TaiwanPink",
-    "4": "TaiwanWhite",
-    "5": "ArkaKiranred",
-    "649": "L",
+    "3": "Taiwan Pink",
+    "4": "Taiwan White",
+    "5": "Arka Kiran red",
+    "6": "L49",
     "777": "other"
   },
   "h3_crop4sapota": {
-    "1": "Cricketball",
+    "1": "Cricket ball",
     "2": "Kalapathi",
     "3": "Palasapota",
     "4": "Badoli",
@@ -3475,31 +3493,31 @@
   },
   "h3_crop4pomogranate": {
     "1": "Bhagavan",
-    "2": "GaneshKesar",
+    "2": "Ganesh Kesar",
     "777": "other"
   },
   "h3_crop4papaya": {
     "1": "Taiwan",
-    "2": "Taiwanredlady",
-    "3": "Pusagiant",
-    "4": "Pusadelicious",
-    "5": "Localdesi",
+    "2": "Taiwan (red lady)",
+    "3": "Pusa giant",
+    "4": "Pusa-delicious",
+    "5": "Local (desi)",
     "777": "other"
   },
   "h3_crop4neredu": {
-    "1": "Localdesi",
-    "2": "Allaneredusapling",
+    "1": "Local (desi)",
+    "2": "Allaneredu sapling",
     "3": "Bahubali",
     "777": "other"
   },
   "h3_crop4seethaphal": {
     "1": "Balanagar",
-    "2": "NMKGold",
-    "3": "RedSeethaphal",
+    "2": "NMK Gold",
+    "3": "Red Seethaphal",
     "777": "other"
   },
   "h3_crop4watermelon": {
-    "1": "Nallakalingara",
+    "1": "Nalla kalingara",
     "2": "Sarakallingara",
     "777": "other"
   },
@@ -3516,20 +3534,20 @@
     "2": "Teja",
     "4": "Byadgi",
     "6": "Syngenta",
-    "7": "Devanurdelux",
+    "7": "Devanur delux",
     "8": "Dharma",
     "10": "Lali",
     "11": "Bangaram",
     "12": "Priyanka",
     "13": "VNR",
-    "14": "PUSAjwala",
-    "510": "Super",
+    "14": "PUSA jwala",
+    "5": "Super10",
     "777": "other",
     "3": "Aspire 144",
     "9": "244"
   },
   "h3_crop4onion": {
-    "1": "Eastwest",
+    "1": "East west",
     "2": "Mahi",
     "3": "Virat",
     "4": "Vijay",
@@ -3537,7 +3555,7 @@
     "6": "Leadveter",
     "7": "Panchaganga",
     "8": "Namdhari",
-    "9": "Chinnaballari",
+    "9": "Chinna ballari",
     "10": "AFLR",
     "777": "other"
   },
@@ -3562,34 +3580,34 @@
     "4": "Chukkakur",
     "5": "Palakalaku",
     "6": "Palak",
-    "7": "CurryLeaf",
+    "7": "Curry Leaf",
     "8": "Gongura",
-    "9": "Ponagantiaaku",
-    "10": "PatnamGogaku",
+    "9": "Ponaganti aaku",
+    "10": "Patnam Gogaku",
     "11": "Cheemagogaku",
     "777": "other"
   },
   "h3_crop4mixed": {
     "1": "Onion",
     "2": "Tomato",
-    "3": "Clusterbean",
+    "3": "Cluster bean",
     "4": "Ladyfinger",
     "5": "Munaga",
     "6": "Brinjal",
     "7": "Kakara",
-    "8": "Anapasorakaya",
+    "8": "Anapa/sorakaya",
     "9": "Dosakaya",
     "10": "Keeradosa",
-    "11": "Greenchilli",
+    "11": "Green chilli",
     "12": "Gummadi",
-    "13": "Buddigummadi",
+    "13": "Buddi gummadi",
     "777": "other"
   },
   "h3_crop4groundnut": {
     "4": "Dharani",
-    "6": "TirupatiNarayani",
+    "6": "Tirupati Narayani",
     "7": "Amaravathi",
-    "11": "KadiriBold",
+    "11": "Kadiri Bold",
     "12": "Teegakaya",
     "1": "K-6",
     "2": "K-9",
@@ -3602,7 +3620,7 @@
   },
   "h3_crop4sunflower": {
     "1": "Kaveri",
-    "2": "Gangakaveri",
+    "2": "Ganga-kaveri",
     "3": "Sumitra",
     "4": "Gowri",
     "5": "Kanchana",
@@ -3610,49 +3628,49 @@
     "6": "NDSH 1012"
   },
   "h3_crop4castor": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop4safflower": {
-    "1": "Mullakusama",
-    "2": "Tellakusuma",
-    "3": "Budidakusuma",
+    "1": "Mulla kusama",
+    "2": "Tella kusuma",
+    "3": "Budida kusuma",
     "777": "other"
   },
   "h3_crop4sesamum": {
-    "1": "Nallanuvvulu",
-    "2": "Telanuvvulu",
-    "3": "Verrinuvvulu",
+    "1": "Nalla nuvvulu",
+    "2": "Tela nuvvulu",
+    "3": "Verri nuvvulu",
     "777": "other"
   },
   "h3_crop4chamanthi": {
-    "1": "Yellowgold",
-    "2": "Redgold",
+    "1": "Yellow gold",
+    "2": "Red gold",
     "3": "Button",
     "4": "Raichur",
     "5": "Silper",
     "777": "other"
   },
   "h3_crop4mallepuvvu": {
-    "1": "Sannamall",
-    "2": "Jajimall",
-    "3": "Gundumall",
-    "4": "Sentujagi",
-    "5": "Muddamall",
+    "1": "Sanna mall",
+    "2": "Jaji mall",
+    "3": "Gundu mall",
+    "4": "Sentu jagi",
+    "5": "Mudda mall",
     "777": "other"
   },
   "h3_crop4kanakambaram": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop4banthi": {
-    "1": "Ashokaroyalyellow",
+    "1": "Ashoka royal yellow",
     "777": "other"
   },
   "h3_crop4chendumalle": {
-    "1": "Gunduchendumalle",
-    "2": "NeelamChamanti",
-    "3": "YerraChamanti",
+    "1": "Gundu chendumalle",
+    "2": "Neelam Chamanti",
+    "3": "Yerra Chamanti",
     "777": "other"
   },
   "h3_crop4plot": {
@@ -3777,57 +3795,59 @@
     "777": "Otherspecify"
   },
   "h3_crop4_whensell": {
-    "1": "immediatelysold",
-    "2777": "IstoppedforabetterpriceOtherstoppedduetootherreasons"
+    "1": "immediately sold",
+    "2": "I stopped for a better price",
+    "777": "Other stopped due too other reasons"
   },
   "h3_crop4_advicesell": {
-    "1": "AdvicefromKVKRBKorotherGovt",
-    "2": "AdvicefromFPONGO",
-    "3": "advicefromfamilyorotherfarmer",
-    "4": "Noadviceduetoownexperience",
-    "5": "Byviewinginthemediaegnewspapersocialmedia"
+    "1": "Advice from KVK RBK or other Govt",
+    "2": "Advice from FPO/NGO",
+    "3": "advice from family or other farmer",
+    "4": "No advice due to own experience",
+    "5": "By viewing in the media eg newspaper social media"
   },
   "h3_crop4_store": {
-    "1": "athome",
-    "2": "privatewarehouse",
-    "3": "GovernmentWarehouse",
-    "4": "FPONGOWarehouse",
-    "5777": "inthefieldMisc"
+    "1": "at home",
+    "2": "private warehouse",
+    "3": "Government Warehouse",
+    "4": "FPO/NGO Warehouse",
+    "5": "in the field",
+    "777": "Misc"
   },
   "h3_crop4_whosell": {
-    "1": "directlytoAPMCMandi",
-    "2": "FarmerAssuranceCentersatMSPprice",
+    "1": "directly to APMC Mandi",
+    "2": "Farmer Assurance Centers at MSP price",
     "3": "FPOs",
-    "4": "PrivateAgentTrader",
-    "5": "VillageLevelMarket",
-    "6": "FarmersMarkets",
-    "7": "directtoconsumers",
-    "8": "Purchaseagreementwithshopkeeperorcontractor",
-    "9": "factoryormill",
+    "4": "Private Agent/Trader",
+    "5": "Village Level Market",
+    "6": "Farmers' Markets",
+    "7": "direct to consumers",
+    "8": "Purchase agreement with shopkeeper or contractor",
+    "9": "factory or mill",
     "777": "Misc"
   },
   "h3_crop4_assistwho": {
     "1": "FPO",
-    "2": "RBKIKPorothergovernmentagency",
+    "2": "RBK IKP or other government agency",
     "3": "other"
   },
   "h3_crop4_payment": {
-    "1": "moneyhandedover",
-    "4": "intheformofanyobject",
-    "23": "depositedinthebankDebtpayment",
+    "1": "money handed over",
+    "4": "in the form of any object",
+    "23": "deposited in the bank Debt payment",
     "777": "Misc"
   },
   "h3_crop4_process": {
-    "1": "toentice",
+    "1": "to entice",
     "2": "drying",
     "3": "Milling",
-    "4": "CanningTinning",
-    "5": "BrandingPackaging"
+    "4": "Canning/Tinning",
+    "5": "Branding/Packaging"
   },
   "h3_crop5": {
     "1": "Paddy",
-    "2": "Othercereal",
-    "3": "Pulsepappurakam",
+    "2": "Other cereal",
+    "3": "Pulse (pappu rakam)",
     "4": "Cotton",
     "5": "Fruit",
     "6": "Vegetable",
@@ -3836,40 +3856,40 @@
     "777": "other"
   },
   "h3_crop5paddy": {
-    "6": "TellaHamsa",
+    "6": "Tella Hamsa",
     "7": "Sreerama",
     "9": "Navara",
     "10": "Kalabatti",
-    "11": "BarmaBlock",
+    "11": "Barma Block",
     "12": "Kalabatti",
-    "13": "Krishnavihri",
+    "13": "Krishna vihri",
     "14": "Kujipatalia",
     "15": "siddasannalu",
     "16": "indrani",
     "17": "Sugandhi",
-    "18": "Parimalasannalu",
-    "19": "RaktaSali",
+    "18": "Parimala sannalu",
+    "19": "Rakta Sali",
     "20": "Ratnachodi",
-    "21": "Mapillaisambha",
-    "22": "Bahuroopi",
-    "23": "Radhajigale",
+    "21": "Mapillai sambha",
+    "22": "Bahu roopi",
+    "23": "Radha jigale",
     "24": "Kudirath",
     "25": "HMT",
     "26": "Basmati",
-    "27": "Mysoormallika",
-    "28": "khetrimaharaj",
-    "29": "Chittimutyalu",
-    "30": "Manipoorblock",
-    "32": "Jinkrice",
-    "33": "Mitubudalu",
-    "47": "NDLR",
-    "58": "NDLR",
+    "27": "Mysoor mallika",
+    "28": "khetri maharaj",
+    "29": "Chitti mutyalu",
+    "30": "Manipoor block",
+    "32": "Jink rice",
+    "33": "Mitu budalu",
+    "4": "NDLR-7",
+    "5": "NDLR-8",
     "777": "Other",
-    "864": "IR",
-    "15204": "BPT",
-    "31121": "MTU",
-    "215048": "RNR",
-    "317029": "Swarna"
+    "8": "IR64",
+    "1": "BPT-5204",
+    "3": "MTU-1121",
+    "2": "RNR-15048",
+    "31": "Swarna7029"
   },
   "h3_crop5cereal": {
     "1": "Jowar",
@@ -3889,7 +3909,8 @@
     "5": "Alasanda",
     "6": "Anapakaya",
     "7": "Horsegram",
-    "8777": "Bengalgramother"
+    "8": "Bengalgram",
+    "777": "other"
   },
   "h3_crop5cotton": {
     "1": "Cotton",
@@ -3901,22 +3922,22 @@
     "2": "Mango",
     "3": "Guava",
     "4": "Sapota",
-    "5": "Sweetlime",
+    "5": "Sweet lime",
     "6": "Pomegranate",
     "7": "Papaya",
-    "8": "NereduJamun",
+    "8": "Neredu (Jamun)",
     "9": "Seethaphal",
     "10": "Watermelon",
     "11": "Cashew",
     "777": "other"
   },
   "h3_crop5vegetable": {
-    "1": "Redchilli",
+    "1": "Red chilli",
     "2": "Onion",
     "3": "Tomato",
     "4": "Lemon",
-    "5": "Greenleafyvegetable",
-    "6": "Mixedplot",
+    "5": "Green leafy vegetable",
+    "6": "Mixed plot",
     "7": "Brinjal",
     "777": "Other"
   },
@@ -3932,103 +3953,104 @@
     "1": "Chamanti",
     "2": "Mallepuvvu",
     "3": "Kanakambaram",
-    "46": "BanthiChendumalle",
+    "4": "Banthi",
+    "6": "Chendumalle",
     "777": "other"
   },
   "h3_crop5jowar": {
     "1": "Tellajonna",
     "2": "Pacchajonna",
-    "3": "Biscuitjona",
-    "4": "Muddakankijonna",
-    "5": "Seethammajonna",
-    "720": "CSV",
+    "3": "Biscuit jona",
+    "4": "Muddakanki jonna",
+    "5": "Seethamma jonna",
+    "7": "CSV20",
     "777": "other",
-    "823": "CSV",
-    "62647": "NTJ"
+    "8": "CSV23",
+    "6": "NTJ2647"
   },
   "h3_crop5korra": {
     "1": "Jadakorra",
-    "2": "MuddaKorra",
+    "2": "Mudda Korra",
     "4": "Suryanandi",
     "5": "Sreelakshmi",
     "6": "Yerrakorra",
     "10": "Kdaraya",
-    "11": "NavariKorra",
+    "11": "Navari Korra",
     "777": "other",
-    "33088": "NDLR",
-    "73156": "SIA",
-    "83222": "SIA",
-    "93085": "SIA"
+    "3": "NDLR-3088",
+    "7": "SIA3156",
+    "8": "SIA3222",
+    "9": "SIA3085"
   },
   "h3_crop5ragi": {
     "1": "Vakula",
     "2": "Vennamdud",
     "3": "Kurva",
     "4": "Klayani",
-    "5": "Kuravaragi",
-    "6": "Karnatakaragi"
+    "5": "Kurava ragi",
+    "6": "Karnataka ragi"
   },
   "h3_crop5samalu": {
-    "4": "Localdesi",
+    "4": "Local (desi)",
     "777": "other",
-    "1900": "VK",
-    "2834": "VK",
-    "3762": "VK"
+    "1": "VK900",
+    "2": "VK834",
+    "3": "VK762"
   },
   "h3_crop5arikelu": {
-    "1": "LocaldesiPacchaVrigaluTellavarigalu",
+    "1": "Local (desi) Paccha Vrigalu Tella varigalu",
     "777": "other"
   },
   "h3_crop5varigalu": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop5oodalu": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop5kandi": {
     "4": "Kolambo",
-    "5": "Tellakandi",
-    "6": "Macchalakandi",
+    "5": "Tella kandi",
+    "6": "Macchala kandi",
     "7": "richa",
     "8": "Kudurath",
     "9": "Asha",
     "11": "Asha",
     "12": "Laxmi",
-    "141": "LRG",
-    "252": "LRG",
-    "307": "BRG",
+    "1": "LRG-41",
+    "2": "LRG-52",
+    "3": "BRG-07",
     "777": "other",
-    "10176": "PRG",
-    "138711": "ICPL"
+    "10": "PRG-176",
+    "13": "ICPL-8711"
   },
   "h3_crop5minumulu": {
-    "4": "TBGTirupathi",
-    "5": "GBGGuntur",
-    "6": "NRIMaruthi",
+    "4": "TBG Tirupathi",
+    "5": "GBG Guntur",
+    "6": "NRI-Maruthi",
     "7": "Moddu",
     "9": "Kuwait",
-    "39": "Tsiddarth",
-    "231": "PU",
+    "3": "T9-siddarth",
+    "2": "PU-31",
     "777": "other",
-    "1104": "TBG",
-    "82043": "IPU"
+    "1": "TBG104",
+    "8": "IPU2-043"
   },
   "h3_crop5pesara": {
     "4": "Amulya",
     "5": "Siddarth",
     "777": "other",
-    "1295": "MGG",
-    "2460": "LGG",
-    "3425": "WGG",
-    "6267": "ML",
-    "7203": "IPM",
-    "8214": "IPM"
+    "1": "MGG-295",
+    "2": "LGG-460",
+    "3": "WGG-425",
+    "6": "ML-267",
+    "7": "IPM2-03",
+    "8": "IPM2-14"
   },
   "h3_crop5pappusenaga": {
     "2": "Gulabi",
-    "111": "J",
+    "1": "J-11",
     "777": "other"
   },
   "h3_crop5alasanda": {
@@ -4037,8 +4059,8 @@
     "777": "other"
   },
   "h3_crop5anapakaya": {
-    "1": "Peddaanapa",
-    "2": "Chinnaanapa",
+    "1": "Pedda anapa",
+    "2": "Chinna anapa",
     "777": "other"
   },
   "h3_crop5cottontype": {
@@ -4048,7 +4070,7 @@
     "4": "Nandhini",
     "7": "Asha",
     "8": "Sadanand",
-    "9": "Rasimagic",
+    "9": "Rasi magic",
     "10": "Dhamaka",
     "11": "Revanth",
     "12": "US",
@@ -4057,29 +4079,30 @@
     "16": "Kaveri",
     "18": "Ajith",
     "19": "Kranthi",
-    "20": "Srirama",
+    "20": "Sri rama",
     "21": "Narsimha",
-    "56": "ShaktiBaswam",
+    "5": "Shakti",
+    "6": "Baswam",
     "777": "other",
-    "1399": "JK",
-    "17659": "Rasi"
+    "13": "JK99",
+    "17": "Rasi659"
   },
   "h3_crop5banana": {
     "1": "AC",
     "3": "Jain",
     "4": "Kadali",
-    "29": "G",
+    "2": "G9",
     "777": "other"
   },
   "h3_crop5mango": {
     "1": "Benishan",
     "2": "Bangalore",
     "3": "Malligubba",
-    "4": "Nujividurasalu",
+    "4": "Nujividu rasalu",
     "5": "Alphonso",
     "6": "Neelam",
     "7": "Kuddus",
-    "8": "ImamPasand",
+    "8": "Imam Pasand",
     "9": "Mallika",
     "10": "Ynuguntala",
     "11": "Ratnagiri",
@@ -4089,16 +4112,16 @@
     "777": "other"
   },
   "h3_crop5guava": {
-    "1": "AllahabadSafeda",
+    "1": "Allahabad Safeda",
     "2": "Lalith",
-    "3": "TaiwanPink",
-    "4": "TaiwanWhite",
-    "5": "ArkaKiranred",
-    "649": "L",
+    "3": "Taiwan Pink",
+    "4": "Taiwan White",
+    "5": "Arka Kiran red",
+    "6": "L49",
     "777": "other"
   },
   "h3_crop5sapota": {
-    "1": "Cricketball",
+    "1": "Cricket ball",
     "2": "Kalapathi",
     "3": "Palasapota",
     "4": "Badoli",
@@ -4111,31 +4134,31 @@
   },
   "h3_crop5pomogranate": {
     "1": "Bhagavan",
-    "2": "GaneshKesar",
+    "2": "Ganesh Kesar",
     "777": "other"
   },
   "h3_crop5papaya": {
     "1": "Taiwan",
-    "2": "Taiwanredlady",
-    "3": "Pusagiant",
-    "4": "Pusadelicious",
-    "5": "Localdesi",
+    "2": "Taiwan (red lady)",
+    "3": "Pusa giant",
+    "4": "Pusa-delicious",
+    "5": "Local (desi)",
     "777": "other"
   },
   "h3_crop5neredu": {
-    "1": "Localdesi",
-    "2": "Allaneredusapling",
+    "1": "Local (desi)",
+    "2": "Allaneredu sapling",
     "3": "Bahubali",
     "777": "other"
   },
   "h3_crop5seethaphal": {
     "1": "Balanagar",
-    "2": "NMKGold",
-    "3": "RedSeethaphal",
+    "2": "NMK Gold",
+    "3": "Red Seethaphal",
     "777": "other"
   },
   "h3_crop5watermelon": {
-    "1": "Nallakalingara",
+    "1": "Nalla kalingara",
     "2": "Sarakallingara",
     "777": "other"
   },
@@ -4152,20 +4175,20 @@
     "2": "Teja",
     "4": "Byadgi",
     "6": "Syngenta",
-    "7": "Devanurdelux",
+    "7": "Devanur delux",
     "8": "Dharma",
     "10": "Lali",
     "11": "Bangaram",
     "12": "Priyanka",
     "13": "VNR",
-    "14": "PUSAjwala",
-    "510": "Super",
+    "14": "PUSA jwala",
+    "5": "Super10",
     "777": "other",
     "3": "Aspire 144",
     "9": "244"
   },
   "h3_crop5onion": {
-    "1": "Eastwest",
+    "1": "East west",
     "2": "Mahi",
     "3": "Virat",
     "4": "Vijay",
@@ -4173,7 +4196,7 @@
     "6": "Leadveter",
     "7": "Panchaganga",
     "8": "Namdhari",
-    "9": "Chinnaballari",
+    "9": "Chinna ballari",
     "10": "AFLR",
     "777": "other"
   },
@@ -4198,34 +4221,34 @@
     "4": "Chukkakur",
     "5": "Palakalaku",
     "6": "Palak",
-    "7": "CurryLeaf",
+    "7": "Curry Leaf",
     "8": "Gongura",
-    "9": "Ponagantiaaku",
-    "10": "PatnamGogaku",
+    "9": "Ponaganti aaku",
+    "10": "Patnam Gogaku",
     "11": "Cheemagogaku",
     "777": "other"
   },
   "h3_crop5mixed": {
     "1": "Onion",
     "2": "Tomato",
-    "3": "Clusterbean",
+    "3": "Cluster bean",
     "4": "Ladyfinger",
     "5": "Munaga",
     "6": "Brinjal",
     "7": "Kakara",
-    "8": "Anapasorakaya",
+    "8": "Anapa/sorakaya",
     "9": "Dosakaya",
     "10": "Keeradosa",
-    "11": "Greenchilli",
+    "11": "Green chilli",
     "12": "Gummadi",
-    "13": "Buddigummadi",
+    "13": "Buddi gummadi",
     "777": "other"
   },
   "h3_crop5groundnut": {
     "4": "Dharani",
-    "6": "TirupatiNarayani",
+    "6": "Tirupati Narayani",
     "7": "Amaravathi",
-    "11": "KadiriBold",
+    "11": "Kadiri Bold",
     "12": "Teegakaya",
     "1": "K-6",
     "2": "K-9",
@@ -4238,7 +4261,7 @@
   },
   "h3_crop5sunflower": {
     "1": "Kaveri",
-    "2": "Gangakaveri",
+    "2": "Ganga-kaveri",
     "3": "Sumitra",
     "4": "Gowri",
     "5": "Kanchana",
@@ -4246,49 +4269,49 @@
     "6": "NDSH 1012"
   },
   "h3_crop5castor": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop5safflower": {
-    "1": "Mullakusama",
-    "2": "Tellakusuma",
-    "3": "Budidakusuma",
+    "1": "Mulla kusama",
+    "2": "Tella kusuma",
+    "3": "Budida kusuma",
     "777": "other"
   },
   "h3_crop5sesamum": {
-    "1": "Nallanuvvulu",
-    "2": "Telanuvvulu",
-    "3": "Verrinuvvulu",
+    "1": "Nalla nuvvulu",
+    "2": "Tela nuvvulu",
+    "3": "Verri nuvvulu",
     "777": "other"
   },
   "h3_crop5chamanthi": {
-    "1": "Yellowgold",
-    "2": "Redgold",
+    "1": "Yellow gold",
+    "2": "Red gold",
     "3": "Button",
     "4": "Raichur",
     "5": "Silper",
     "777": "other"
   },
   "h3_crop5mallepuvvu": {
-    "1": "Sannamall",
-    "2": "Jajimall",
-    "3": "Gundumall",
-    "4": "Sentujagi",
-    "5": "Muddamall",
+    "1": "Sanna mall",
+    "2": "Jaji mall",
+    "3": "Gundu mall",
+    "4": "Sentu jagi",
+    "5": "Mudda mall",
     "777": "other"
   },
   "h3_crop5kanakambaram": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_crop5banthi": {
-    "1": "Ashokaroyalyellow",
+    "1": "Ashoka royal yellow",
     "777": "other"
   },
   "h3_crop5chendumalle": {
-    "1": "Gunduchendumalle",
-    "2": "NeelamChamanti",
-    "3": "YerraChamanti",
+    "1": "Gundu chendumalle",
+    "2": "Neelam Chamanti",
+    "3": "Yerra Chamanti",
     "777": "other"
   },
   "h3_crop5plot": {
@@ -4413,52 +4436,54 @@
     "777": "Otherspecify"
   },
   "h3_crop5_whensell": {
-    "1": "immediatelysold",
-    "2777": "IstoppedforabetterpriceOtherstoppedduetootherreasons"
+    "1": "immediately sold",
+    "2": "I stopped for a better price",
+    "777": "Other stopped due too other reasons"
   },
   "h3_crop5_advicesell": {
-    "1": "AdvicefromKVKRBKorotherGovt",
-    "2": "AdvicefromFPONGO",
-    "3": "advicefromfamilyorotherfarmer",
-    "4": "Noadviceduetoownexperience",
-    "5": "Byviewinginthemediaegnewspapersocialmedia"
+    "1": "Advice from KVK RBK or other Govt",
+    "2": "Advice from FPO/NGO",
+    "3": "advice from family or other farmer",
+    "4": "No advice due to own experience",
+    "5": "By viewing in the media eg newspaper social media"
   },
   "h3_crop5_store": {
-    "1": "athome",
-    "2": "privatewarehouse",
-    "3": "GovernmentWarehouse",
-    "4": "FPONGOWarehouse",
-    "5777": "inthefieldMisc"
+    "1": "at home",
+    "2": "private warehouse",
+    "3": "Government Warehouse",
+    "4": "FPO/NGO Warehouse",
+    "5": "in the field",
+    "777": "Misc"
   },
   "h3_crop5_whosell": {
-    "1": "directlytoAPMCMandi",
-    "2": "FarmerAssuranceCentersatMSPprice",
+    "1": "directly to APMC Mandi",
+    "2": "Farmer Assurance Centers at MSP price",
     "3": "FPOs",
-    "4": "PrivateAgentTrader",
-    "5": "VillageLevelMarket",
-    "6": "FarmersMarkets",
-    "7": "directtoconsumers",
-    "8": "Purchaseagreementwithshopkeeperorcontractor",
-    "9": "factoryormill",
+    "4": "Private Agent/Trader",
+    "5": "Village Level Market",
+    "6": "Farmers' Markets",
+    "7": "direct to consumers",
+    "8": "Purchase agreement with shopkeeper or contractor",
+    "9": "factory or mill",
     "777": "Misc"
   },
   "h3_crop5_assistwho": {
     "1": "FPO",
-    "2": "RBKIKPorothergovernmentagency",
+    "2": "RBK IKP or other government agency",
     "3": "other"
   },
   "h3_crop5_payment": {
-    "1": "moneyhandedover",
-    "4": "intheformofanyobject",
-    "23": "depositedinthebankDebtpayment",
+    "1": "money handed over",
+    "4": "in the form of any object",
+    "23": "deposited in the bank Debt payment",
     "777": "Misc"
   },
   "h3_crop5_process": {
-    "1": "toentice",
+    "1": "to entice",
     "2": "drying",
     "3": "Milling",
-    "4": "CanningTinning",
-    "5": "BrandingPackaging"
+    "4": "Canning/Tinning",
+    "5": "Branding/Packaging"
   },
   "h3_organiclist": {
     "1": "Bijamrita",
@@ -4504,8 +4529,8 @@
   },
   "h3_kgcrop1": {
     "1": "Paddy",
-    "2": "Othercereal",
-    "3": "Pulsepappurakam",
+    "2": "Other cereal",
+    "3": "Pulse (pappu rakam)",
     "4": "Cotton",
     "5": "Fruit",
     "6": "Vegetable",
@@ -4514,40 +4539,40 @@
     "777": "other"
   },
   "h3_kgcrop1paddy": {
-    "6": "TellaHamsa",
+    "6": "Tella Hamsa",
     "7": "Sreerama",
     "9": "Navara",
     "10": "Kalabatti",
-    "11": "BarmaBlock",
+    "11": "Barma Block",
     "12": "Kalabatti",
-    "13": "Krishnavihri",
+    "13": "Krishna vihri",
     "14": "Kujipatalia",
     "15": "siddasannalu",
     "16": "indrani",
     "17": "Sugandhi",
-    "18": "Parimalasannalu",
-    "19": "RaktaSali",
+    "18": "Parimala sannalu",
+    "19": "Rakta Sali",
     "20": "Ratnachodi",
-    "21": "Mapillaisambha",
-    "22": "Bahuroopi",
-    "23": "Radhajigale",
+    "21": "Mapillai sambha",
+    "22": "Bahu roopi",
+    "23": "Radha jigale",
     "24": "Kudirath",
     "25": "HMT",
     "26": "Basmati",
-    "27": "Mysoormallika",
-    "28": "khetrimaharaj",
-    "29": "Chittimutyalu",
-    "30": "Manipoorblock",
-    "32": "Jinkrice",
-    "33": "Mitubudalu",
-    "47": "NDLR",
-    "58": "NDLR",
+    "27": "Mysoor mallika",
+    "28": "khetri maharaj",
+    "29": "Chitti mutyalu",
+    "30": "Manipoor block",
+    "32": "Jink rice",
+    "33": "Mitu budalu",
+    "4": "NDLR-7",
+    "5": "NDLR-8",
     "777": "Other",
-    "864": "IR",
-    "15204": "BPT",
-    "31121": "MTU",
-    "215048": "RNR",
-    "317029": "Swarna"
+    "8": "IR64",
+    "1": "BPT-5204",
+    "3": "MTU-1121",
+    "2": "RNR-15048",
+    "31": "Swarna7029"
   },
   "h3_kgcrop1cereal": {
     "1": "Jowar",
@@ -4567,7 +4592,8 @@
     "5": "Alasanda",
     "6": "Anapakaya",
     "7": "Horsegram",
-    "8777": "Bengalgramother"
+    "8": "Bengalgram",
+    "777": "other"
   },
   "h3_kgcrop1cotton": {
     "1": "Cotton",
@@ -4579,22 +4605,22 @@
     "2": "Mango",
     "3": "Guava",
     "4": "Sapota",
-    "5": "Sweetlime",
+    "5": "Sweet lime",
     "6": "Pomegranate",
     "7": "Papaya",
-    "8": "NereduJamun",
+    "8": "Neredu (Jamun)",
     "9": "Seethaphal",
     "10": "Watermelon",
     "11": "Cashew",
     "777": "other"
   },
   "h3_kgcrop1vegetable": {
-    "1": "Redchilli",
+    "1": "Red chilli",
     "2": "Onion",
     "3": "Tomato",
     "4": "Lemon",
-    "5": "Greenleafyvegetable",
-    "6": "Mixedplot",
+    "5": "Green leafy vegetable",
+    "6": "Mixed plot",
     "7": "Brinjal",
     "777": "Other"
   },
@@ -4610,103 +4636,104 @@
     "1": "Chamanti",
     "2": "Mallepuvvu",
     "3": "Kanakambaram",
-    "46": "BanthiChendumalle",
+    "4": "Banthi",
+    "6": "Chendumalle",
     "777": "other"
   },
   "h3_kgcrop1jowar": {
     "1": "Tellajonna",
     "2": "Pacchajonna",
-    "3": "Biscuitjona",
-    "4": "Muddakankijonna",
-    "5": "Seethammajonna",
-    "720": "CSV",
+    "3": "Biscuit jona",
+    "4": "Muddakanki jonna",
+    "5": "Seethamma jonna",
+    "7": "CSV20",
     "777": "other",
-    "823": "CSV",
-    "62647": "NTJ"
+    "8": "CSV23",
+    "6": "NTJ2647"
   },
   "h3_kgcrop1korra": {
     "1": "Jadakorra",
-    "2": "MuddaKorra",
+    "2": "Mudda Korra",
     "4": "Suryanandi",
     "5": "Sreelakshmi",
     "6": "Yerrakorra",
     "10": "Kdaraya",
-    "11": "NavariKorra",
+    "11": "Navari Korra",
     "777": "other",
-    "33088": "NDLR",
-    "73156": "SIA",
-    "83222": "SIA",
-    "93085": "SIA"
+    "3": "NDLR-3088",
+    "7": "SIA3156",
+    "8": "SIA3222",
+    "9": "SIA3085"
   },
   "h3_kgcrop1ragi": {
     "1": "Vakula",
     "2": "Vennamdud",
     "3": "Kurva",
     "4": "Klayani",
-    "5": "Kuravaragi",
-    "6": "Karnatakaragi"
+    "5": "Kurava ragi",
+    "6": "Karnataka ragi"
   },
   "h3_kgcrop1samalu": {
-    "4": "Localdesi",
+    "4": "Local (desi)",
     "777": "other",
-    "1900": "VK",
-    "2834": "VK",
-    "3762": "VK"
+    "1": "VK900",
+    "2": "VK834",
+    "3": "VK762"
   },
   "h3_kgcrop1arikelu": {
-    "1": "LocaldesiPacchaVrigaluTellavarigalu",
+    "1": "Local (desi) Paccha Vrigalu Tella varigalu",
     "777": "other"
   },
   "h3_kgcrop1varigalu": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_kgcrop1oodalu": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_kgcrop1kandi": {
     "4": "Kolambo",
-    "5": "Tellakandi",
-    "6": "Macchalakandi",
+    "5": "Tella kandi",
+    "6": "Macchala kandi",
     "7": "richa",
     "8": "Kudurath",
     "9": "Asha",
     "11": "Asha",
     "12": "Laxmi",
-    "141": "LRG",
-    "252": "LRG",
-    "307": "BRG",
+    "1": "LRG-41",
+    "2": "LRG-52",
+    "3": "BRG-07",
     "777": "other",
-    "10176": "PRG",
-    "138711": "ICPL"
+    "10": "PRG-176",
+    "13": "ICPL-8711"
   },
   "h3_kgcrop1minumulu": {
-    "4": "TBGTirupathi",
-    "5": "GBGGuntur",
-    "6": "NRIMaruthi",
+    "4": "TBG Tirupathi",
+    "5": "GBG Guntur",
+    "6": "NRI-Maruthi",
     "7": "Moddu",
     "9": "Kuwait",
-    "39": "Tsiddarth",
-    "231": "PU",
+    "3": "T9-siddarth",
+    "2": "PU-31",
     "777": "other",
-    "1104": "TBG",
-    "82043": "IPU"
+    "1": "TBG104",
+    "8": "IPU2-043"
   },
   "h3_kgcrop1pesara": {
     "4": "Amulya",
     "5": "Siddarth",
     "777": "other",
-    "1295": "MGG",
-    "2460": "LGG",
-    "3425": "WGG",
-    "6267": "ML",
-    "7203": "IPM",
-    "8214": "IPM"
+    "1": "MGG-295",
+    "2": "LGG-460",
+    "3": "WGG-425",
+    "6": "ML-267",
+    "7": "IPM2-03",
+    "8": "IPM2-14"
   },
   "h3_kgcrop1pappusenaga": {
     "2": "Gulabi",
-    "111": "J",
+    "1": "J-11",
     "777": "other"
   },
   "h3_kgcrop1alasanda": {
@@ -4715,8 +4742,8 @@
     "777": "other"
   },
   "h3_kgcrop1anapakaya": {
-    "1": "Peddaanapa",
-    "2": "Chinnaanapa",
+    "1": "Pedda anapa",
+    "2": "Chinna anapa",
     "777": "other"
   },
   "h3_kgcrop1cottontype": {
@@ -4726,7 +4753,7 @@
     "4": "Nandhini",
     "7": "Asha",
     "8": "Sadanand",
-    "9": "Rasimagic",
+    "9": "Rasi magic",
     "10": "Dhamaka",
     "11": "Revanth",
     "12": "US",
@@ -4735,29 +4762,30 @@
     "16": "Kaveri",
     "18": "Ajith",
     "19": "Kranthi",
-    "20": "Srirama",
+    "20": "Sri rama",
     "21": "Narsimha",
-    "56": "ShaktiBaswam",
+    "5": "Shakti",
+    "6": "Baswam",
     "777": "other",
-    "1399": "JK",
-    "17659": "Rasi"
+    "13": "JK99",
+    "17": "Rasi659"
   },
   "h3_kgcrop1banana": {
     "1": "AC",
     "3": "Jain",
     "4": "Kadali",
-    "29": "G",
+    "2": "G9",
     "777": "other"
   },
   "h3_kgcrop1mango": {
     "1": "Benishan",
     "2": "Bangalore",
     "3": "Malligubba",
-    "4": "Nujividurasalu",
+    "4": "Nujividu rasalu",
     "5": "Alphonso",
     "6": "Neelam",
     "7": "Kuddus",
-    "8": "ImamPasand",
+    "8": "Imam Pasand",
     "9": "Mallika",
     "10": "Ynuguntala",
     "11": "Ratnagiri",
@@ -4767,16 +4795,16 @@
     "777": "other"
   },
   "h3_kgcrop1guava": {
-    "1": "AllahabadSafeda",
+    "1": "Allahabad Safeda",
     "2": "Lalith",
-    "3": "TaiwanPink",
-    "4": "TaiwanWhite",
-    "5": "ArkaKiranred",
-    "649": "L",
+    "3": "Taiwan Pink",
+    "4": "Taiwan White",
+    "5": "Arka Kiran red",
+    "6": "L49",
     "777": "other"
   },
   "h3_kgcrop1sapota": {
-    "1": "Cricketball",
+    "1": "Cricket ball",
     "2": "Kalapathi",
     "3": "Palasapota",
     "4": "Badoli",
@@ -4789,31 +4817,31 @@
   },
   "h3_kgcrop1pomogranate": {
     "1": "Bhagavan",
-    "2": "GaneshKesar",
+    "2": "Ganesh Kesar",
     "777": "other"
   },
   "h3_kgcrop1papaya": {
     "1": "Taiwan",
-    "2": "Taiwanredlady",
-    "3": "Pusagiant",
-    "4": "Pusadelicious",
-    "5": "Localdesi",
+    "2": "Taiwan (red lady)",
+    "3": "Pusa giant",
+    "4": "Pusa-delicious",
+    "5": "Local (desi)",
     "777": "other"
   },
   "h3_kgcrop1neredu": {
-    "1": "Localdesi",
-    "2": "Allaneredusapling",
+    "1": "Local (desi)",
+    "2": "Allaneredu sapling",
     "3": "Bahubali",
     "777": "other"
   },
   "h3_kgcrop1seethaphal": {
     "1": "Balanagar",
-    "2": "NMKGold",
-    "3": "RedSeethaphal",
+    "2": "NMK Gold",
+    "3": "Red Seethaphal",
     "777": "other"
   },
   "h3_kgcrop1watermelon": {
-    "1": "Nallakalingara",
+    "1": "Nalla kalingara",
     "2": "Sarakallingara",
     "777": "other"
   },
@@ -4830,20 +4858,20 @@
     "2": "Teja",
     "4": "Byadgi",
     "6": "Syngenta",
-    "7": "Devanurdelux",
+    "7": "Devanur delux",
     "8": "Dharma",
     "10": "Lali",
     "11": "Bangaram",
     "12": "Priyanka",
     "13": "VNR",
-    "14": "PUSAjwala",
-    "510": "Super",
+    "14": "PUSA jwala",
+    "5": "Super10",
     "777": "other",
     "3": "Aspire 144",
     "9": "244"
   },
   "h3_kgcrop1onion": {
-    "1": "Eastwest",
+    "1": "East west",
     "2": "Mahi",
     "3": "Virat",
     "4": "Vijay",
@@ -4851,7 +4879,7 @@
     "6": "Leadveter",
     "7": "Panchaganga",
     "8": "Namdhari",
-    "9": "Chinnaballari",
+    "9": "Chinna ballari",
     "10": "AFLR",
     "777": "other"
   },
@@ -4876,34 +4904,34 @@
     "4": "Chukkakur",
     "5": "Palakalaku",
     "6": "Palak",
-    "7": "CurryLeaf",
+    "7": "Curry Leaf",
     "8": "Gongura",
-    "9": "Ponagantiaaku",
-    "10": "PatnamGogaku",
+    "9": "Ponaganti aaku",
+    "10": "Patnam Gogaku",
     "11": "Cheemagogaku",
     "777": "other"
   },
   "h3_kgcrop1mixed": {
     "1": "Onion",
     "2": "Tomato",
-    "3": "Clusterbean",
+    "3": "Cluster bean",
     "4": "Ladyfinger",
     "5": "Munaga",
     "6": "Brinjal",
     "7": "Kakara",
-    "8": "Anapasorakaya",
+    "8": "Anapa/sorakaya",
     "9": "Dosakaya",
     "10": "Keeradosa",
-    "11": "Greenchilli",
+    "11": "Green chilli",
     "12": "Gummadi",
-    "13": "Buddigummadi",
+    "13": "Buddi gummadi",
     "777": "other"
   },
   "h3_kgcrop1groundnut": {
     "4": "Dharani",
-    "6": "TirupatiNarayani",
+    "6": "Tirupati Narayani",
     "7": "Amaravathi",
-    "11": "KadiriBold",
+    "11": "Kadiri Bold",
     "12": "Teegakaya",
     "1": "K-6",
     "2": "K-9",
@@ -4916,7 +4944,7 @@
   },
   "h3_kgcrop1sunflower": {
     "1": "Kaveri",
-    "2": "Gangakaveri",
+    "2": "Ganga-kaveri",
     "3": "Sumitra",
     "4": "Gowri",
     "5": "Kanchana",
@@ -4924,49 +4952,49 @@
     "6": "NDSH 1012"
   },
   "h3_kgcrop1castor": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_kgcrop1safflower": {
-    "1": "Mullakusama",
-    "2": "Tellakusuma",
-    "3": "Budidakusuma",
+    "1": "Mulla kusama",
+    "2": "Tella kusuma",
+    "3": "Budida kusuma",
     "777": "other"
   },
   "h3_kgcrop1sesamum": {
-    "1": "Nallanuvvulu",
-    "2": "Telanuvvulu",
-    "3": "Verrinuvvulu",
+    "1": "Nalla nuvvulu",
+    "2": "Tela nuvvulu",
+    "3": "Verri nuvvulu",
     "777": "other"
   },
   "h3_kgcrop1chamanthi": {
-    "1": "Yellowgold",
-    "2": "Redgold",
+    "1": "Yellow gold",
+    "2": "Red gold",
     "3": "Button",
     "4": "Raichur",
     "5": "Silper",
     "777": "other"
   },
   "h3_kgcrop1mallepuvvu": {
-    "1": "Sannamall",
-    "2": "Jajimall",
-    "3": "Gundumall",
-    "4": "Sentujagi",
-    "5": "Muddamall",
+    "1": "Sanna mall",
+    "2": "Jaji mall",
+    "3": "Gundu mall",
+    "4": "Sentu jagi",
+    "5": "Mudda mall",
     "777": "other"
   },
   "h3_kgcrop1kanakambaram": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_kgcrop1banthi": {
-    "1": "Ashokaroyalyellow",
+    "1": "Ashoka royal yellow",
     "777": "other"
   },
   "h3_kgcrop1chendumalle": {
-    "1": "Gunduchendumalle",
-    "2": "NeelamChamanti",
-    "3": "YerraChamanti",
+    "1": "Gundu chendumalle",
+    "2": "Neelam Chamanti",
+    "3": "Yerra Chamanti",
     "777": "other"
   },
   "h3_kgcrop1plot": {
@@ -4977,8 +5005,8 @@
   },
   "h3_kgcrop2": {
     "1": "Paddy",
-    "2": "Othercereal",
-    "3": "Pulsepappurakam",
+    "2": "Other cereal",
+    "3": "Pulse (pappu rakam)",
     "4": "Cotton",
     "5": "Fruit",
     "6": "Vegetable",
@@ -4987,40 +5015,40 @@
     "777": "other"
   },
   "h3_kgcrop2paddy": {
-    "6": "TellaHamsa",
+    "6": "Tella Hamsa",
     "7": "Sreerama",
     "9": "Navara",
     "10": "Kalabatti",
-    "11": "BarmaBlock",
+    "11": "Barma Block",
     "12": "Kalabatti",
-    "13": "Krishnavihri",
+    "13": "Krishna vihri",
     "14": "Kujipatalia",
     "15": "siddasannalu",
     "16": "indrani",
     "17": "Sugandhi",
-    "18": "Parimalasannalu",
-    "19": "RaktaSali",
+    "18": "Parimala sannalu",
+    "19": "Rakta Sali",
     "20": "Ratnachodi",
-    "21": "Mapillaisambha",
-    "22": "Bahuroopi",
-    "23": "Radhajigale",
+    "21": "Mapillai sambha",
+    "22": "Bahu roopi",
+    "23": "Radha jigale",
     "24": "Kudirath",
     "25": "HMT",
     "26": "Basmati",
-    "27": "Mysoormallika",
-    "28": "khetrimaharaj",
-    "29": "Chittimutyalu",
-    "30": "Manipoorblock",
-    "32": "Jinkrice",
-    "33": "Mitubudalu",
-    "47": "NDLR",
-    "58": "NDLR",
+    "27": "Mysoor mallika",
+    "28": "khetri maharaj",
+    "29": "Chitti mutyalu",
+    "30": "Manipoor block",
+    "32": "Jink rice",
+    "33": "Mitu budalu",
+    "4": "NDLR-7",
+    "5": "NDLR-8",
     "777": "Other",
-    "864": "IR",
-    "15204": "BPT",
-    "31121": "MTU",
-    "215048": "RNR",
-    "317029": "Swarna"
+    "8": "IR64",
+    "1": "BPT-5204",
+    "3": "MTU-1121",
+    "2": "RNR-15048",
+    "31": "Swarna7029"
   },
   "h3_kgcrop2cereal": {
     "1": "Jowar",
@@ -5040,7 +5068,8 @@
     "5": "Alasanda",
     "6": "Anapakaya",
     "7": "Horsegram",
-    "8777": "Bengalgramother"
+    "8": "Bengalgram",
+    "777": "other"
   },
   "h3_kgcrop2cotton": {
     "1": "Cotton",
@@ -5052,22 +5081,22 @@
     "2": "Mango",
     "3": "Guava",
     "4": "Sapota",
-    "5": "Sweetlime",
+    "5": "Sweet lime",
     "6": "Pomegranate",
     "7": "Papaya",
-    "8": "NereduJamun",
+    "8": "Neredu (Jamun)",
     "9": "Seethaphal",
     "10": "Watermelon",
     "11": "Cashew",
     "777": "other"
   },
   "h3_kgcrop2vegetable": {
-    "1": "Redchilli",
+    "1": "Red chilli",
     "2": "Onion",
     "3": "Tomato",
     "4": "Lemon",
-    "5": "Greenleafyvegetable",
-    "6": "Mixedplot",
+    "5": "Green leafy vegetable",
+    "6": "Mixed plot",
     "7": "Brinjal",
     "777": "Other"
   },
@@ -5083,103 +5112,104 @@
     "1": "Chamanti",
     "2": "Mallepuvvu",
     "3": "Kanakambaram",
-    "46": "BanthiChendumalle",
+    "4": "Banthi",
+    "6": "Chendumalle",
     "777": "other"
   },
   "h3_kgcrop2jowar": {
     "1": "Tellajonna",
     "2": "Pacchajonna",
-    "3": "Biscuitjona",
-    "4": "Muddakankijonna",
-    "5": "Seethammajonna",
-    "720": "CSV",
+    "3": "Biscuit jona",
+    "4": "Muddakanki jonna",
+    "5": "Seethamma jonna",
+    "7": "CSV20",
     "777": "other",
-    "823": "CSV",
-    "62647": "NTJ"
+    "8": "CSV23",
+    "6": "NTJ2647"
   },
   "h3_kgcrop2korra": {
     "1": "Jadakorra",
-    "2": "MuddaKorra",
+    "2": "Mudda Korra",
     "4": "Suryanandi",
     "5": "Sreelakshmi",
     "6": "Yerrakorra",
     "10": "Kdaraya",
-    "11": "NavariKorra",
+    "11": "Navari Korra",
     "777": "other",
-    "33088": "NDLR",
-    "73156": "SIA",
-    "83222": "SIA",
-    "93085": "SIA"
+    "3": "NDLR-3088",
+    "7": "SIA3156",
+    "8": "SIA3222",
+    "9": "SIA3085"
   },
   "h3_kgcrop2ragi": {
     "1": "Vakula",
     "2": "Vennamdud",
     "3": "Kurva",
     "4": "Klayani",
-    "5": "Kuravaragi",
-    "6": "Karnatakaragi"
+    "5": "Kurava ragi",
+    "6": "Karnataka ragi"
   },
   "h3_kgcrop2samalu": {
-    "4": "Localdesi",
+    "4": "Local (desi)",
     "777": "other",
-    "1900": "VK",
-    "2834": "VK",
-    "3762": "VK"
+    "1": "VK900",
+    "2": "VK834",
+    "3": "VK762"
   },
   "h3_kgcrop2arikelu": {
-    "1": "LocaldesiPacchaVrigaluTellavarigalu",
+    "1": "Local (desi) Paccha Vrigalu Tella varigalu",
     "777": "other"
   },
   "h3_kgcrop2varigalu": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_kgcrop2oodalu": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_kgcrop2kandi": {
     "4": "Kolambo",
-    "5": "Tellakandi",
-    "6": "Macchalakandi",
+    "5": "Tella kandi",
+    "6": "Macchala kandi",
     "7": "richa",
     "8": "Kudurath",
     "9": "Asha",
     "11": "Asha",
     "12": "Laxmi",
-    "141": "LRG",
-    "252": "LRG",
-    "307": "BRG",
+    "1": "LRG-41",
+    "2": "LRG-52",
+    "3": "BRG-07",
     "777": "other",
-    "10176": "PRG",
-    "138711": "ICPL"
+    "10": "PRG-176",
+    "13": "ICPL-8711"
   },
   "h3_kgcrop2minumulu": {
-    "4": "TBGTirupathi",
-    "5": "GBGGuntur",
-    "6": "NRIMaruthi",
+    "4": "TBG Tirupathi",
+    "5": "GBG Guntur",
+    "6": "NRI-Maruthi",
     "7": "Moddu",
     "9": "Kuwait",
-    "39": "Tsiddarth",
-    "231": "PU",
+    "3": "T9-siddarth",
+    "2": "PU-31",
     "777": "other",
-    "1104": "TBG",
-    "82043": "IPU"
+    "1": "TBG104",
+    "8": "IPU2-043"
   },
   "h3_kgcrop2pesara": {
     "4": "Amulya",
     "5": "Siddarth",
     "777": "other",
-    "1295": "MGG",
-    "2460": "LGG",
-    "3425": "WGG",
-    "6267": "ML",
-    "7203": "IPM",
-    "8214": "IPM"
+    "1": "MGG-295",
+    "2": "LGG-460",
+    "3": "WGG-425",
+    "6": "ML-267",
+    "7": "IPM2-03",
+    "8": "IPM2-14"
   },
   "h3_kgcrop2pappusenaga": {
     "2": "Gulabi",
-    "111": "J",
+    "1": "J-11",
     "777": "other"
   },
   "h3_kgcrop2alasanda": {
@@ -5188,8 +5218,8 @@
     "777": "other"
   },
   "h3_kgcrop2anapakaya": {
-    "1": "Peddaanapa",
-    "2": "Chinnaanapa",
+    "1": "Pedda anapa",
+    "2": "Chinna anapa",
     "777": "other"
   },
   "h3_kgcrop2cottontype": {
@@ -5199,7 +5229,7 @@
     "4": "Nandhini",
     "7": "Asha",
     "8": "Sadanand",
-    "9": "Rasimagic",
+    "9": "Rasi magic",
     "10": "Dhamaka",
     "11": "Revanth",
     "12": "US",
@@ -5208,29 +5238,30 @@
     "16": "Kaveri",
     "18": "Ajith",
     "19": "Kranthi",
-    "20": "Srirama",
+    "20": "Sri rama",
     "21": "Narsimha",
-    "56": "ShaktiBaswam",
+    "5": "Shakti",
+    "6": "Baswam",
     "777": "other",
-    "1399": "JK",
-    "17659": "Rasi"
+    "13": "JK99",
+    "17": "Rasi659"
   },
   "h3_kgcrop2banana": {
     "1": "AC",
     "3": "Jain",
     "4": "Kadali",
-    "29": "G",
+    "2": "G9",
     "777": "other"
   },
   "h3_kgcrop2mango": {
     "1": "Benishan",
     "2": "Bangalore",
     "3": "Malligubba",
-    "4": "Nujividurasalu",
+    "4": "Nujividu rasalu",
     "5": "Alphonso",
     "6": "Neelam",
     "7": "Kuddus",
-    "8": "ImamPasand",
+    "8": "Imam Pasand",
     "9": "Mallika",
     "10": "Ynuguntala",
     "11": "Ratnagiri",
@@ -5240,16 +5271,16 @@
     "777": "other"
   },
   "h3_kgcrop2guava": {
-    "1": "AllahabadSafeda",
+    "1": "Allahabad Safeda",
     "2": "Lalith",
-    "3": "TaiwanPink",
-    "4": "TaiwanWhite",
-    "5": "ArkaKiranred",
-    "649": "L",
+    "3": "Taiwan Pink",
+    "4": "Taiwan White",
+    "5": "Arka Kiran red",
+    "6": "L49",
     "777": "other"
   },
   "h3_kgcrop2sapota": {
-    "1": "Cricketball",
+    "1": "Cricket ball",
     "2": "Kalapathi",
     "3": "Palasapota",
     "4": "Badoli",
@@ -5262,31 +5293,31 @@
   },
   "h3_kgcrop2pomogranate": {
     "1": "Bhagavan",
-    "2": "GaneshKesar",
+    "2": "Ganesh Kesar",
     "777": "other"
   },
   "h3_kgcrop2papaya": {
     "1": "Taiwan",
-    "2": "Taiwanredlady",
-    "3": "Pusagiant",
-    "4": "Pusadelicious",
-    "5": "Localdesi",
+    "2": "Taiwan (red lady)",
+    "3": "Pusa giant",
+    "4": "Pusa-delicious",
+    "5": "Local (desi)",
     "777": "other"
   },
   "h3_kgcrop2neredu": {
-    "1": "Localdesi",
-    "2": "Allaneredusapling",
+    "1": "Local (desi)",
+    "2": "Allaneredu sapling",
     "3": "Bahubali",
     "777": "other"
   },
   "h3_kgcrop2seethaphal": {
     "1": "Balanagar",
-    "2": "NMKGold",
-    "3": "RedSeethaphal",
+    "2": "NMK Gold",
+    "3": "Red Seethaphal",
     "777": "other"
   },
   "h3_kgcrop2watermelon": {
-    "1": "Nallakalingara",
+    "1": "Nalla kalingara",
     "2": "Sarakallingara",
     "777": "other"
   },
@@ -5303,20 +5334,20 @@
     "2": "Teja",
     "4": "Byadgi",
     "6": "Syngenta",
-    "7": "Devanurdelux",
+    "7": "Devanur delux",
     "8": "Dharma",
     "10": "Lali",
     "11": "Bangaram",
     "12": "Priyanka",
     "13": "VNR",
-    "14": "PUSAjwala",
-    "510": "Super",
+    "14": "PUSA jwala",
+    "5": "Super10",
     "777": "other",
     "3": "Aspire 144",
     "9": "244"
   },
   "h3_kgcrop2onion": {
-    "1": "Eastwest",
+    "1": "East west",
     "2": "Mahi",
     "3": "Virat",
     "4": "Vijay",
@@ -5324,7 +5355,7 @@
     "6": "Leadveter",
     "7": "Panchaganga",
     "8": "Namdhari",
-    "9": "Chinnaballari",
+    "9": "Chinna ballari",
     "10": "AFLR",
     "777": "other"
   },
@@ -5349,34 +5380,34 @@
     "4": "Chukkakur",
     "5": "Palakalaku",
     "6": "Palak",
-    "7": "CurryLeaf",
+    "7": "Curry Leaf",
     "8": "Gongura",
-    "9": "Ponagantiaaku",
-    "10": "PatnamGogaku",
+    "9": "Ponaganti aaku",
+    "10": "Patnam Gogaku",
     "11": "Cheemagogaku",
     "777": "other"
   },
   "h3_kgcrop2mixed": {
     "1": "Onion",
     "2": "Tomato",
-    "3": "Clusterbean",
+    "3": "Cluster bean",
     "4": "Ladyfinger",
     "5": "Munaga",
     "6": "Brinjal",
     "7": "Kakara",
-    "8": "Anapasorakaya",
+    "8": "Anapa/sorakaya",
     "9": "Dosakaya",
     "10": "Keeradosa",
-    "11": "Greenchilli",
+    "11": "Green chilli",
     "12": "Gummadi",
-    "13": "Buddigummadi",
+    "13": "Buddi gummadi",
     "777": "other"
   },
   "h3_kgcrop2groundnut": {
     "4": "Dharani",
-    "6": "TirupatiNarayani",
+    "6": "Tirupati Narayani",
     "7": "Amaravathi",
-    "11": "KadiriBold",
+    "11": "Kadiri Bold",
     "12": "Teegakaya",
     "1": "K-6",
     "2": "K-9",
@@ -5389,7 +5420,7 @@
   },
   "h3_kgcrop2sunflower": {
     "1": "Kaveri",
-    "2": "Gangakaveri",
+    "2": "Ganga-kaveri",
     "3": "Sumitra",
     "4": "Gowri",
     "5": "Kanchana",
@@ -5397,61 +5428,55 @@
     "6": "NDSH 1012"
   },
   "h3_kgcrop2castor": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_kgcrop2safflower": {
-    "1": "Mullakusama",
-    "2": "Tellakusuma",
-    "3": "Budidakusuma",
+    "1": "Mulla kusama",
+    "2": "Tella kusuma",
+    "3": "Budida kusuma",
     "777": "other"
   },
   "h3_kgcrop2sesamum": {
-    "1": "Nallanuvvulu",
-    "2": "Telanuvvulu",
-    "3": "Verrinuvvulu",
+    "1": "Nalla nuvvulu",
+    "2": "Tela nuvvulu",
+    "3": "Verri nuvvulu",
     "777": "other"
   },
   "h3_kgcrop2chamanthi": {
-    "1": "Yellowgold",
-    "2": "Redgold",
+    "1": "Yellow gold",
+    "2": "Red gold",
     "3": "Button",
     "4": "Raichur",
     "5": "Silper",
     "777": "other"
   },
   "h3_kgcrop2mallepuvvu": {
-    "1": "Sannamall",
-    "2": "Jajimall",
-    "3": "Gundumall",
-    "4": "Sentujagi",
-    "5": "Muddamall",
+    "1": "Sanna mall",
+    "2": "Jaji mall",
+    "3": "Gundu mall",
+    "4": "Sentu jagi",
+    "5": "Mudda mall",
     "777": "other"
   },
   "h3_kgcrop2kanakambaram": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_kgcrop2banthi": {
-    "1": "Ashokaroyalyellow",
+    "1": "Ashoka royal yellow",
     "777": "other"
   },
   "h3_kgcrop2chendumalle": {
-    "1": "Gunduchendumalle",
-    "2": "NeelamChamanti",
-    "3": "YerraChamanti",
+    "1": "Gundu chendumalle",
+    "2": "Neelam Chamanti",
+    "3": "Yerra Chamanti",
     "777": "other"
-  },
-  "h3_kgcrop2plot": {
-    "4": "Other",
-    "131": "hplotname",
-    "232": "hplotname",
-    "333": "hplotname"
   },
   "h3_kgcrop3": {
     "1": "Paddy",
-    "2": "Othercereal",
-    "3": "Pulsepappurakam",
+    "2": "Other cereal",
+    "3": "Pulse (pappu rakam)",
     "4": "Cotton",
     "5": "Fruit",
     "6": "Vegetable",
@@ -5460,40 +5485,40 @@
     "777": "other"
   },
   "h3_kgcrop3paddy": {
-    "6": "TellaHamsa",
+    "6": "Tella Hamsa",
     "7": "Sreerama",
     "9": "Navara",
     "10": "Kalabatti",
-    "11": "BarmaBlock",
+    "11": "Barma Block",
     "12": "Kalabatti",
-    "13": "Krishnavihri",
+    "13": "Krishna vihri",
     "14": "Kujipatalia",
     "15": "siddasannalu",
     "16": "indrani",
     "17": "Sugandhi",
-    "18": "Parimalasannalu",
-    "19": "RaktaSali",
+    "18": "Parimala sannalu",
+    "19": "Rakta Sali",
     "20": "Ratnachodi",
-    "21": "Mapillaisambha",
-    "22": "Bahuroopi",
-    "23": "Radhajigale",
+    "21": "Mapillai sambha",
+    "22": "Bahu roopi",
+    "23": "Radha jigale",
     "24": "Kudirath",
     "25": "HMT",
     "26": "Basmati",
-    "27": "Mysoormallika",
-    "28": "khetrimaharaj",
-    "29": "Chittimutyalu",
-    "30": "Manipoorblock",
-    "32": "Jinkrice",
-    "33": "Mitubudalu",
-    "47": "NDLR",
-    "58": "NDLR",
+    "27": "Mysoor mallika",
+    "28": "khetri maharaj",
+    "29": "Chitti mutyalu",
+    "30": "Manipoor block",
+    "32": "Jink rice",
+    "33": "Mitu budalu",
+    "4": "NDLR-7",
+    "5": "NDLR-8",
     "777": "Other",
-    "864": "IR",
-    "15204": "BPT",
-    "31121": "MTU",
-    "215048": "RNR",
-    "317029": "Swarna"
+    "8": "IR64",
+    "1": "BPT-5204",
+    "3": "MTU-1121",
+    "2": "RNR-15048",
+    "31": "Swarna7029"
   },
   "h3_kgcrop3cereal": {
     "1": "Jowar",
@@ -5513,7 +5538,8 @@
     "5": "Alasanda",
     "6": "Anapakaya",
     "7": "Horsegram",
-    "8777": "Bengalgramother"
+    "8": "Bengalgram",
+    "777": "other"
   },
   "h3_kgcrop3cotton": {
     "1": "Cotton",
@@ -5525,22 +5551,22 @@
     "2": "Mango",
     "3": "Guava",
     "4": "Sapota",
-    "5": "Sweetlime",
+    "5": "Sweet lime",
     "6": "Pomegranate",
     "7": "Papaya",
-    "8": "NereduJamun",
+    "8": "Neredu (Jamun)",
     "9": "Seethaphal",
     "10": "Watermelon",
     "11": "Cashew",
     "777": "other"
   },
   "h3_kgcrop3vegetable": {
-    "1": "Redchilli",
+    "1": "Red chilli",
     "2": "Onion",
     "3": "Tomato",
     "4": "Lemon",
-    "5": "Greenleafyvegetable",
-    "6": "Mixedplot",
+    "5": "Green leafy vegetable",
+    "6": "Mixed plot",
     "7": "Brinjal",
     "777": "Other"
   },
@@ -5556,103 +5582,104 @@
     "1": "Chamanti",
     "2": "Mallepuvvu",
     "3": "Kanakambaram",
-    "46": "BanthiChendumalle",
+    "4": "Banthi",
+    "6": "Chendumalle",
     "777": "other"
   },
   "h3_kgcrop3jowar": {
     "1": "Tellajonna",
     "2": "Pacchajonna",
-    "3": "Biscuitjona",
-    "4": "Muddakankijonna",
-    "5": "Seethammajonna",
-    "720": "CSV",
+    "3": "Biscuit jona",
+    "4": "Muddakanki jonna",
+    "5": "Seethamma jonna",
+    "7": "CSV20",
     "777": "other",
-    "823": "CSV",
-    "62647": "NTJ"
+    "8": "CSV23",
+    "6": "NTJ2647"
   },
   "h3_kgcrop3korra": {
     "1": "Jadakorra",
-    "2": "MuddaKorra",
+    "2": "Mudda Korra",
     "4": "Suryanandi",
     "5": "Sreelakshmi",
     "6": "Yerrakorra",
     "10": "Kdaraya",
-    "11": "NavariKorra",
+    "11": "Navari Korra",
     "777": "other",
-    "33088": "NDLR",
-    "73156": "SIA",
-    "83222": "SIA",
-    "93085": "SIA"
+    "3": "NDLR-3088",
+    "7": "SIA3156",
+    "8": "SIA3222",
+    "9": "SIA3085"
   },
   "h3_kgcrop3ragi": {
     "1": "Vakula",
     "2": "Vennamdud",
     "3": "Kurva",
     "4": "Klayani",
-    "5": "Kuravaragi",
-    "6": "Karnatakaragi"
+    "5": "Kurava ragi",
+    "6": "Karnataka ragi"
   },
   "h3_kgcrop3samalu": {
-    "4": "Localdesi",
+    "4": "Local (desi)",
     "777": "other",
-    "1900": "VK",
-    "2834": "VK",
-    "3762": "VK"
+    "1": "VK900",
+    "2": "VK834",
+    "3": "VK762"
   },
   "h3_kgcrop3arikelu": {
-    "1": "LocaldesiPacchaVrigaluTellavarigalu",
+    "1": "Local (desi) Paccha Vrigalu Tella varigalu",
     "777": "other"
   },
   "h3_kgcrop3varigalu": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_kgcrop3oodalu": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_kgcrop3kandi": {
     "4": "Kolambo",
-    "5": "Tellakandi",
-    "6": "Macchalakandi",
+    "5": "Tella kandi",
+    "6": "Macchala kandi",
     "7": "richa",
     "8": "Kudurath",
     "9": "Asha",
     "11": "Asha",
     "12": "Laxmi",
-    "141": "LRG",
-    "252": "LRG",
-    "307": "BRG",
+    "1": "LRG-41",
+    "2": "LRG-52",
+    "3": "BRG-07",
     "777": "other",
-    "10176": "PRG",
-    "138711": "ICPL"
+    "10": "PRG-176",
+    "13": "ICPL-8711"
   },
   "h3_kgcrop3minumulu": {
-    "4": "TBGTirupathi",
-    "5": "GBGGuntur",
-    "6": "NRIMaruthi",
+    "4": "TBG Tirupathi",
+    "5": "GBG Guntur",
+    "6": "NRI-Maruthi",
     "7": "Moddu",
     "9": "Kuwait",
-    "39": "Tsiddarth",
-    "231": "PU",
+    "3": "T9-siddarth",
+    "2": "PU-31",
     "777": "other",
-    "1104": "TBG",
-    "82043": "IPU"
+    "1": "TBG104",
+    "8": "IPU2-043"
   },
   "h3_kgcrop3pesara": {
     "4": "Amulya",
     "5": "Siddarth",
     "777": "other",
-    "1295": "MGG",
-    "2460": "LGG",
-    "3425": "WGG",
-    "6267": "ML",
-    "7203": "IPM",
-    "8214": "IPM"
+    "1": "MGG-295",
+    "2": "LGG-460",
+    "3": "WGG-425",
+    "6": "ML-267",
+    "7": "IPM2-03",
+    "8": "IPM2-14"
   },
   "h3_kgcrop3pappusenaga": {
     "2": "Gulabi",
-    "111": "J",
+    "1": "J-11",
     "777": "other"
   },
   "h3_kgcrop3alasanda": {
@@ -5661,8 +5688,8 @@
     "777": "other"
   },
   "h3_kgcrop3anapakaya": {
-    "1": "Peddaanapa",
-    "2": "Chinnaanapa",
+    "1": "Pedda anapa",
+    "2": "Chinna anapa",
     "777": "other"
   },
   "h3_kgcrop3cottontype": {
@@ -5672,7 +5699,7 @@
     "4": "Nandhini",
     "7": "Asha",
     "8": "Sadanand",
-    "9": "Rasimagic",
+    "9": "Rasi magic",
     "10": "Dhamaka",
     "11": "Revanth",
     "12": "US",
@@ -5681,29 +5708,30 @@
     "16": "Kaveri",
     "18": "Ajith",
     "19": "Kranthi",
-    "20": "Srirama",
+    "20": "Sri rama",
     "21": "Narsimha",
-    "56": "ShaktiBaswam",
+    "5": "Shakti",
+    "6": "Baswam",
     "777": "other",
-    "1399": "JK",
-    "17659": "Rasi"
+    "13": "JK99",
+    "17": "Rasi659"
   },
   "h3_kgcrop3banana": {
     "1": "AC",
     "3": "Jain",
     "4": "Kadali",
-    "29": "G",
+    "2": "G9",
     "777": "other"
   },
   "h3_kgcrop3mango": {
     "1": "Benishan",
     "2": "Bangalore",
     "3": "Malligubba",
-    "4": "Nujividurasalu",
+    "4": "Nujividu rasalu",
     "5": "Alphonso",
     "6": "Neelam",
     "7": "Kuddus",
-    "8": "ImamPasand",
+    "8": "Imam Pasand",
     "9": "Mallika",
     "10": "Ynuguntala",
     "11": "Ratnagiri",
@@ -5713,16 +5741,16 @@
     "777": "other"
   },
   "h3_kgcrop3guava": {
-    "1": "AllahabadSafeda",
+    "1": "Allahabad Safeda",
     "2": "Lalith",
-    "3": "TaiwanPink",
-    "4": "TaiwanWhite",
-    "5": "ArkaKiranred",
-    "649": "L",
+    "3": "Taiwan Pink",
+    "4": "Taiwan White",
+    "5": "Arka Kiran red",
+    "6": "L49",
     "777": "other"
   },
   "h3_kgcrop3sapota": {
-    "1": "Cricketball",
+    "1": "Cricket ball",
     "2": "Kalapathi",
     "3": "Palasapota",
     "4": "Badoli",
@@ -5735,31 +5763,31 @@
   },
   "h3_kgcrop3pomogranate": {
     "1": "Bhagavan",
-    "2": "GaneshKesar",
+    "2": "Ganesh Kesar",
     "777": "other"
   },
   "h3_kgcrop3papaya": {
     "1": "Taiwan",
-    "2": "Taiwanredlady",
-    "3": "Pusagiant",
-    "4": "Pusadelicious",
-    "5": "Localdesi",
+    "2": "Taiwan (red lady)",
+    "3": "Pusa giant",
+    "4": "Pusa-delicious",
+    "5": "Local (desi)",
     "777": "other"
   },
   "h3_kgcrop3neredu": {
-    "1": "Localdesi",
-    "2": "Allaneredusapling",
+    "1": "Local (desi)",
+    "2": "Allaneredu sapling",
     "3": "Bahubali",
     "777": "other"
   },
   "h3_kgcrop3seethaphal": {
     "1": "Balanagar",
-    "2": "NMKGold",
-    "3": "RedSeethaphal",
+    "2": "NMK Gold",
+    "3": "Red Seethaphal",
     "777": "other"
   },
   "h3_kgcrop3watermelon": {
-    "1": "Nallakalingara",
+    "1": "Nalla kalingara",
     "2": "Sarakallingara",
     "777": "other"
   },
@@ -5776,20 +5804,20 @@
     "2": "Teja",
     "4": "Byadgi",
     "6": "Syngenta",
-    "7": "Devanurdelux",
+    "7": "Devanur delux",
     "8": "Dharma",
     "10": "Lali",
     "11": "Bangaram",
     "12": "Priyanka",
     "13": "VNR",
-    "14": "PUSAjwala",
-    "510": "Super",
+    "14": "PUSA jwala",
+    "5": "Super10",
     "777": "other",
     "3": "Aspire 144",
     "9": "244"
   },
   "h3_kgcrop3onion": {
-    "1": "Eastwest",
+    "1": "East west",
     "2": "Mahi",
     "3": "Virat",
     "4": "Vijay",
@@ -5797,7 +5825,7 @@
     "6": "Leadveter",
     "7": "Panchaganga",
     "8": "Namdhari",
-    "9": "Chinnaballari",
+    "9": "Chinna ballari",
     "10": "AFLR",
     "777": "other"
   },
@@ -5822,34 +5850,34 @@
     "4": "Chukkakur",
     "5": "Palakalaku",
     "6": "Palak",
-    "7": "CurryLeaf",
+    "7": "Curry Leaf",
     "8": "Gongura",
-    "9": "Ponagantiaaku",
-    "10": "PatnamGogaku",
+    "9": "Ponaganti aaku",
+    "10": "Patnam Gogaku",
     "11": "Cheemagogaku",
     "777": "other"
   },
   "h3_kgcrop3mixed": {
     "1": "Onion",
     "2": "Tomato",
-    "3": "Clusterbean",
+    "3": "Cluster bean",
     "4": "Ladyfinger",
     "5": "Munaga",
     "6": "Brinjal",
     "7": "Kakara",
-    "8": "Anapasorakaya",
+    "8": "Anapa/sorakaya",
     "9": "Dosakaya",
     "10": "Keeradosa",
-    "11": "Greenchilli",
+    "11": "Green chilli",
     "12": "Gummadi",
-    "13": "Buddigummadi",
+    "13": "Buddi gummadi",
     "777": "other"
   },
   "h3_kgcrop3groundnut": {
     "4": "Dharani",
-    "6": "TirupatiNarayani",
+    "6": "Tirupati Narayani",
     "7": "Amaravathi",
-    "11": "KadiriBold",
+    "11": "Kadiri Bold",
     "12": "Teegakaya",
     "1": "K-6",
     "2": "K-9",
@@ -5862,7 +5890,7 @@
   },
   "h3_kgcrop3sunflower": {
     "1": "Kaveri",
-    "2": "Gangakaveri",
+    "2": "Ganga-kaveri",
     "3": "Sumitra",
     "4": "Gowri",
     "5": "Kanchana",
@@ -5870,55 +5898,49 @@
     "6": "NDSH 1012"
   },
   "h3_kgcrop3castor": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_kgcrop3safflower": {
-    "1": "Mullakusama",
-    "2": "Tellakusuma",
-    "3": "Budidakusuma",
+    "1": "Mulla kusama",
+    "2": "Tella kusuma",
+    "3": "Budida kusuma",
     "777": "other"
   },
   "h3_kgcrop3sesamum": {
-    "1": "Nallanuvvulu",
-    "2": "Telanuvvulu",
-    "3": "Verrinuvvulu",
+    "1": "Nalla nuvvulu",
+    "2": "Tela nuvvulu",
+    "3": "Verri nuvvulu",
     "777": "other"
   },
   "h3_kgcrop3chamanthi": {
-    "1": "Yellowgold",
-    "2": "Redgold",
+    "1": "Yellow gold",
+    "2": "Red gold",
     "3": "Button",
     "4": "Raichur",
     "5": "Silper",
     "777": "other"
   },
   "h3_kgcrop3mallepuvvu": {
-    "1": "Sannamall",
-    "2": "Jajimall",
-    "3": "Gundumall",
-    "4": "Sentujagi",
-    "5": "Muddamall",
+    "1": "Sanna mall",
+    "2": "Jaji mall",
+    "3": "Gundu mall",
+    "4": "Sentu jagi",
+    "5": "Mudda mall",
     "777": "other"
   },
   "h3_kgcrop3kanakambaram": {
-    "1": "Localdesi",
+    "1": "Local (desi)",
     "777": "other"
   },
   "h3_kgcrop3banthi": {
-    "1": "Ashokaroyalyellow",
+    "1": "Ashoka royal yellow",
     "777": "other"
   },
   "h3_kgcrop3chendumalle": {
-    "1": "Gunduchendumalle",
-    "2": "NeelamChamanti",
-    "3": "YerraChamanti",
+    "1": "Gundu chendumalle",
+    "2": "Neelam Chamanti",
+    "3": "Yerra Chamanti",
     "777": "other"
-  },
-  "h3_kgcrop3plot": {
-    "4": "Other",
-    "131": "hplotname",
-    "232": "hplotname",
-    "333": "hplotname"
   }
 }
