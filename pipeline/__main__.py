@@ -66,9 +66,9 @@ def main():
     cleaned_df = calculate_h3_farmsize(cleaned_df)
     cleaned_df = calculate_h3_cultivateland(cleaned_df)
     cleaned_df = calcualte_h3_costofcult(cleaned_df)
+    cleaned_df = calculate_h3_cropNland(cleaned_df)
     cleaned_df = classify_h3_fullyorganic(cleaned_df)
     # TODO: Figure out the order of operations here and potentially move it
-    cleaned_df = calculate_h3_cropNland(cleaned_df)
 
     cleaned_df = calculate_h3_plotNfert_synkg(cleaned_df)
 

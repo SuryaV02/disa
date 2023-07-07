@@ -58,27 +58,34 @@ def classify_h3_fullyorganic(df):
     """ """
 
     df = calculate_h3_plotNorganic_calc(df)
-    conditions = [
+
+    def classify_full(row):
         # Fully organic condition
-        (
-            ((df["h3_plot1organic_calc"] == "Organic"))
-            & ((df["h3_plot2organic_calc"] == "Organic"))
-            & ((df["h3_plot3organic_calc"] == "Organic")),
-        ),
+        if (
+            ((row["h3_plot1organic_calc"] == "Organic"))
+            and ((row["h3_plot2organic_calc"] == "Organic"))
+            and ((row["h3_plot3organic_calc"] == "Organic"))
+        ):
+            row["h3_fullyorganic"] = "Fully Organic"
         # Partially organic condition
-        (
-            ((df["h3_plot1organic_calc"] == "Organic"))
-            | ((df["h3_plot2organic_calc"] == "Organic"))
-            | ((df["h3_plot3organic_calc"] == "Organic")),
-        ),
-    ]
-    categories = ["Fully Organic", "Partially Organic"]
+        elif (
+            ((row["h3_plot1organic_calc"] == "Organic"))
+            or ((row["h3_plot2organic_calc"] == "Organic"))
+            or ((row["h3_plot3organic_calc"] == "Organic")),
+        ):
+            row["h3_fullyorganic"] = "Partially Organic"
+        elif (
+            pd.isna(row["h3_plot1organic_calc"])
+            and pd.isna(row["h3_plot2organic_calc"])
+            and pd.isna(row["h3_plot3organic_calc"])
+        ):
+            row["h3_fullyorganic"] = np.nan
+        else:
+            row["h3_fullyorganic"] = "Not Organic"
 
-    # df["h3_fullyorganic"] = np.select(conditions, categories, default="Not Organic")
+        return row
 
-    df["h3_fullyorganic"] = df.apply(
-        lambda row: np.select(conditions, categories, default="Not Organic"), axis=1
-    )
+    df = df.apply(classify_full, axis=1)
 
     return df
 
