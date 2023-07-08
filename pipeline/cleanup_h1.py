@@ -58,13 +58,13 @@ def update_h1_exp_food(df):
 
 
 def update_h1_exp_water_amt(df):
-    # divide by 6
+    # divide by 6 to get monthly exp
     df["h1_exp_water_amt"] = df["h1_exp_water_amt"].div(6, fill_value=np.nan)
     return df
 
 
 def update_h1_exp_healthcare_amt(df):
-    # divide by 6
+    # divide by 6 to get monthly exp
     df["h1_exp_healthcare_amt"] = df["h1_exp_healthcare_amt"].div(6, fill_value=np.nan)
     return df
 
