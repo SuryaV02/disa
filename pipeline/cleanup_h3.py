@@ -331,6 +331,7 @@ def calculate_h3_cropNland(df):
 
 def calculate_h3_cropN_yield_normalized(df):
     ## TODO: Wrap up the rield calculations
+    # Unit = kg/acre 
     def calcualte_yield_in_kg(df, N: int):
         df[f"h3_crop{N}_yield_in_kg"] = df[f"h3_crop{N}yield"]
         return df

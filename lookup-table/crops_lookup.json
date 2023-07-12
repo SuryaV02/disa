@@ -1,0 +1,461 @@
+{
+    "paddy": {
+        "6": "Tella Hamsa",
+        "7": "Sreerama",
+        "9": "Navara",
+        "10": "Kalabatti",
+        "11": "Barma Block",
+        "12": "Kalabatti",
+        "13": "Krishna vihri",
+        "14": "Kujipatalia",
+        "15": "siddasannalu",
+        "16": "indrani",
+        "17": "Sugandhi",
+        "18": "Parimala sannalu",
+        "19": "Rakta Sali",
+        "20": "Ratnachodi",
+        "21": "Mapillai sambha",
+        "22": "Bahu roopi",
+        "23": "Radha jigale",
+        "24": "Kudirath",
+        "25": "HMT",
+        "26": "Basmati",
+        "27": "Mysoor mallika",
+        "28": "khetri maharaj",
+        "29": "Chitti mutyalu",
+        "30": "Manipoor block",
+        "32": "Jink rice",
+        "33": "Mitu budalu",
+        "4": "NDLR-7",
+        "5": "NDLR-8",
+        "777": "Other",
+        "8": "IR64",
+        "1": "BPT-5204",
+        "3": "MTU-1121",
+        "2": "RNR-15048",
+        "31": "Swarna7029"
+    },
+    "cereal": {
+        "1": "Jowar",
+        "2": "Korra",
+        "3": "Ragi",
+        "4": "Samalu",
+        "5": "Arikelu",
+        "6": "Varigalu",
+        "7": "Oodalu",
+        "777": "Other"
+    },
+    "pulse": {
+        "1": "Kandi",
+        "2": "Minmulu",
+        "3": "Pesara",
+        "4": "Pappusenaga",
+        "5": "Alasanda",
+        "6": "Anapakaya",
+        "7": "Horsegram",
+        "8": "Bengalgram",
+        "777": "other"
+    },
+    "cotton": {
+        "1": "Cotton",
+        "2": "Sugarcane",
+        "777": "Other"
+    },
+    "fruit": {
+        "1": "Banana",
+        "2": "Mango",
+        "3": "Guava",
+        "4": "Sapota",
+        "5": "Sweet lime",
+        "6": "Pomegranate",
+        "7": "Papaya",
+        "8": "Neredu (Jamun)",
+        "9": "Seethaphal",
+        "10": "Watermelon",
+        "11": "Cashew",
+        "777": "other"
+    },
+    "vegetable": {
+        "1": "Red chilli",
+        "2": "Onion",
+        "3": "Tomato",
+        "4": "Lemon",
+        "5": "Green leafy vegetable",
+        "6": "Mixed plot",
+        "7": "Brinjal",
+        "777": "Other"
+    },
+    "oilseed": {
+        "1": "Groundnut",
+        "2": "Sunflower",
+        "3": "Castor",
+        "4": "Safflower",
+        "5": "Sesamum",
+        "777": "other"
+    },
+    "flower": {
+        "1": "Chamanti",
+        "2": "Mallepuvvu",
+        "3": "Kanakambaram",
+        "4": "Banthi",
+        "6": "Chendumalle",
+        "777": "other"
+    },
+    "jowar": {
+        "1": "Tellajonna",
+        "2": "Pacchajonna",
+        "3": "Biscuit jona",
+        "4": "Muddakanki jonna",
+        "5": "Seethamma jonna",
+        "7": "CSV20",
+        "777": "other",
+        "8": "CSV23",
+        "6": "NTJ2647"
+    },
+    "korra": {
+        "1": "Jadakorra",
+        "2": "Mudda Korra",
+        "4": "Suryanandi",
+        "5": "Sreelakshmi",
+        "6": "Yerrakorra",
+        "10": "Kdaraya",
+        "11": "Navari Korra",
+        "777": "other",
+        "3": "NDLR-3088",
+        "7": "SIA3156",
+        "8": "SIA3222",
+        "9": "SIA3085"
+    },
+    "ragi": {
+        "1": "Vakula",
+        "2": "Vennamdud",
+        "3": "Kurva",
+        "4": "Klayani",
+        "5": "Kurava ragi",
+        "6": "Karnataka ragi"
+    },
+    "samalu": {
+        "4": "Local (desi)",
+        "777": "other",
+        "1": "VK900",
+        "2": "VK834",
+        "3": "VK762"
+    },
+    "arikelu": {
+        "1": "Local (desi) Paccha Vrigalu Tella varigalu",
+        "777": "other"
+    },
+    "varigalu": {
+        "1": "Local (desi)",
+        "777": "other"
+    },
+    "oodalu": {
+        "1": "Local (desi)",
+        "777": "other"
+    },
+    "kandi": {
+        "4": "Kolambo",
+        "5": "Tella kandi",
+        "6": "Macchala kandi",
+        "7": "richa",
+        "8": "Kudurath",
+        "9": "Asha",
+        "11": "Asha",
+        "12": "Laxmi",
+        "1": "LRG-41",
+        "2": "LRG-52",
+        "3": "BRG-07",
+        "777": "other",
+        "10": "PRG-176",
+        "13": "ICPL-8711"
+    },
+    "minumulu": {
+        "4": "TBG Tirupathi",
+        "5": "GBG Guntur",
+        "6": "NRI-Maruthi",
+        "7": "Moddu",
+        "9": "Kuwait",
+        "3": "T9-siddarth",
+        "2": "PU-31",
+        "777": "other",
+        "1": "TBG104",
+        "8": "IPU2-043"
+    },
+    "pesara": {
+        "4": "Amulya",
+        "5": "Siddarth",
+        "777": "other",
+        "1": "MGG-295",
+        "2": "LGG-460",
+        "3": "WGG-425",
+        "6": "ML-267",
+        "7": "IPM2-03",
+        "8": "IPM2-14"
+    },
+    "pappusenaga": {
+        "2": "Gulabi",
+        "1": "J-11",
+        "777": "other"
+    },
+    "alasanda": {
+        "1": "Telupu",
+        "2": "Yerupu",
+        "777": "other"
+    },
+    "anapakaya": {
+        "1": "Pedda anapa",
+        "2": "Chinna anapa",
+        "777": "other"
+    },
+    "cottontype": {
+        "1": "Rasi",
+        "2": "Neo",
+        "3": "Pushpa",
+        "4": "Nandhini",
+        "7": "Asha",
+        "8": "Sadanand",
+        "9": "Rasi magic",
+        "10": "Dhamaka",
+        "11": "Revanth",
+        "12": "US",
+        "14": "Mokha",
+        "15": "Jadhu",
+        "16": "Kaveri",
+        "18": "Ajith",
+        "19": "Kranthi",
+        "20": "Sri rama",
+        "21": "Narsimha",
+        "5": "Shakti",
+        "6": "Baswam",
+        "777": "other",
+        "13": "JK99",
+        "17": "Rasi659"
+    },
+    "banana": {
+        "1": "AC",
+        "3": "Jain",
+        "4": "Kadali",
+        "2": "G9",
+        "777": "other"
+    },
+    "mango": {
+        "1": "Benishan",
+        "2": "Bangalore",
+        "3": "Malligubba",
+        "4": "Nujividu rasalu",
+        "5": "Alphonso",
+        "6": "Neelam",
+        "7": "Kuddus",
+        "8": "Imam Pasand",
+        "9": "Mallika",
+        "10": "Ynuguntala",
+        "11": "Ratnagiri",
+        "12": "Himasagar",
+        "13": "Suvarnarekha",
+        "14": "Amarapali",
+        "777": "other"
+    },
+    "guava": {
+        "1": "Allahabad Safeda",
+        "2": "Lalith",
+        "3": "Taiwan Pink",
+        "4": "Taiwan White",
+        "5": "Arka Kiran red",
+        "6": "L49",
+        "777": "other"
+    },
+    "sapota": {
+        "1": "Cricket ball",
+        "2": "Kalapathi",
+        "3": "Palasapota",
+        "4": "Badoli",
+        "777": "other"
+    },
+    "sweet": {
+        "1": "Rangapuri",
+        "2": "Jabberu",
+        "777": "other"
+    },
+    "pomogranate": {
+        "1": "Bhagavan",
+        "2": "Ganesh Kesar",
+        "777": "other"
+    },
+    "papaya": {
+        "1": "Taiwan",
+        "2": "Taiwan (red lady)",
+        "3": "Pusa giant",
+        "4": "Pusa-delicious",
+        "5": "Local (desi)",
+        "777": "other"
+    },
+    "neredu": {
+        "1": "Local (desi)",
+        "2": "Allaneredu sapling",
+        "3": "Bahubali",
+        "777": "other"
+    },
+    "seethaphal": {
+        "1": "Balanagar",
+        "2": "NMK Gold",
+        "3": "Red Seethaphal",
+        "777": "other"
+    },
+    "watermelon": {
+        "1": "Nalla kalingara",
+        "2": "Sarakallingara",
+        "777": "other"
+    },
+    "cashew": {
+        "1": "VRL-3",
+        "2": "VLR-4",
+        "3": "BPP-5",
+        "4": "BPP-8",
+        "5": "BPP-9",
+        "777": "other"
+    },
+    "red": {
+        "1": "Delux",
+        "2": "Teja",
+        "4": "Byadgi",
+        "6": "Syngenta",
+        "7": "Devanur delux",
+        "8": "Dharma",
+        "10": "Lali",
+        "11": "Bangaram",
+        "12": "Priyanka",
+        "13": "VNR",
+        "14": "PUSA jwala",
+        "5": "Super10",
+        "777": "other",
+        "3": "Aspire 144",
+        "9": "244"
+    },
+    "onion": {
+        "1": "East west",
+        "2": "Mahi",
+        "3": "Virat",
+        "4": "Vijay",
+        "5": "Nasikred",
+        "6": "Leadveter",
+        "7": "Panchaganga",
+        "8": "Namdhari",
+        "9": "Chinna ballari",
+        "10": "AFLR",
+        "777": "other"
+    },
+    "tomato": {
+        "2": "Saho",
+        "4": "Vaibhav",
+        "6": "PKM-1",
+        "3": "34 sahith",
+        "777": "other",
+        "1": "448",
+        "5": "999"
+    },
+    "lemon": {
+        "1": "Balaji",
+        "2": "Desi",
+        "777": "other"
+    },
+    "green": {
+        "1": "Coriander",
+        "2": "Menthi",
+        "3": "Palakura",
+        "4": "Chukkakur",
+        "5": "Palakalaku",
+        "6": "Palak",
+        "7": "Curry Leaf",
+        "8": "Gongura",
+        "9": "Ponaganti aaku",
+        "10": "Patnam Gogaku",
+        "11": "Cheemagogaku",
+        "777": "other"
+    },
+    "mixed": {
+        "1": "Onion",
+        "2": "Tomato",
+        "3": "Cluster bean",
+        "4": "Ladyfinger",
+        "5": "Munaga",
+        "6": "Brinjal",
+        "7": "Kakara",
+        "8": "Anapa/sorakaya",
+        "9": "Dosakaya",
+        "10": "Keeradosa",
+        "11": "Green chilli",
+        "12": "Gummadi",
+        "13": "Buddi gummadi",
+        "777": "other"
+    },
+    "groundnut": {
+        "4": "Dharani",
+        "6": "Tirupati Narayani",
+        "7": "Amaravathi",
+        "11": "Kadiri Bold",
+        "12": "Teegakaya",
+        "1": "K-6",
+        "2": "K-9",
+        "3": "K-7",
+        "5": "TMV-2",
+        "777": "other",
+        "8": "Tag-24",
+        "10": "Jl-24",
+        "9": "Lepakshi-1218"
+    },
+    "sunflower": {
+        "1": "Kaveri",
+        "2": "Ganga-kaveri",
+        "3": "Sumitra",
+        "4": "Gowri",
+        "5": "Kanchana",
+        "777": "other",
+        "6": "NDSH 1012"
+    },
+    "castor": {
+        "1": "Local (desi)",
+        "777": "other"
+    },
+    "safflower": {
+        "1": "Mulla kusama",
+        "2": "Tella kusuma",
+        "3": "Budida kusuma",
+        "777": "other"
+    },
+    "sesamum": {
+        "1": "Nalla nuvvulu",
+        "2": "Tela nuvvulu",
+        "3": "Verri nuvvulu",
+        "777": "other"
+    },
+    "chamanthi": {
+        "1": "Yellow gold",
+        "2": "Red gold",
+        "3": "Button",
+        "4": "Raichur",
+        "5": "Silper",
+        "777": "other"
+    },
+    "mallepuvvu": {
+        "1": "Sanna mall",
+        "2": "Jaji mall",
+        "3": "Gundu mall",
+        "4": "Sentu jagi",
+        "5": "Mudda mall",
+        "777": "other"
+    },
+    "kanakambaram": {
+        "1": "Local (desi)",
+        "777": "other"
+    },
+    "banthi": {
+        "1": "Ashoka royal yellow",
+        "777": "other"
+    },
+    "chendumalle": {
+        "1": "Gundu chendumalle",
+        "2": "Neelam Chamanti",
+        "3": "Yerra Chamanti",
+        "777": "other"
+    }
+}
