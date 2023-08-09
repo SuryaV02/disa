@@ -7,10 +7,11 @@
   },
   "s1_gender": {
     "1": "male",
-    "2": "awoman"
+    "2": "a woman"
   },
   "s1_dobtype": {
-    "12": "BasedonAadhaarCardanyothercardissuedbyGovtselfreported"
+    "1": "Based on Aadhaar Card/ any other card issued by Govt",
+    "2": "self-reported"
   },
   "s1_age": {
     "111": "rounddatediffsdatesdoby"
@@ -19,9 +20,9 @@
     "11710": "ifsage"
   },
   "s1_notwilling_reason": {
-    "1": "notime",
-    "2": "donotlike",
-    "777": "otherreasons"
+    "1": "no time",
+    "2": "do not like",
+    "777": "other reasons"
   },
   "s2_interviewer": {
     "1": "Jyoti",
@@ -31,10 +32,11 @@
   },
   "s2_gender": {
     "1": "male",
-    "2": "awoman"
+    "2": "a woman"
   },
   "s2_dobtype": {
-    "12": "BasedonAadhaarCardanyothercardissuedbyGovtselfreported"
+    "1": "Based on Aadhaar Card/ any other card issued by Govt",
+    "2": "self-reported"
   },
   "s2_age": {
     "221": "rounddatediffsdatesdoby"
@@ -43,9 +45,9 @@
     "21710": "ifsage"
   },
   "s2_notwilling_reason": {
-    "1": "notime",
-    "2": "donotlike",
-    "777": "otherreasons"
+    "1": "no time",
+    "2": "do not like",
+    "777": "other reasons"
   },
   "s4_interviewer": {
     "1": "Jyoti",
@@ -110,9 +112,9 @@
     "4": "Mallaepali"
   },
   "s4_village_ka22": {
-    "1": "TVelamvaripalli",
-    "2": "AshokNagar",
-    "3": "NeelavaramThanda",
+    "1": "T Velamvaripalli",
+    "2": "Ashok Nagar",
+    "3": "Neelavaram Thanda",
     "4": "Bollagondicheruvu"
   },
   "s4_village_ka23": {
@@ -122,7 +124,7 @@
     "1": "Giddangivaripalli"
   },
   "s4_village_ka31": {
-    "1": "VemulaSCColony",
+    "1": "Vemula SC Colony",
     "2": "Sheshannagaaripalli",
     "3": "Vemula",
     "4": "Bachayyagaaripalli",
@@ -142,7 +144,7 @@
   },
   "s4_village_an11": {
     "1": "Odhulapalli",
-    "2": "Gollapallithanda",
+    "2": "Gollapalli thanda",
     "3": "Bandamidapalli",
     "4": "Sabbanaguntapalli",
     "5": "Rachivaripalli",
@@ -190,10 +192,10 @@
     "3": "others"
   },
   "s4_contact1relation": {
-    "1": "parentsinlaws",
+    "1": "parents/in-laws",
     "2": "grandfather",
-    "3": "PinniMavaiya",
-    "4": "OtherRelatives",
+    "3": "Pinni/Mavaiya",
+    "4": "Other Relatives",
     "5": "friend",
     "6": "Owner",
     "7": "Neighbors",
@@ -206,10 +208,10 @@
     "4": "Sunita"
   },
   "h1_cookfuel": {
-    "1": "LPGGas",
+    "1": "LPG / Gas",
     "2": "sticks",
-    "3": "treebranchesgrass",
-    "4": "Agriculturalbasedgarbage",
+    "3": "treebranches / grass",
+    "4": "Agricultural based garbage",
     "777": "etc"
   },
   "h1_drinkingwater": {
@@ -221,42 +223,42 @@
     "777": "Misc"
   },
   "h1_toilet": {
-    "1": "flushtothesewersystemofpipes",
-    "2": "Flushtheseptictank",
-    "3": "Singlepitlatrinewithslab",
-    "4": "Nofacilityinopenspace",
+    "1": "flush to the sewer system of pipes",
+    "2": "Flush the septic tank",
+    "3": "Single pit latrine with slab",
+    "4": "Nofacility/in open space",
     "777": "Misc"
   },
   "h1_floor": {
     "1": "cement",
     "2": "stone",
-    "3": "Polishedstonemarblegranite",
-    "4": "Ceramictiles",
+    "3": "Polished stone/marble/granite",
+    "4": "Ceramic tiles",
     "5": "clay",
     "777": "Misc"
   },
   "h1_roof": {
-    "1": "CementConcreteRCCRBS",
-    "2": "Asbestossheets",
-    "3": "looselypackedstone",
+    "1": "Cement/Concrete/RCC/RBS",
+    "2": "Asbestos sheets",
+    "3": "loosely packed stone",
     "4": "tiles",
     "5": "Slate",
     "6": "metal",
-    "7": "grasspalmleaf",
+    "7": "grass/palm leaf",
     "777": "Misc"
   },
   "h1_walls": {
-    "1": "CementConcrete",
-    "2": "limecementstone",
-    "3": "claystonebrick",
+    "1": "Cement/Concrete",
+    "2": "lime/cement stone",
+    "3": "clay stone (brick)",
     "4": "mud",
     "777": "Misc"
   },
   "h1_exp_phone_unit": {
-    "4": "aboutayearperiod",
-    "11": "aboutmonth",
-    "22": "aboutmonths",
-    "33": "aboutmonths",
+    "4": "about a year period",
+    "1": "about 1 month",
+    "2": "about 2 months",
+    "3": "about 3 months",
     "777": "Misc"
   },
   "a10_interviewer": {
@@ -266,12 +268,12 @@
     "4": "Sunita"
   },
   "a10_0400": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -282,12 +284,12 @@
     "777": "Misc"
   },
   "a10_0430": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -298,12 +300,12 @@
     "777": "Misc"
   },
   "a10_0500": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -314,12 +316,12 @@
     "777": "Misc"
   },
   "a10_0530": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -330,12 +332,12 @@
     "777": "Misc"
   },
   "a10_0600": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -346,12 +348,12 @@
     "777": "Misc"
   },
   "a10_0630": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -362,12 +364,12 @@
     "777": "Misc"
   },
   "a10_0700": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -378,12 +380,12 @@
     "777": "Misc"
   },
   "a10_0730": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -394,12 +396,12 @@
     "777": "Misc"
   },
   "a10_0800": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -410,12 +412,12 @@
     "777": "Misc"
   },
   "a10_0830": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -426,12 +428,12 @@
     "777": "Misc"
   },
   "a10_0900": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -442,12 +444,12 @@
     "777": "Misc"
   },
   "a10_0930": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -458,12 +460,12 @@
     "777": "Misc"
   },
   "a10_1000": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -474,12 +476,12 @@
     "777": "Misc"
   },
   "a10_1030": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -490,12 +492,12 @@
     "777": "Misc"
   },
   "a10_1100": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -506,12 +508,12 @@
     "777": "Misc"
   },
   "a10_1130": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -522,12 +524,12 @@
     "777": "Misc"
   },
   "a10_1200": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -538,12 +540,12 @@
     "777": "Misc"
   },
   "a10_1230": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -554,12 +556,12 @@
     "777": "Misc"
   },
   "a10_1300": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -570,12 +572,12 @@
     "777": "Misc"
   },
   "a10_1330": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -586,12 +588,12 @@
     "777": "Misc"
   },
   "a10_1400": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -602,12 +604,12 @@
     "777": "Misc"
   },
   "a10_1430": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -618,12 +620,12 @@
     "777": "Misc"
   },
   "a10_1500": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -634,12 +636,12 @@
     "777": "Misc"
   },
   "a10_1530": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -650,12 +652,12 @@
     "777": "Misc"
   },
   "a10_1600": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -666,12 +668,12 @@
     "777": "Misc"
   },
   "a10_1630": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -682,12 +684,12 @@
     "777": "Misc"
   },
   "a10_1700": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -698,12 +700,12 @@
     "777": "Misc"
   },
   "a10_1730": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -714,12 +716,12 @@
     "777": "Misc"
   },
   "a10_1800": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -730,12 +732,12 @@
     "777": "Misc"
   },
   "a10_1830": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -746,12 +748,12 @@
     "777": "Misc"
   },
   "a10_1900": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -762,12 +764,12 @@
     "777": "Misc"
   },
   "a10_1930": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -778,12 +780,12 @@
     "777": "Misc"
   },
   "a10_2000": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -794,12 +796,12 @@
     "777": "Misc"
   },
   "a10_2030": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -810,12 +812,12 @@
     "777": "Misc"
   },
   "a10_2100": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -826,12 +828,12 @@
     "777": "Misc"
   },
   "a10_2130": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -842,12 +844,12 @@
     "777": "Misc"
   },
   "a10_2200": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -858,12 +860,12 @@
     "777": "Misc"
   },
   "a10_2230": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -874,12 +876,12 @@
     "777": "Misc"
   },
   "a10_2300": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -890,12 +892,12 @@
     "777": "Misc"
   },
   "a10_2330": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -906,12 +908,12 @@
     "777": "Misc"
   },
   "a10_2400": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -922,12 +924,12 @@
     "777": "Misc"
   },
   "a10_0030": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -938,12 +940,12 @@
     "777": "Misc"
   },
   "a10_0100": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -954,12 +956,12 @@
     "777": "Misc"
   },
   "a10_0130": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -970,12 +972,12 @@
     "777": "Misc"
   },
   "a10_0200": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -986,12 +988,12 @@
     "777": "Misc"
   },
   "a10_0230": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -1002,12 +1004,12 @@
     "777": "Misc"
   },
   "a10_0300": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -1018,12 +1020,12 @@
     "777": "Misc"
   },
   "a10_0330": {
-    "1": "sleeprest",
+    "1": "sleep/rest",
     "2": "meal",
-    "3": "PersonalCare",
+    "3": "Personal Care",
     "4": "study",
     "5": "Job",
-    "6": "ownbusiness",
+    "6": "own business",
     "7": "Agriculture",
     "8": "Cattle",
     "9": "Shopping",
@@ -1041,31 +1043,33 @@
   },
   "a5_gender": {
     "1": "male",
-    "2": "awoman"
+    "2": "a woman"
   },
   "a5_relationship_m": {
     "1": "husband",
-    "2": "sonof",
+    "2": "son of",
     "3": "Father",
-    "4": "fatherinlaw",
+    "4": "father-in-law",
     "5": "grandfather",
-    "6": "brotherof",
+    "6": "brother of",
     "7": "single"
   },
   "a5_relationship_f": {
     "1": "wife",
     "2": "Mother",
     "3": "daughter",
-    "4": "daughterinlaw",
+    "4": "daughter-in-law",
     "5": "grandmother",
     "6": "sister",
     "7": "single"
   },
   "a5_interview": {
     "1": "alone",
-    "2": "whenthereareadultfemales",
-    "3": "whenthereareadultmales",
-    "456": "whenmenandwomenaretogetherwhentherearechildrenWhentherearemenwomenandchildren"
+    "2": "when there are adult females",
+    "3": "when there are adult males",
+    "4": "when men and women are together",
+    "5": "when there are children",
+    "6": "When there are men, women and children"
   },
   "a5_livestock_type": {
     "1": "Cows",
@@ -1078,38 +1082,41 @@
     "2": "goats",
     "3": "sheep",
     "4": "Pigs",
-    "5": "otheranimals"
+    "5": "other animals"
   },
   "a5_fpo_name": {
-    "1": "ProddaturFPC",
-    "2": "VemulaFPC",
-    "3": "VempallyFPC",
-    "4": "GayathriFPO",
-    "5": "DoorsFPC",
-    "6": "SewalalFPO",
-    "7": "VepadaTribalFPC",
-    "8": "GreenFPO",
-    "9": "TungabadraFPO"
+    "1": "Proddatur FPC",
+    "2": "Vemula FPC",
+    "3": "Vempally FPC",
+    "4": "Gayathri FPO",
+    "5": "Doors FPC",
+    "6": "Sewalal FPO",
+    "7": "Vepada Tribal FPC",
+    "8": "Green FPO",
+    "9": "Tungabadra FPO"
   },
   "a5_shg_role": {
     "1": "VOA",
     "2": "President",
     "8": "others",
-    "34": "PresidentSecretary",
-    "567": "FirstleaderSecondleaderMember"
+    "3": "President",
+    "4": "Secretary",
+    "5": "First leader",
+    "6": "Second leader",
+    "7": "Member"
   },
   "a5_shg_comfort": {
-    "1": "isveryuncomfortable",
+    "1": "is very uncomfortable",
     "2": "Discomfort",
-    "3": "neithercomfortablenoruncomfortable",
+    "3": "neither comfortable nor uncomfortable",
     "4": "conveniently",
-    "5": "verycomfortable"
+    "5": "very comfortable"
   },
   "a5_shg_join": {
-    "1": "ofmyowndesireseeingothersdothesame",
-    "2": "becausemyhusbandaskedme",
-    "3": "duetomotherinlaworfatherinlawasking",
-    "777": "otherreason"
+    "1": "of my own desire (seeing others do the same)",
+    "2": "because my husband asked me",
+    "3": "due to mother-in-law or father-in-law asking",
+    "777": "other reason"
   },
   "h3_interviewer": {
     "1": "Jyoti",
@@ -1122,165 +1129,165 @@
     "2": "two",
     "3": "three",
     "4": "four",
-    "5": "fiveormore"
+    "5": "five or more"
   },
   "h3_plot1fert": {
     "0": "none",
-    "1": "ChemicalfertilizerslikeDAPandUrea",
+    "1": "Chemical fertilizers (like DAP and Urea)",
     "2": "Jivamrita",
-    "3": "DesiCattleManure",
-    "4": "buffalomanure",
-    "5": "ManureofJerseyCows",
-    "6": "GhanaJivamritham",
-    "8": "VermiCompost",
-    "9": "greenmanure",
-    "10": "WasteDecomposer",
-    "72": "TypeIILSolidBiomass",
+    "3": "Desi Cattle Manure",
+    "4": "buffalo manure",
+    "5": "Manure of Jersey Cows",
+    "6": "Ghana Jivamritham",
+    "8": "Vermi Compost",
+    "9": "green manure",
+    "10": "Waste Decomposer",
+    "7": "TypeII / L2 Solid Biomass",
     "777": "Misc"
   },
   "h3_plot1fert_syntype": {
-    "1": "PhosphateNPKmix",
+    "1": "Phosphate (NPK mix)",
     "2": "DAP",
     "3": "Urea",
     "4": "MOP",
     "5": "SSP"
   },
   "h3_plot1fert_synbagwt": {
-    "125": "kg",
-    "250": "kg"
+    "1": "25 kg",
+    "2": "50 kg"
   },
   "h3_plot1pest": {
     "0": "none",
-    "1": "Chemicalpesticidesinsecticidesherbicidesandfungicides",
-    "2": "stickytrap",
-    "3": "sexbaskets",
-    "4": "biopesticideiedecoctionssolutionsneemoilandbiofungicidecontainingmicroorganismsusedforinsectcontrol",
-    "5": "friendlyinsects",
+    "1": "Chemical pesticides (insecticides, herbicides, and fungicides)",
+    "2": "sticky trap",
+    "3": "sex baskets",
+    "4": "biopesticide, i.e. decoctions, solutions, neem oil, and bio-fungicide containing microorganisms used for insect control",
+    "5": "friendly insects",
     "777": "Misc"
   },
   "h3_plot1practices": {
     "1": "intercropping",
-    "2": "MixedCrops",
-    "3": "BorderCrops",
-    "4": "Fieldcrops",
+    "2": "Mixed Crops",
+    "3": "Border Crops",
+    "4": "Field crops",
     "5": "PMDS",
-    "6": "greenmanure",
-    "7": "theseedsofmarigoldsinsummer",
-    "8": "Dabolkarsapproach",
-    "10": "fruittrees",
-    "12": "halfacrevegetablemodelKalpataru",
-    "13": "lowtillageornotill",
-    "14": "Mulchingliveordry",
-    "95": "LayerModel",
+    "6": "green manure",
+    "7": "the seeds of marigolds in summer",
+    "8": "Dabolkar's approach",
+    "10": "fruit trees",
+    "12": "half acre vegetable model (Kalpataru)",
+    "13": "low tillage or no-till",
+    "14": "Mulching (live or dry)",
+    "9": "5 Layer Model",
     "777": "Misc",
-    "11365": "daysofgreencover"
+    "11": "365 days of green-cover"
   },
   "h3_plot2fert": {
     "0": "none",
-    "1": "ChemicalfertilizerslikeDAPandUrea",
+    "1": "Chemical fertilizers (like DAP and Urea)",
     "2": "Jivamrita",
-    "3": "DesiCattleManure",
-    "4": "buffalomanure",
-    "5": "ManureofJerseyCows",
-    "6": "GhanaJivamritham",
-    "8": "VermiCompost",
-    "9": "greenmanure",
-    "10": "WasteDecomposer",
-    "72": "TypeIILSolidBiomass",
+    "3": "Desi Cattle Manure",
+    "4": "buffalo manure",
+    "5": "Manure of Jersey Cows",
+    "6": "Ghana Jivamritham",
+    "8": "Vermi Compost",
+    "9": "green manure",
+    "10": "Waste Decomposer",
+    "7": "TypeII / L2 Solid Biomass",
     "777": "Misc"
   },
   "h3_plot2fert_syntype": {
-    "1": "PhosphateNPKmix",
+    "1": "Phosphate (NPK mix)",
     "2": "DAP",
     "3": "Urea",
     "4": "MOP",
     "5": "SSP"
   },
   "h3_plot2fert_synbagwt": {
-    "125": "kg",
-    "250": "kg"
+    "1": "25 kg",
+    "2": "50 kg"
   },
   "h3_plot2pest": {
     "0": "none",
-    "1": "Chemicalpesticidesinsecticidesherbicidesandfungicides",
-    "2": "stickytrap",
-    "3": "sexbaskets",
-    "4": "biopesticideiedecoctionssolutionsneemoilandmicrobialbiofungicideusedforinsectcontrol",
+    "1": "Chemical pesticides (insecticides, herbicides, and fungicides)",
+    "2": "sticky trap",
+    "3": "sex baskets",
+    "4": "biopesticide, i.e. decoctions, solutions, neem oil, and bio-fungicide containing microorganisms used for insect control",
     "777": "Misc"
   },
   "h3_plot2practices": {
     "1": "intercropping",
-    "2": "MixedCrops",
-    "3": "BorderCrops",
-    "4": "Fieldcrops",
+    "2": "Mixed Crops",
+    "3": "Border Crops",
+    "4": "Field crops",
     "5": "PMDS",
-    "6": "greenmanure",
-    "7": "theseedsofmarigoldsinsummer",
-    "8": "Dabolkarsapproach",
-    "10": "fruittrees",
-    "12": "halfacrevegetablemodelKalpataru",
-    "13": "lowtillageornotill",
-    "14": "Mulchingliveordry",
-    "95": "LayerModel",
+    "6": "green manure",
+    "7": "the seeds of marigolds in summer",
+    "8": "Dabolkar's approach",
+    "10": "fruit trees",
+    "12": "half acre vegetable model (Kalpataru)",
+    "13": "low tillage or no-till",
+    "14": "Mulching (live or dry)",
+    "9": "5 Layer Model",
     "777": "Misc",
-    "11365": "daysofgreencover"
+    "11": "365 days of green-cover"
   },
   "h3_plot3fert": {
     "0": "none",
-    "1": "ChemicalfertilizerslikeDAPandUrea",
+    "1": "Chemical fertilizers (like DAP and Urea)",
     "2": "Jivamrita",
-    "3": "DesiCattleManure",
-    "4": "buffalomanure",
-    "5": "ManureofJerseyCows",
-    "6": "GhanaJivamritham",
-    "8": "VermiCompost",
-    "9": "greenmanure",
-    "10": "WasteDecomposer",
-    "72": "TypeIILSolidBiomass",
+    "3": "Desi Cattle Manure",
+    "4": "buffalo manure",
+    "5": "Manure of Jersey Cows",
+    "6": "Ghana Jivamritham",
+    "8": "Vermi Compost",
+    "9": "green manure",
+    "10": "Waste Decomposer",
+    "7": "TypeII / L2 Solid Biomass",
     "777": "Misc"
   },
   "h3_plot3fert_syntype": {
-    "1": "PhosphateNPKmix",
+    "1": "Phosphate (NPK mix)",
     "2": "DAP",
     "3": "Urea",
     "4": "MOP",
     "5": "SSP"
   },
   "h3_plot3fert_synbagwt": {
-    "125": "kg",
-    "250": "kg"
+    "1": "25 kg",
+    "2": "50 kg"
   },
   "h3_plot3pest": {
     "0": "none",
-    "1": "Chemicalpesticidesinsecticidesherbicidesandfungicides",
-    "2": "stickytrap",
-    "3": "sexbaskets",
-    "4": "biopesticideiedecoctionssolutionsneemoilandmicrobialbiofungicideusedforinsectcontrol",
+    "1": "Chemical pesticides (insecticides, herbicides, and fungicides)",
+    "2": "sticky trap",
+    "3": "sex baskets",
+    "4": "biopesticide, i.e. decoctions, solutions, neem oil, and bio-fungicide containing microorganisms used for insect control",
     "777": "Misc"
   },
   "h3_plot3practices": {
     "1": "intercropping",
-    "2": "MixedCrops",
-    "3": "BorderCrops",
-    "4": "Fieldcrops",
+    "2": "Mixed Crops",
+    "3": "Border Crops",
+    "4": "Field crops",
     "5": "PMDS",
-    "6": "greenmanure",
-    "7": "theseedsofmarigoldsinsummer",
-    "8": "Dabolkarsapproach",
-    "10": "fruittrees",
-    "12": "halfacrevegetablemodelKalpataru",
-    "13": "lowtillageornotill",
-    "14": "Mulchingliveordry",
-    "95": "LayerModel",
+    "6": "green manure",
+    "7": "the seeds of marigolds in summer",
+    "8": "Dabolkar's approach",
+    "10": "fruit trees",
+    "12": "half acre vegetable model (Kalpataru)",
+    "13": "low tillage or no-till",
+    "14": "Mulching (live or dry)",
+    "9": "5 Layer Model",
     "777": "Misc",
-    "11365": "daysofgreencover"
+    "11": "365 days of green-cover"
   },
   "h3_crops": {
     "1": "one",
     "2": "two",
     "3": "three",
     "4": "four",
-    "5": "fiveormore"
+    "5": "five or more"
   },
   "h3_crop1": {
     "1": "Paddy",
