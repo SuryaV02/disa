@@ -13,12 +13,6 @@
     "1": "Based on Aadhaar Card/ any other card issued by Govt",
     "2": "self-reported"
   },
-  "s1_age": {
-    "111": "rounddatediffsdatesdoby"
-  },
-  "s1_age_eligible": {
-    "11710": "ifsage"
-  },
   "s1_notwilling_reason": {
     "1": "no time",
     "2": "do not like",
@@ -37,12 +31,6 @@
   "s2_dobtype": {
     "1": "Based on Aadhaar Card/ any other card issued by Govt",
     "2": "self-reported"
-  },
-  "s2_age": {
-    "221": "rounddatediffsdatesdoby"
-  },
-  "s2_age_eligible": {
-    "21710": "ifsage"
   },
   "s2_notwilling_reason": {
     "1": "no time",
