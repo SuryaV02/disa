@@ -28,11 +28,19 @@ from pipeline.cleanup_s4 import (
 from pipeline.merge import merge_redcap_event_rows
 import pandas as pd
 
+from pipeline.utils import process_data_with_json
+
 
 def main():
     # merged_df = merge_redcap_event_rows('/root/sandbox/disa/data_v0004.tsv')
-    merged_df = pd.read_csv("/root/sandbox/disa/data_v0004.tsv", sep="\t", header=0)
+    raw_df = pd.read_csv("/root/sandbox/disa/data_v0004.tsv", sep="\t", header=0)
+    
+    # Replace the data
+    json_dict = pd.read_json("/root/sandbox/disa/lookup-table/JSON_fields.json")
+    replaced_df = process_data_with_json(raw_df, json_dict)
+    replaced_df.to_csv("/root/sandbox/disa/data_replaced.tsv", sep="\t", index=False)
 
+    exit()
     # s4 Study
     cleaned_df = cleanup_s4_hhcategory(merged_df)
     cleaned_df = merge_s4_cluster(cleaned_df)

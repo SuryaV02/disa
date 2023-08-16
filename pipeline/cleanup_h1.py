@@ -121,7 +121,7 @@ def add_exp_other_specify_to_h1_exp_substance_amt(df):
             row["h1_exp_substance_amt"] == row["h1_exp_other_amt"]
             row["h1_exp_other_amt"] == np.nan
             row["h1_exp_other_specify"] = np.nan
-            row["h1_exp_other"] = "No"
+            row["h1_exp_other"] = False
 
         return row
 
@@ -173,7 +173,7 @@ def reassign_h1_income_other_specify(df):
                 return row
             reassignment_amount_column_name = f"{reassignment_category_column_name}_amt"
             # Set category to yes
-            row[reassignment_category_column_name] = "Yes"
+            row[reassignment_category_column_name] = True
             if reassignment_amount_column_name not in row.index:
                 row[reassignment_amount_column_name] = value
             elif pd.isna(row[reassignment_amount_column_name]):
@@ -184,7 +184,7 @@ def reassign_h1_income_other_specify(df):
             # Blank out the old columns
             row["h1_income_other_amt"] == np.nan
             row["h1_income_other_specify"] = np.nan
-            row["h1_income_other"] = "No"
+            row["h1_income_other"] = False
 
             print(
                 f"Moved income_other_amt to {reassignment_amount_column_name} for HHID: {row['hhid']}"

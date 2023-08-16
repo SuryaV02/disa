@@ -1,8 +1,6 @@
 import numpy as np
 import pandas as pd
 
-from pipeline.utils import purge_outliers
-
 
 def purge_h3_outliers(df):
     mask = df["h3_pesticide"] > 200000
@@ -166,19 +164,19 @@ def calculate_h3_plotNorganic_calc(df):
             return row
 
         # First eliminate all the conventional
-        if (row[synthetic_fert_column_name] == "Checked") and (
-            row[pesticide_column_name] == "Checked"
+        if (row[synthetic_fert_column_name] == True) and (
+            row[pesticide_column_name] == True
         ):
             row[classification_column_name] = "Conventional"
         elif (
-            (row[synthetic_fert_column_name] == "Unchecked")
-            and (row[fert_other_column_name] != "yes")
-            and (row[pesticide_column_name] != "Checked")  # Don't Care pesticide
+            (row[synthetic_fert_column_name] == False)
+            and (row[fert_other_column_name] != True)
+            and (row[pesticide_column_name] != True)  # Don't Care pesticide
         ):  # Adding the extra condition incase its labeled data
             row[classification_column_name] = "Organic"
         elif (
-            row[pesticide_column_name] != "Checked"
-            or row[pesticide_other_column_name] == "Checked"
+            row[pesticide_column_name] != True
+            or row[pesticide_other_column_name] == True
         ):  # Don't care logic for fertilizer
             row[classification_column_name] = "NPM"
         else:
