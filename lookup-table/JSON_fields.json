@@ -1818,7 +1818,7 @@
     "2": "per week",
     "3": "season",
     "4": "total",
-    "5": "sacks"
+    "5": "bags"
   },
   "h3_crop1_kgquintal": {
     "1": "kg",
@@ -1830,7 +1830,7 @@
     "2": "75",
     "3": "80",
     "4": "44",
-    "777": "(Otherspecify)"
+    "777": "Other/Specify"
   },
   "h3_crop1_losswhy": {
     "1": "Crop loss due to insects and pests",
@@ -1857,15 +1857,15 @@
     "1": "kg",
     "2": "quintal",
     "3": "tons",
-    "4": "sacks",
-    "777": "Otherspecify"
+    "4": "bags",
+    "777": "Other/Specify"
   },
   "h3_crop1_soldkgperbag": {
     "1": "50",
     "2": "75",
     "3": "80",
     "4": "44",
-    "777": "Otherspecify"
+    "777": "Other/Specify"
   },
   "h3_crop1_whensell": {
     "1": "immediately sold",
@@ -2458,7 +2458,7 @@
     "2": "per week",
     "3": "season",
     "4": "total",
-    "5": "sacks"
+    "5": "bags"
   },
   "h3_crop2_kgquintal": {
     "1": "kg",
@@ -2470,7 +2470,7 @@
     "2": "75",
     "3": "80",
     "4": "44",
-    "777": "Otherspecify"
+    "777": "Other/Specify"
   },
   "h3_crop2_losswhy": {
     "1": "Crop loss due to insects and pests",
@@ -2497,15 +2497,15 @@
     "1": "kg",
     "2": "quintal",
     "3": "tons",
-    "4": "sacks",
-    "777": "Otherspecify"
+    "4": "bags",
+    "777": "Other/Specify"
   },
   "h3_crop2_soldkgperbag": {
     "1": "50",
     "2": "75",
     "3": "80",
     "4": "44",
-    "777": "Otherspecify"
+    "777": "Other/Specify"
   },
   "h3_crop2_whensell": {
     "1": "immediately sold",
@@ -3098,7 +3098,7 @@
     "2": "per week",
     "3": "season",
     "4": "total",
-    "5": "sacks"
+    "5": "bags"
   },
   "h3_crop3_kgquintal": {
     "1": "kg",
@@ -3110,7 +3110,7 @@
     "2": "75",
     "3": "80",
     "4": "44",
-    "777": "Otherspecify"
+    "777": "Other/Specify"
   },
   "h3_crop3_losswhy": {
     "1": "Crop loss due to insects and pests",
@@ -3138,15 +3138,15 @@
     "1": "kg",
     "2": "quintal",
     "3": "tons",
-    "4": "sacks",
-    "777": "Otherspecify"
+    "4": "bags",
+    "777": "Other/Specify"
   },
   "h3_crop3_soldkgperbag": {
     "1": "50",
     "2": "75",
     "3": "80",
     "4": "44",
-    "777": "Otherspecify"
+    "777": "Other/Specify"
   },
   "h3_crop3_whensell": {
     "1": "immediately sold",
@@ -3739,7 +3739,7 @@
     "2": "per week",
     "3": "season",
     "4": "total",
-    "5": "sacks"
+    "5": "bags"
   },
   "h3_crop4_kgquintal": {
     "1": "kg",
@@ -3751,7 +3751,7 @@
     "2": "75",
     "3": "80",
     "4": "44",
-    "777": "Otherspecify"
+    "777": "Other/Specify"
   },
   "h3_crop4_losswhy": {
     "1": "Crop loss due to insects and pests",
@@ -3779,15 +3779,15 @@
     "1": "kg",
     "2": "quintal",
     "3": "tons",
-    "4": "sacks",
-    "777": "Otherspecify"
+    "4": "bags",
+    "777": "Other/Specify"
   },
   "h3_crop4_soldkgperbag": {
     "1": "50",
     "2": "75",
     "3": "80",
     "4": "44",
-    "777": "Otherspecify"
+    "777": "Other/Specify"
   },
   "h3_crop4_whensell": {
     "1": "immediately sold",
@@ -4380,7 +4380,7 @@
     "2": "per week",
     "3": "season",
     "4": "total",
-    "5": "sacks"
+    "5": "bags"
   },
   "h3_crop5_kgquintal": {
     "1": "kg",
@@ -4392,7 +4392,7 @@
     "2": "75",
     "3": "80",
     "4": "44",
-    "777": "Otherspecify"
+    "777": "Other/Specify"
   },
   "h3_crop5_losswhy": {
     "1": "Crop loss due to insects and pests",
@@ -4420,15 +4420,15 @@
     "1": "kg",
     "2": "quintal",
     "3": "tons",
-    "4": "sacks",
-    "777": "Otherspecify"
+    "4": "bags",
+    "777": "Other/Specify"
   },
   "h3_crop5_soldkgperbag": {
     "1": "50",
     "2": "75",
     "3": "80",
     "4": "44",
-    "777": "Otherspecify"
+    "777": "Other/Specify"
   },
   "h3_crop5_whensell": {
     "1": "immediately sold",
