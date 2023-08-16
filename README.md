@@ -46,3 +46,18 @@ README.md
 4. 
 
 
+| Type       | Naming Scheme                 | Versioning        | Rationale                                                                                                                                                              | Dataframe Copy | Order |
+|------------|-------------------------------|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|-------|
+| RAW inputs | data_v0001.tsv                | Serial            | To keep track of what input data we are getting                                                                                                                        | N/A            | 0     |
+| Row Merged | data_row_merged-date-time.tsv | Date Time         | In case there are errors that we need to fix                                                                                                                           | No             | 1     |
+| Cleanup    | data_cleanup_1                | None (Use latest) | Any replacement will be in place, mistakes are going to be traceable  New columns will have unique names that will break analysis scrips when run with old data schema | No             | 2     |
+| Analysis   | data_analysis_1               | None(Use latest)  |                                                                                                                                                                        | No             | N/A   |
+
+Pipeline:
+
+
+
+1. Merging
+2. Cleanup
+
+    N/A
