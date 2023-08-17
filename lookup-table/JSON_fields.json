@@ -1,4 +1,51 @@
 {
+  "a5_away": {
+    "1": "రోజువారీ",
+    "2": "వారానికి ఒకసారి",
+    "3": "ప్రతి 2 వారాలకొకసారి",
+    "4": "నెలకొకసారి",
+    "5": "కొన్ని నెలలకు ఒక్కసారి",
+    "6": "ఎప్పుడు వేళ్లను",
+    "999": "చెప్పదలచుకోలేదు"
+  },
+  "a5_away_long": {
+    "0": "No",
+    "1": "Yes",
+    "999": "Don't want to disclose"
+  },
+  "a5_bigexp_input": {
+    "1": "ప్రమేయం లేదు లేదా చాలా తక్కువ",
+    "2": "కొన్ని విషయాలలో ప్రమేయం ఉంటుంది",
+    "3": "అన్ని విషయాలలో ప్రమేయం ఉంటుంది",
+    "888": "వర్తించదు",
+    "999": "సమాధానం చెప్పదలుచుకోలేదు"
+  },
+  "a5_cashcrop_income": {
+    "1": "ప్రమేయం లేదు లేదా చాలా తక్కువ",
+    "2": "కొన్ని విషయాలలో ప్రమేయం ఉంటుంది",
+    "3": "అన్ని విషయాలలో ప్రమేయం ఉంటుంది",
+    "888": "వర్తించదు",
+    "999": "సమాధానం చెప్పదలుచుకోలేదు"
+  },
+  "a5_cashcrop_input": {
+    "1": "పాల్గొన లేదు లేదా చాలా తక్కువ పాల్గొన్నాను",
+    "2": "కొన్ని నిర్ణయాలలో పాల్గొన్నాను",
+    "3": "అన్నింటిలో లేదా దాదాపు అన్నిటిలో పాల్గొన్నాను",
+    "888": "వర్తించదు",
+    "999": "సమాధానం చెప్పదలుచుకోలేదు"
+  },
+  "a5_family": {
+    "1": "ఈ గ్రామంలో",
+    "2": "వేరే గ్రామంలో",
+    "3": "తల్లిదండ్రులతో నివసిస్తున్నారు",
+    "4": "ఇద్దరు తల్లితండ్రులు చనిపోయారు",
+    "999": "చెప్పదలచుకోలేదు"
+  },
+  "a5_fpo": {
+    "0": "No",
+    "1": "Yes",
+    "999": "Don't know"
+  },
   "a5_fpo_name": {
     "1": "Proddatur FPC",
     "2": "Vemula FPC",
@@ -12,7 +59,13 @@
   },
   "a5_gender": {
     "1": "male",
-    "2": "woman"
+    "2": "female"
+  },
+  "a5_healthcentre": {
+    "1": "అనుమతి తీసుకొని వెళ్తాను",
+    "2": "చెప్పి వెళ్తాను",
+    "3": "ఎప్పుడు వేళ్లను",
+    "999": "చెప్పదలచుకోలేదు"
   },
   "a5_interview": {
     "1": "alone",
@@ -28,11 +81,96 @@
     "3": "Sun",
     "4": "Sunita"
   },
+  "a5_livestock_income": {
+    "1": "ప్రమేయం లేదు లేదా చాలా తక్కువ",
+    "2": "కొన్ని విషయాలలో ప్రమేయం ఉంటుంది",
+    "3": "అన్ని విషయాలలో ప్రమేయం ఉంటుంది",
+    "888": "వర్తించదు",
+    "999": "సమాధానం చెప్పదలుచుకోలేదు"
+  },
+  "a5_livestock_input": {
+    "1": "పాల్గొన లేదు లేదా చాలా తక్కువ పాల్గొన్నాను",
+    "2": "కొన్ని నిర్ణయాలలో పాల్గొన్నాను",
+    "3": "అన్నింటిలో లేదా దాదాపు అన్నిటిలో పాల్గొన్నాను",
+    "888": "వర్తించదు",
+    "999": "సమాధానం చెప్పదలుచుకోలేదు"
+  },
   "a5_livestock_type": {
     "1": "Cows",
     "2": "buffaloes",
     "3": "oxen",
     "4": "other"
+  },
+  "a5_loan_bank": {
+    "0": "No",
+    "1": "Yes",
+    "3": "Maybe can/cannot take it",
+    "999": "Don't want to disclose"
+  },
+  "a5_loan_bank_take": {
+    "0": "No",
+    "1": "Yes",
+    "999": "Don't know"
+  },
+  "a5_loan_ff": {
+    "0": "No",
+    "1": "Yes",
+    "3": "Maybe can/cannot take it",
+    "999": "Don't want to disclose"
+  },
+  "a5_loan_ff_take": {
+    "0": "No",
+    "1": "Yes",
+    "999": "Don't know"
+  },
+  "a5_loan_input": {
+    "0": "No",
+    "1": "Yes",
+    "3": "Maybe can/cannot take it",
+    "999": "Don't want to disclose"
+  },
+  "a5_loan_input_take": {
+    "0": "No",
+    "1": "Yes",
+    "999": "Don't know"
+  },
+  "a5_loan_shg": {
+    "0": "No",
+    "1": "Yes",
+    "3": "Maybe can/cannot take it",
+    "999": "Don't want to disclose"
+  },
+  "a5_loan_shg_take": {
+    "0": "No",
+    "1": "Yes",
+    "999": "Don't know"
+  },
+  "a5_ngo_alone": {
+    "0": "లేదు",
+    "1": "అవును",
+    "888": "వర్తించదు",
+    "999": "చెప్పదలచుకోలేదు"
+  },
+  "a5_ngo_who": {
+    "1": "స్వంత నిర్ణయం",
+    "2": "భార్య/భర్త",
+    "3": "ఇతర ఇంటి సభ్యులు",
+    "4": "వేరే ఇంటికి సంబందించిన సభ్యులు",
+    "888": "వర్తించదు"
+  },
+  "a5_nonfarm_income": {
+    "1": "ప్రమేయం లేదు లేదా చాలా తక్కువ",
+    "2": "కొన్ని విషయాలలో ప్రమేయం ఉంటుంది",
+    "3": "అన్ని విషయాలలో ప్రమేయం ఉంటుంది",
+    "888": "వర్తించదు",
+    "999": "సమాధానం చెప్పదలుచుకోలేదు"
+  },
+  "a5_nonfarm_input": {
+    "1": "పాల్గొన లేదు లేదా చాలా తక్కువ పాల్గొన్నాను",
+    "2": "కొన్ని నిర్ణయాలలో పాల్గొన్నాను",
+    "3": "అన్నింటిలో లేదా దాదాపు అన్నిటిలో పాల్గొన్నాను",
+    "888": "వర్తించదు",
+    "999": "సమాధానం చెప్పదలుచుకోలేదు"
   },
   "a5_relationship_f": {
     "1": "wife",
@@ -51,6 +189,11 @@
     "5": "grandfather",
     "6": "brother of",
     "7": "single"
+  },
+  "a5_shg": {
+    "0": "No",
+    "1": "Yes",
+    "999": "Don't know"
   },
   "a5_shg_comfort": {
     "1": "is very uncomfortable",
@@ -81,6 +224,98 @@
     "3": "sheep",
     "4": "Pigs",
     "5": "other animals"
+  },
+  "a5_smallexp_input": {
+    "1": "ప్రమేయం లేదు లేదా చాలా తక్కువ",
+    "2": "కొన్ని విషయాలలో ప్రమేయం ఉంటుంది",
+    "3": "అన్ని విషయాలలో ప్రమేయం ఉంటుంది",
+    "888": "వర్తించదు",
+    "999": "సమాధానం చెప్పదలుచుకోలేదు"
+  },
+  "a5_smc": {
+    "0": "No",
+    "1": "Yes",
+    "999": "Don't know"
+  },
+  "a5_visit_bank": {
+    "1": "ఎప్పుడూ వెళ్లలేదు",
+    "2": "కొన్ని సార్లు వెళ్ళాను",
+    "3": "చాలా సార్లు వెళ్ళాను",
+    "999": "చెప్పదలచుకోలేదు"
+  },
+  "a5_visit_community": {
+    "1": "రోజువారీ",
+    "2": "వారానికి ఒకసారి",
+    "3": "ప్రతి 2 వారాలకొకసారి",
+    "4": "నెలకొకసారి",
+    "5": "కొన్ని నెలలకు ఒక్కసారి",
+    "6": "ఎప్పుడు వేళ్లను",
+    "999": "చెప్పదలచుకోలేదు"
+  },
+  "a5_visit_family": {
+    "1": "అనుమతి తీసుకొని వెళ్తాను",
+    "2": "చెప్పి వెళ్తాను",
+    "3": "ఎప్పుడు వేళ్లను",
+    "999": "చెప్పదలచుకోలేదు"
+  },
+  "a5_visit_family_often": {
+    "1": "రోజువారీ",
+    "2": "వారానికి ఒకసారి",
+    "3": "ప్రతి 2 వారాలకొకసారి",
+    "4": "నెలకొకసారి",
+    "5": "కొన్ని నెలలకు ఒక్కసారి",
+    "6": "ఎప్పుడు వేళ్లను",
+    "999": "చెప్పదలచుకోలేదు"
+  },
+  "a5_visit_friend1": {
+    "1": "రోజువారీ",
+    "2": "వారానికి ఒకసారి",
+    "3": "ప్రతి 2 వారాలకొకసారి",
+    "4": "నెలకొకసారి",
+    "5": "కొన్ని నెలలకు ఒక్కసారి",
+    "6": "ఎప్పుడు వేళ్లను",
+    "999": "చెప్పదలచుకోలేదు"
+  },
+  "a5_visit_hospital1": {
+    "1": "రోజువారీ",
+    "2": "వారానికి ఒకసారి",
+    "3": "ప్రతి 2 వారాలకొకసారి",
+    "4": "నెలకొకసారి",
+    "5": "కొన్ని నెలలకు ఒక్కసారి",
+    "6": "ఎప్పుడు వేళ్లను",
+    "999": "చెప్పదలచుకోలేదు"
+  },
+  "a5_visit_market1": {
+    "1": "రోజువారీ",
+    "2": "వారానికి ఒకసారి",
+    "3": "ప్రతి 2 వారాలకొకసారి",
+    "4": "నెలకొకసారి",
+    "5": "కొన్ని నెలలకు ఒక్కసారి",
+    "6": "ఎప్పుడు వేళ్లను",
+    "999": "చెప్పదలచుకోలేదు"
+  },
+  "a5_visit_urban": {
+    "1": "రోజువారీ",
+    "2": "వారానికి ఒకసారి",
+    "3": "ప్రతి 2 వారాలకొకసారి",
+    "4": "నెలకొకసారి",
+    "5": "కొన్ని నెలలకు ఒక్కసారి",
+    "6": "ఎప్పుడు వేళ్లను",
+    "999": "చెప్పదలచుకోలేదు"
+  },
+  "a5_wage_income": {
+    "1": "ప్రమేయం లేదు లేదా చాలా తక్కువ",
+    "2": "కొన్ని విషయాలలో ప్రమేయం ఉంటుంది",
+    "3": "అన్ని విషయాలలో ప్రమేయం ఉంటుంది",
+    "888": "వర్తించదు",
+    "999": "సమాధానం చెప్పదలుచుకోలేదు"
+  },
+  "a5_wage_input": {
+    "1": "పాల్గొన లేదు లేదా చాలా తక్కువ పాల్గొన్నాను",
+    "2": "కొన్ని నిర్ణయాలలో పాల్గొన్నాను",
+    "3": "అన్నింటిలో లేదా దాదాపు అన్నిటిలో పాల్గొన్నాను",
+    "888": "వర్తించదు",
+    "999": "సమాధానం చెప్పదలుచుకోలేదు"
   },
   "a10_0030": {
     "1": "sleep/rest",
@@ -856,12 +1091,46 @@
     "3": "Sun",
     "4": "Sunita"
   },
+  "a10_work_hours": {
+    "1": "More than usual",
+    "2": "As usual",
+    "3": "Less than usual"
+  },
+  "agri_production_complete": {
+    "0": "Incomplete",
+    "1": "Unverified",
+    "2": "Complete"
+  },
+  "basic_complete": {
+    "0": "Incomplete",
+    "1": "Unverified",
+    "2": "Complete"
+  },
+  "decision_making_complete": {
+    "0": "Incomplete",
+    "1": "Unverified",
+    "2": "Complete"
+  },
+  "eligibility_female_complete": {
+    "0": "Incomplete",
+    "1": "Unverified",
+    "2": "Complete"
+  },
+  "eligibility_male_complete": {
+    "0": "Incomplete",
+    "1": "Unverified",
+    "2": "Complete"
+  },
   "h1_cookfuel": {
     "1": "LPG / Gas",
     "2": "sticks",
     "3": "treebranches / grass",
     "4": "Agricultural based garbage",
     "777": "etc"
+  },
+  "h1_debt": {
+    "1": 1,
+    "2": 0
   },
   "h1_drinkingwater": {
     "1": "pipeinthehouse",
@@ -870,6 +1139,10 @@
     "4": "tubewellorbore",
     "5": "waterplantathome",
     "777": "Misc"
+  },
+  "h1_emi": {
+    "1": 1,
+    "2": 0
   },
   "h1_exp_phone_unit": {
     "1": "about 1 month",
@@ -885,6 +1158,10 @@
     "4": "Ceramic tiles",
     "5": "clay",
     "777": "Misc"
+  },
+  "h1_income_cultivation": {
+    "1": 1,
+    "2": 0
   },
   "h1_interviewer": {
     "1": "Jyoti",
@@ -915,6 +1192,10 @@
     "3": "clay stone (brick)",
     "4": "mud",
     "777": "Misc"
+  },
+  "h2_income_cultivation": {
+    "1": 1,
+    "2": 0
   },
   "h3_crop1": {
     "1": "Paddy",
@@ -1021,6 +1302,17 @@
     "4": "FPO/NGO Warehouse",
     "5": "in the field",
     "777": "Misc"
+  },
+  "h3_crop1_storepest": {
+    "0": "None",
+    "1": "Chemical pesticide(DDT dust , boric Powder , EDTA, EDT, CELPHOS)",
+    "2": "Natural Pesticide ( eg Neem oil , neem leaves )",
+    "3": "I don’t know"
+  },
+  "h3_crop1_syear": {
+    "1": "2020",
+    "2": "2021",
+    "3": "2022"
   },
   "h3_crop1_timeunit": {
     "1": "per acre",
@@ -1661,6 +1953,17 @@
     "4": "FPO/NGO Warehouse",
     "5": "in the field",
     "777": "Misc"
+  },
+  "h3_crop2_storepest": {
+    "0": "None",
+    "1": "Chemical pesticide(DDT dust , boric Powder , EDTA, EDT, CELPHOS)",
+    "2": "Natural Pesticide ( eg Neem oil , neem leaves )",
+    "3": "I don’t know"
+  },
+  "h3_crop2_syear": {
+    "1": "2020",
+    "2": "2021",
+    "3": "2022"
   },
   "h3_crop2_timeunit": {
     "1": "per acre",
@@ -2303,6 +2606,17 @@
     "5": "in the field",
     "777": "Misc"
   },
+  "h3_crop3_storepest": {
+    "0": "None",
+    "1": "Chemical pesticide(DDT dust , boric Powder , EDTA, EDT, CELPHOS)",
+    "2": "Natural Pesticide ( eg Neem oil , neem leaves )",
+    "3": "I don’t know"
+  },
+  "h3_crop3_syear": {
+    "1": "2020",
+    "2": "2021",
+    "3": "2022"
+  },
   "h3_crop3_timeunit": {
     "1": "per acre",
     "2": "per week",
@@ -2377,6 +2691,10 @@
     "777": "other"
   },
   "h3_crop3caster": {
+    "1": "Local (desi)",
+    "777": "other"
+  },
+  "h3_crop3castor": {
     "1": "Local (desi)",
     "777": "other"
   },
@@ -2943,6 +3261,17 @@
     "4": "FPO/NGO Warehouse",
     "5": "in the field",
     "777": "Misc"
+  },
+  "h3_crop4_storepest": {
+    "0": "None",
+    "1": "Chemical pesticide(DDT dust , boric Powder , EDTA, EDT, CELPHOS)",
+    "2": "Natural Pesticide ( eg Neem oil , neem leaves )",
+    "3": "I don’t know"
+  },
+  "h3_crop4_syear": {
+    "1": "2020",
+    "2": "2021",
+    "3": "2022"
   },
   "h3_crop4_timeunit": {
     "1": "per acre",
@@ -3584,6 +3913,17 @@
     "4": "FPO/NGO Warehouse",
     "5": "in the field",
     "777": "Misc"
+  },
+  "h3_crop5_storepest": {
+    "0": "None",
+    "1": "Chemical pesticide(DDT dust , boric Powder , EDTA, EDT, CELPHOS)",
+    "2": "Natural Pesticide ( eg Neem oil , neem leaves )",
+    "3": "I don’t know"
+  },
+  "h3_crop5_syear": {
+    "1": "2020",
+    "2": "2021",
+    "3": "2022"
   },
   "h3_crop5_timeunit": {
     "1": "per acre",
@@ -5590,6 +5930,17 @@
     "21": "Azolla",
     "777": "Misc"
   },
+  "h3_plot1certstatus": {
+    "1": "Fully organic",
+    "2": "conversion period",
+    "3": "Don’t know"
+  },
+  "h3_plot1certtype": {
+    "1": "PGS",
+    "2": "Non PGS",
+    "3": "PGS and Non PGS",
+    "4": "Don’t know"
+  },
   "h3_plot1fert": {
     "0": "none",
     "1": "Chemical fertilizers (like DAP and Urea)",
@@ -5605,8 +5956,8 @@
     "777": "Misc"
   },
   "h3_plot1fert_synbagwt": {
-    "1": "25 kg",
-    "2": "50 kg"
+    "1": "25",
+    "2": "50"
   },
   "h3_plot1fert_syntype": {
     "1": "Phosphate (NPK mix)",
@@ -5614,6 +5965,16 @@
     "3": "Urea",
     "4": "MOP",
     "5": "SSP"
+  },
+  "h3_plot1irrigation": {
+    "1": "in Kharif Only",
+    "2": "In Rabi and Kharif",
+    "3": "No provision"
+  },
+  "h3_plot1organic": {
+    "0": "Conventional",
+    "1": "Organic",
+    "2": "NPM"
   },
   "h3_plot1pest": {
     "0": "none",
@@ -5641,6 +6002,17 @@
     "14": "Mulching (live or dry)",
     "777": "Misc"
   },
+  "h3_plot2certstatus": {
+    "1": "Fully organic",
+    "2": "conversion period",
+    "3": "Don’t know"
+  },
+  "h3_plot2certtype": {
+    "1": "PGS",
+    "2": "Non PGS",
+    "3": "PGS and Non PGS",
+    "4": "Don’t know"
+  },
   "h3_plot2fert": {
     "0": "none",
     "1": "Chemical fertilizers (like DAP and Urea)",
@@ -5656,8 +6028,8 @@
     "777": "Misc"
   },
   "h3_plot2fert_synbagwt": {
-    "1": "25 kg",
-    "2": "50 kg"
+    "1": "25",
+    "2": "50"
   },
   "h3_plot2fert_syntype": {
     "1": "Phosphate (NPK mix)",
@@ -5665,6 +6037,16 @@
     "3": "Urea",
     "4": "MOP",
     "5": "SSP"
+  },
+  "h3_plot2irrigation": {
+    "1": "in Kharif Only",
+    "2": "In Rabi and Kharif",
+    "3": "No provision"
+  },
+  "h3_plot2organic": {
+    "0": "Conventional",
+    "1": "Organic",
+    "2": "NPM"
   },
   "h3_plot2pest": {
     "0": "none",
@@ -5691,6 +6073,17 @@
     "14": "Mulching (live or dry)",
     "777": "Misc"
   },
+  "h3_plot3certstatus": {
+    "1": "Fully organic",
+    "2": "exchange period",
+    "3": "Don’t know"
+  },
+  "h3_plot3certtype": {
+    "1": "PGS",
+    "2": "Non PGS",
+    "3": "PGS and Non PGS",
+    "4": "Don’t know"
+  },
   "h3_plot3fert": {
     "0": "none",
     "1": "Chemical fertilizers (like DAP and Urea)",
@@ -5706,8 +6099,8 @@
     "777": "Misc"
   },
   "h3_plot3fert_synbagwt": {
-    "1": "25 kg",
-    "2": "50 kg"
+    "1": "25",
+    "2": "50"
   },
   "h3_plot3fert_syntype": {
     "1": "Phosphate (NPK mix)",
@@ -5715,6 +6108,16 @@
     "3": "Urea",
     "4": "MOP",
     "5": "SSP"
+  },
+  "h3_plot3irrigation": {
+    "1": "in Kharif Only",
+    "2": "In Rabi and Kharif",
+    "3": "No provision"
+  },
+  "h3_plot3organic": {
+    "0": "Conventional",
+    "1": "Organic",
+    "2": "NPM"
   },
   "h3_plot3pest": {
     "0": "none",
@@ -5747,6 +6150,16 @@
     "3": "three",
     "4": "four",
     "5": "five or more"
+  },
+  "household_economics__v_4": {
+    "0": "Incomplete",
+    "1": "Unverified",
+    "2": "Complete"
+  },
+  "household_economics_complete": {
+    "0": "Incomplete",
+    "1": "Unverified",
+    "2": "Complete"
   },
   "s1_dobtype": {
     "1": "Based on Aadhaar Card/ any other card issued by Govt",
@@ -5807,6 +6220,11 @@
     "7": "Neighbors",
     "777": "others"
   },
+  "s4_district": {
+    "1": "Kadapa",
+    "2": "Anantapur",
+    "3": "Kurnool"
+  },
   "s4_floor": {
     "0": "Ground",
     "1": "First",
@@ -5841,6 +6259,12 @@
     "1": "Kondapuram",
     "2": "Mudumala",
     "3": "Eerladinne"
+  },
+  "s4_hhcategory": {
+    "1": "S2S (organic in at least one plot)",
+    "2": "NPM/Transition",
+    "3": "Conventional",
+    "4": "Used to be organic, but no longer"
   },
   "s4_hhgender": {
     "1": "male",
@@ -5937,5 +6361,10 @@
   },
   "s4_village_ku13": {
     "1": "Eerladinne"
+  },
+  "time_use_complete": {
+    "0": "Incomplete",
+    "1": "Unverified",
+    "2": "Complete"
   }
 }
