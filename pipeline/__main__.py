@@ -1,3 +1,4 @@
+import json
 from pipeline.cleanup_a10 import calculate_work_totals
 from pipeline.cleanup_h1 import (
     add_exp_other_specify_to_h1_exp_substance_amt,
@@ -33,10 +34,13 @@ from pipeline.utils import process_data_with_json
 
 def main():
     # merged_df = merge_redcap_event_rows('/root/sandbox/disa/data_v0004.tsv')
-    raw_df = pd.read_csv("/root/sandbox/disa/data_v0004.tsv", sep="\t", header=0)
-    
+    raw_df = pd.read_csv("/root/sandbox/disa/data_v0005.tsv", sep="\t", header=0)
+
     # Replace the data
-    json_dict = pd.read_json("/root/sandbox/disa/lookup-table/JSON_fields.json")
+    json_dict = {}
+    with open("/root/sandbox/disa/lookup-table/JSON_fields.json", "r") as json_file_ptr:
+        json_dict = json.load(json_file_ptr)
+
     replaced_df = process_data_with_json(raw_df, json_dict)
     replaced_df.to_csv("/root/sandbox/disa/data_replaced.tsv", sep="\t", index=False)
 

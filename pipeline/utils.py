@@ -2,18 +2,21 @@ from typing import Dict
 import pandas as pd
 
 
-def process_data_with_json(raw_df: pd.DataFrame, column_name_dict: pd.DataFrame):
-    for column_name in raw_df:
-        if column_name in column_name_dict:
-            column_mapping = dict(
-                [(value, key) for key, value in column_name_dict[column_name].items()]
-            )
-            raw_df.replace({column_name: column_mapping}, inplace=True)
+def process_data_with_json(
+    raw_df: pd.DataFrame, column_name_dict: Dict
+) -> pd.DataFrame:
+    processed_df = (
+        raw_df.copy()
+    )  # Create a copy to avoid modifying the original DataFrame
 
-    return raw_df
+    for column_name, value_mapping in column_name_dict.items():
+        if column_name in processed_df.columns:
+            processed_df[column_name] = processed_df[column_name].replace(value_mapping)
+
+    return processed_df
 
 
-def apply_patch(main_df: pd.DataFrame, patch_df: pd.DataFrame):
+def apply_patch(main_df: pd.DataFrame, patch_df: pd.DataFrame) -> pd.DataFrame:
     def update_cell(df, column_name, row_index, new_value):
         df.loc[df["hhid"] == row_index, column_name] = new_value
 

@@ -22,7 +22,7 @@ TIME_USE_DICT: Dict[str, str] = {
 }
 
 
-def eliminate_undocumented_work_columns(df, column_names):
+def eliminate_undocumented_work_columns(df, column_names) -> pd.DataFrame:
     for column in column_names:
         drop_list = []
         if df[column].isna().all():
@@ -34,7 +34,7 @@ def eliminate_undocumented_work_columns(df, column_names):
     return df
 
 
-def calculate_work_totals(df):
+def calculate_work_totals(df) -> pd.DataFrame:
     # Generate variables as total number of hours spent in each category based on
     #  table in 'time_use' sheet. Note that data are collected in 30 minute
     #  blocks
