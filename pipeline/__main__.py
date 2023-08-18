@@ -51,16 +51,16 @@ def main():
         }
 
     replaced_df = process_data_with_json(raw_df, json_dict)
-    replaced_df.to_csv("data_replaced.tsv", sep="\t", index=False)
+    replaced_df.to_csv("data_replaced_latest.tsv", sep="\t", index=False)
 
     # Process the patches
     patched_df = process_patch_files(
         CURRENT_DIR.parent.joinpath("patches"), replaced_df
     )
-    patched_df.to_csv("test.tsv", sep="\t", index=False)
+    patched_df.to_csv("data_patcched_latest.tsv", sep="\t", index=False)
 
     # s4 Study
-    cleaned_df = cleanup_s4_hhcategory(replaced_df)
+    cleaned_df = cleanup_s4_hhcategory(patched_df)
     cleaned_df = merge_s4_cluster(cleaned_df)
     cleaned_df = merge_s4_gp(cleaned_df)
     cleaned_df = merge_s4_village(cleaned_df)

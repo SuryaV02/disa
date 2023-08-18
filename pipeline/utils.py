@@ -17,7 +17,7 @@ def process_data_with_json(
     return processed_df
 
 
-def apply_patch(main_df: pd.DataFrame, patch_df: pd.DataFrame) -> pd.DataFrame:
+def apply_patch(main_df: pd.DataFrame, patch_df: pd.DataFrame) -> None:
     def update_cell(
         df: pd.DataFrame,
         column_name: str,
@@ -31,7 +31,6 @@ def apply_patch(main_df: pd.DataFrame, patch_df: pd.DataFrame) -> pd.DataFrame:
         ] = new_value
 
     for _, patch_row in patch_df.iterrows():
-        print(patch_row)
         for column_name, new_value in patch_row.items():
             if column_name != "hhid" and column_name != "redcap_event_name":
                 update_cell(
@@ -41,20 +40,18 @@ def apply_patch(main_df: pd.DataFrame, patch_df: pd.DataFrame) -> pd.DataFrame:
                     patch_row["redcap_event_name"],
                     new_value,
                 )
-    return main_df
 
 
 def process_patch_files(
     patches_path: Path, main_dataframe: pd.DataFrame
 ) -> pd.DataFrame:
     patch_files_list = patches_path.glob("*.csv")
-    temp_df = main_dataframe
+    temp_df = main_dataframe.copy()
 
     # Apply all the patches sequentially
     for patch_file in patch_files_list:
         print(f"Processing Patch File: {patch_file.name} ...")
         patch_df = pd.read_csv(patch_file.absolute(), sep=",", header=0)
-        print(patch_df.to_string())
-        temp_df = apply_patch(temp_df, patch_df)
+        apply_patch(temp_df, patch_df)
 
     return temp_df
