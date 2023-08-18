@@ -226,11 +226,11 @@
     "5": "other animals"
   },
   "a5_smallexp_input": {
-    "1": "ప్రమేయం లేదు లేదా చాలా తక్కువ",
-    "2": "కొన్ని విషయాలలో ప్రమేయం ఉంటుంది",
-    "3": "అన్ని విషయాలలో ప్రమేయం ఉంటుంది",
-    "888": "వర్తించదు",
-    "999": "సమాధానం చెప్పదలుచుకోలేదు"
+    "1": "No or very little involvement",
+    "2": "involves certain matters",
+    "3": "involves in all things",
+    "888": "not applicable",
+    "999": "Do not want to answer"
   },
   "a5_smc": {
     "0": "No",
@@ -238,10 +238,10 @@
     "999": "Don't know"
   },
   "a5_visit_bank": {
-    "1": "ఎప్పుడూ వెళ్లలేదు",
-    "2": "కొన్ని సార్లు వెళ్ళాను",
-    "3": "చాలా సార్లు వెళ్ళాను",
-    "999": "చెప్పదలచుకోలేదు"
+    "1": "never went",
+    "2": "went a few times",
+    "3": "Went many times",
+    "999": "Don't want to say"
   },
   "a5_visit_community": {
     "1": "daily",
@@ -253,10 +253,10 @@
     "999": "Don't want to say"
   },
   "a5_visit_family": {
-    "1": "అనుమతి తీసుకొని వెళ్తాను",
-    "2": "చెప్పి వెళ్తాను",
-    "3": "ఎప్పుడు వేళ్లను",
-    "999": "చెప్పదలచుకోలేదు"
+    "1": "will take permission",
+    "2": "I'll tell you",
+    "3": "never went",
+    "999": "Don't want to say"
   },
   "a5_visit_family_often": {
     "1": "daily",
