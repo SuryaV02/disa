@@ -1,12 +1,12 @@
 {
   "a5_away": {
-    "1": "రోజువారీ",
-    "2": "వారానికి ఒకసారి",
-    "3": "ప్రతి 2 వారాలకొకసారి",
-    "4": "నెలకొకసారి",
-    "5": "కొన్ని నెలలకు ఒక్కసారి",
-    "6": "ఎప్పుడు వేళ్లను",
-    "999": "చెప్పదలచుకోలేదు"
+    "1": "daily",
+    "2": "once a week",
+    "3": "every 2 weeks",
+    "4": "once a month",
+    "5": "once every few months",
+    "6": "never went",
+    "999": "Don't want to say"
   },
   "a5_away_long": {
     "0": "No",
@@ -14,32 +14,32 @@
     "999": "Don't want to disclose"
   },
   "a5_bigexp_input": {
-    "1": "ప్రమేయం లేదు లేదా చాలా తక్కువ",
-    "2": "కొన్ని విషయాలలో ప్రమేయం ఉంటుంది",
-    "3": "అన్ని విషయాలలో ప్రమేయం ఉంటుంది",
-    "888": "వర్తించదు",
-    "999": "సమాధానం చెప్పదలుచుకోలేదు"
+    "1": "No or very little involvement",
+    "2": "involves certain matters",
+    "3": "involves in all things",
+    "888": "not applicable",
+    "999": "Do not want to answer"
   },
   "a5_cashcrop_income": {
-    "1": "ప్రమేయం లేదు లేదా చాలా తక్కువ",
-    "2": "కొన్ని విషయాలలో ప్రమేయం ఉంటుంది",
-    "3": "అన్ని విషయాలలో ప్రమేయం ఉంటుంది",
-    "888": "వర్తించదు",
-    "999": "సమాధానం చెప్పదలుచుకోలేదు"
+    "1": "No or very little involvement",
+    "2": "involves certain matters",
+    "3": "involves in all things",
+    "888": "not applicable",
+    "999": "Do not want to answer"
   },
   "a5_cashcrop_input": {
-    "1": "పాల్గొన లేదు లేదా చాలా తక్కువ పాల్గొన్నాను",
-    "2": "కొన్ని నిర్ణయాలలో పాల్గొన్నాను",
-    "3": "అన్నింటిలో లేదా దాదాపు అన్నిటిలో పాల్గొన్నాను",
-    "888": "వర్తించదు",
-    "999": "సమాధానం చెప్పదలుచుకోలేదు"
+    "1": "Not involved or very little involved",
+    "2": "participated in some decisions",
+    "3": "participated in all or almost all",
+    "888": "not applicable",
+    "999": "Do not want to answer"
   },
   "a5_family": {
-    "1": "ఈ గ్రామంలో",
-    "2": "వేరే గ్రామంలో",
-    "3": "తల్లిదండ్రులతో నివసిస్తున్నారు",
-    "4": "ఇద్దరు తల్లితండ్రులు చనిపోయారు",
-    "999": "చెప్పదలచుకోలేదు"
+    "1": "In this village",
+    "2": "in another village",
+    "3": "Living with parents",
+    "4": "both parents dead",
+    "999": "Don't want to say"
   },
   "a5_fpo": {
     "0": "No",
@@ -62,10 +62,10 @@
     "2": "female"
   },
   "a5_healthcentre": {
-    "1": "అనుమతి తీసుకొని వెళ్తాను",
-    "2": "చెప్పి వెళ్తాను",
-    "3": "ఎప్పుడు వేళ్లను",
-    "999": "చెప్పదలచుకోలేదు"
+    "1": "will take permission",
+    "2": "I'll tell you",
+    "3": "never went",
+    "999": "Don't want to say"
   },
   "a5_interview": {
     "1": "alone",
@@ -82,18 +82,18 @@
     "4": "Sunita"
   },
   "a5_livestock_income": {
-    "1": "ప్రమేయం లేదు లేదా చాలా తక్కువ",
-    "2": "కొన్ని విషయాలలో ప్రమేయం ఉంటుంది",
-    "3": "అన్ని విషయాలలో ప్రమేయం ఉంటుంది",
-    "888": "వర్తించదు",
-    "999": "సమాధానం చెప్పదలుచుకోలేదు"
+    "1": "No or very little involvement",
+    "2": "involves certain matters",
+    "3": "involves in all things",
+    "888": "not applicable",
+    "999": "Do not want to answer"
   },
   "a5_livestock_input": {
-    "1": "పాల్గొన లేదు లేదా చాలా తక్కువ పాల్గొన్నాను",
-    "2": "కొన్ని నిర్ణయాలలో పాల్గొన్నాను",
-    "3": "అన్నింటిలో లేదా దాదాపు అన్నిటిలో పాల్గొన్నాను",
-    "888": "వర్తించదు",
-    "999": "సమాధానం చెప్పదలుచుకోలేదు"
+    "1": "No or very little involvement",
+    "2": "involves certain matters",
+    "3": "involves in all things",
+    "888": "not applicable",
+    "999": "Do not want to answer"
   },
   "a5_livestock_type": {
     "1": "Cows",
@@ -146,31 +146,31 @@
     "999": "Don't know"
   },
   "a5_ngo_alone": {
-    "0": "లేదు",
-    "1": "అవును",
-    "888": "వర్తించదు",
-    "999": "చెప్పదలచుకోలేదు"
+    "0": "No",
+    "1": "Yes",
+    "888": "not applicable",
+    "999": "Don't want to say"
   },
   "a5_ngo_who": {
-    "1": "స్వంత నిర్ణయం",
-    "2": "భార్య/భర్త",
-    "3": "ఇతర ఇంటి సభ్యులు",
-    "4": "వేరే ఇంటికి సంబందించిన సభ్యులు",
-    "888": "వర్తించదు"
+    "1": "own decision",
+    "2": "Wife/Husband",
+    "3": "other household members",
+    "4": "Members belonging to a different household",
+    "888": "Not applicable"
   },
   "a5_nonfarm_income": {
-    "1": "ప్రమేయం లేదు లేదా చాలా తక్కువ",
-    "2": "కొన్ని విషయాలలో ప్రమేయం ఉంటుంది",
-    "3": "అన్ని విషయాలలో ప్రమేయం ఉంటుంది",
-    "888": "వర్తించదు",
-    "999": "సమాధానం చెప్పదలుచుకోలేదు"
+    "1": "No or very little involvement",
+    "2": "involves certain matters",
+    "3": "involves in all things",
+    "888": "not applicable",
+    "999": "Do not want to answer"
   },
   "a5_nonfarm_input": {
-    "1": "పాల్గొన లేదు లేదా చాలా తక్కువ పాల్గొన్నాను",
-    "2": "కొన్ని నిర్ణయాలలో పాల్గొన్నాను",
-    "3": "అన్నింటిలో లేదా దాదాపు అన్నిటిలో పాల్గొన్నాను",
-    "888": "వర్తించదు",
-    "999": "సమాధానం చెప్పదలుచుకోలేదు"
+    "1": "Not involved or very little involved",
+    "2": "participated in some decisions",
+    "3": "participated in all or almost all",
+    "888": "not applicable",
+    "999": "Do not want to answer"
   },
   "a5_relationship_f": {
     "1": "wife",
@@ -244,13 +244,13 @@
     "999": "చెప్పదలచుకోలేదు"
   },
   "a5_visit_community": {
-    "1": "రోజువారీ",
-    "2": "వారానికి ఒకసారి",
-    "3": "ప్రతి 2 వారాలకొకసారి",
-    "4": "నెలకొకసారి",
-    "5": "కొన్ని నెలలకు ఒక్కసారి",
-    "6": "ఎప్పుడు వేళ్లను",
-    "999": "చెప్పదలచుకోలేదు"
+    "1": "daily",
+    "2": "once a week",
+    "3": "every 2 weeks",
+    "4": "once a month",
+    "5": "once every few months",
+    "6": "never went",
+    "999": "Don't want to say"
   },
   "a5_visit_family": {
     "1": "అనుమతి తీసుకొని వెళ్తాను",
@@ -259,49 +259,49 @@
     "999": "చెప్పదలచుకోలేదు"
   },
   "a5_visit_family_often": {
-    "1": "రోజువారీ",
-    "2": "వారానికి ఒకసారి",
-    "3": "ప్రతి 2 వారాలకొకసారి",
-    "4": "నెలకొకసారి",
-    "5": "కొన్ని నెలలకు ఒక్కసారి",
-    "6": "ఎప్పుడు వేళ్లను",
-    "999": "చెప్పదలచుకోలేదు"
+    "1": "daily",
+    "2": "once a week",
+    "3": "every 2 weeks",
+    "4": "once a month",
+    "5": "once every few months",
+    "6": "never went",
+    "999": "Don't want to say"
   },
   "a5_visit_friend1": {
-    "1": "రోజువారీ",
-    "2": "వారానికి ఒకసారి",
-    "3": "ప్రతి 2 వారాలకొకసారి",
-    "4": "నెలకొకసారి",
-    "5": "కొన్ని నెలలకు ఒక్కసారి",
-    "6": "ఎప్పుడు వేళ్లను",
-    "999": "చెప్పదలచుకోలేదు"
+    "1": "daily",
+    "2": "once a week",
+    "3": "every 2 weeks",
+    "4": "once a month",
+    "5": "once every few months",
+    "6": "never went",
+    "999": "Don't want to say"
   },
   "a5_visit_hospital1": {
-    "1": "రోజువారీ",
-    "2": "వారానికి ఒకసారి",
-    "3": "ప్రతి 2 వారాలకొకసారి",
-    "4": "నెలకొకసారి",
-    "5": "కొన్ని నెలలకు ఒక్కసారి",
-    "6": "ఎప్పుడు వేళ్లను",
-    "999": "చెప్పదలచుకోలేదు"
+    "1": "daily",
+    "2": "once a week",
+    "3": "every 2 weeks",
+    "4": "once a month",
+    "5": "once every few months",
+    "6": "never went",
+    "999": "Don't want to say"
   },
   "a5_visit_market1": {
-    "1": "రోజువారీ",
-    "2": "వారానికి ఒకసారి",
-    "3": "ప్రతి 2 వారాలకొకసారి",
-    "4": "నెలకొకసారి",
-    "5": "కొన్ని నెలలకు ఒక్కసారి",
-    "6": "ఎప్పుడు వేళ్లను",
-    "999": "చెప్పదలచుకోలేదు"
+    "1": "daily",
+    "2": "once a week",
+    "3": "every 2 weeks",
+    "4": "once a month",
+    "5": "once every few months",
+    "6": "never went",
+    "999": "Don't want to say"
   },
   "a5_visit_urban": {
-    "1": "రోజువారీ",
-    "2": "వారానికి ఒకసారి",
-    "3": "ప్రతి 2 వారాలకొకసారి",
-    "4": "నెలకొకసారి",
-    "5": "కొన్ని నెలలకు ఒక్కసారి",
-    "6": "ఎప్పుడు వేళ్లను",
-    "999": "చెప్పదలచుకోలేదు"
+    "1": "daily",
+    "2": "once a week",
+    "3": "every 2 weeks",
+    "4": "once a month",
+    "5": "once every few months",
+    "6": "never went",
+    "999": "Don't want to say"
   },
   "a5_wage_income": {
     "1": "ప్రమేయం లేదు లేదా చాలా తక్కువ",
