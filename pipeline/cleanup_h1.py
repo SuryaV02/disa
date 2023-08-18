@@ -81,16 +81,14 @@ def update_h1_exp_phone_amt(df) -> pd.DataFrame:
     # 2 months and 3 if reported for 3 months
 
     def convert_text_to_months(text):
-        print("TEST:")
-        print(text)
         if text == "other":
             raise NotImplementedError(
-                f"Cannot process value: {text} for column: 'h1_exp_phone_unit'"
+                f"Cannot process value: '{text}' for column: 'h1_exp_phone_unit'"
             )
         pattern = r".*(\d+)\s*([m,M]onth|[y,Y]ear)"
         match = re.search(pattern, text)
         if match is None:
-            raise Exception("Could not extract month length from text: ", text)
+            raise Exception(f"Could not extract month length from text: '{text}'")
 
         base = int(match.group(1))
         multiplier = 1 if match.group(2).lower() == "month" else 12

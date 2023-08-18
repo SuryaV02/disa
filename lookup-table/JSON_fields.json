@@ -304,18 +304,18 @@
     "999": "Don't want to say"
   },
   "a5_wage_income": {
-    "1": "ప్రమేయం లేదు లేదా చాలా తక్కువ",
-    "2": "కొన్ని విషయాలలో ప్రమేయం ఉంటుంది",
-    "3": "అన్ని విషయాలలో ప్రమేయం ఉంటుంది",
-    "888": "వర్తించదు",
-    "999": "సమాధానం చెప్పదలుచుకోలేదు"
+    "1": "No or very little involvement",
+    "2": "involves certain matters",
+    "3": "involves in all things",
+    "888": "not applicable",
+    "999": "Do not want to answer"
   },
   "a5_wage_input": {
-    "1": "పాల్గొన లేదు లేదా చాలా తక్కువ పాల్గొన్నాను",
-    "2": "కొన్ని నిర్ణయాలలో పాల్గొన్నాను",
-    "3": "అన్నింటిలో లేదా దాదాపు అన్నిటిలో పాల్గొన్నాను",
-    "888": "వర్తించదు",
-    "999": "సమాధానం చెప్పదలుచుకోలేదు"
+    "1": "Not involved or very little involved",
+    "2": "participated in some decisions",
+    "3": "participated in all or almost all",
+    "888": "not applicable",
+    "999": "Do not want to answer"
   },
   "a10_0030": {
     "1": "Sleep/Rest",
@@ -1148,7 +1148,7 @@
     "1": "about 1 month",
     "2": "about 2 months",
     "3": "about 3 months",
-    "4": "about a year period",
+    "4": "about 1 year period",
     "777": "other"
   },
   "h1_floor": {
