@@ -1,10 +1,8 @@
 import numpy as np
 import pandas as pd
 
-from pipeline.utils import purge_outliers
 
-
-def purge_h3_outliers(df):
+def purge_h3_outliers(df) -> pd.DataFrame:
     mask = df["h3_pesticide"] > 200000
     filtered_df = df[~mask]
     dropped_ids = df[mask]["hhid"].unique()
@@ -13,7 +11,7 @@ def purge_h3_outliers(df):
     return filtered_df
 
 
-def calculate_h3_ownland(df):
+def calculate_h3_ownland(df) -> pd.DataFrame:
     # First cleanup the individual land data
     updated_df = calculate_h3_plot1land(df)
     updated_df = calculate_h3_plot2land(updated_df)
@@ -28,7 +26,7 @@ def calculate_h3_ownland(df):
     return updated_df
 
 
-def calculate_h3_farmsize(df):
+def calculate_h3_farmsize(df) -> pd.DataFrame:
     # We must calculate h3_ownland before calculating this
     df = calculate_h3_ownland(df)
 
@@ -39,7 +37,7 @@ def calculate_h3_farmsize(df):
     return df
 
 
-def calculate_h3_cultivateland(df):
+def calculate_h3_cultivateland(df) -> pd.DataFrame:
     # Generate total cultivated land in number of acres. 1 acre = 100 cents, 1 gunta = 2.5 cents
     df["h3_cultivateland"] = (
         df["h3_cultivateacre"].fillna(0)
@@ -49,7 +47,7 @@ def calculate_h3_cultivateland(df):
     return df
 
 
-def classify_h3_fullyorganic(df):
+def classify_h3_fullyorganic(df) -> pd.DataFrame:
     # Note that these can't be created until you've calculated organic status for each plot individually!
     # Generate binary variable: fully organic if all plots of land reported by farmer are organic, not organic otherwise
 
@@ -90,7 +88,7 @@ def classify_h3_fullyorganic(df):
     return df
 
 
-def calculate_h3_plot1land(df):
+def calculate_h3_plot1land(df) -> pd.DataFrame:
     # Generate total cultivated land in number of acres. 1 acre = 100 cents
     df["h3_plot1land"] = (
         df["h3_plot1acre"].fillna(0)
@@ -100,7 +98,7 @@ def calculate_h3_plot1land(df):
     return df
 
 
-def calculate_h3_plot2land(df):
+def calculate_h3_plot2land(df) -> pd.DataFrame:
     # Generate total cultivated land in number of acres. 1 acre = 100 cents
     df["h3_plot2land"] = (
         df["h3_plot2acre"].fillna(0)
@@ -110,7 +108,7 @@ def calculate_h3_plot2land(df):
     return df
 
 
-def calculate_h3_plotNorganic_calc(df):
+def calculate_h3_plotNorganic_calc(df) -> pd.DataFrame:
     # Generate categorical variable.'Organic' if h3_plot2fert and h3_plot2pest are not using synthetic fertilizers
     # or pesticides (option 1), NPM if not using synthetic pesticides, and all other households as 'Conventional'
     # TODO: Fix NPM logic since most are getting assigned NPM
@@ -166,19 +164,19 @@ def calculate_h3_plotNorganic_calc(df):
             return row
 
         # First eliminate all the conventional
-        if (row[synthetic_fert_column_name] == "Checked") and (
-            row[pesticide_column_name] == "Checked"
+        if (row[synthetic_fert_column_name] == True) and (
+            row[pesticide_column_name] == True
         ):
             row[classification_column_name] = "Conventional"
         elif (
-            (row[synthetic_fert_column_name] == "Unchecked")
-            and (row[fert_other_column_name] != "yes")
-            and (row[pesticide_column_name] != "Checked")  # Don't Care pesticide
+            (row[synthetic_fert_column_name] == False)
+            and (row[fert_other_column_name] != True)
+            and (row[pesticide_column_name] != True)  # Don't Care pesticide
         ):  # Adding the extra condition incase its labeled data
             row[classification_column_name] = "Organic"
         elif (
-            row[pesticide_column_name] != "Checked"
-            or row[pesticide_other_column_name] == "Checked"
+            row[pesticide_column_name] != True
+            or row[pesticide_other_column_name] == True
         ):  # Don't care logic for fertilizer
             row[classification_column_name] = "NPM"
         else:
@@ -193,7 +191,7 @@ def calculate_h3_plotNorganic_calc(df):
     return df
 
 
-def calculate_h3_plot3land(df):
+def calculate_h3_plot3land(df) -> pd.DataFrame:
     # Generate total cultivated land in number of acres. 1 acre = 100 cents
     df["h3_plot3land"] = (
         df["h3_plot3acre"].fillna(0)
@@ -203,7 +201,7 @@ def calculate_h3_plot3land(df):
     return df
 
 
-def calcualte_h3_costofcult(df):
+def calcualte_h3_costofcult(df) -> pd.DataFrame:
     # sum of all cost variables below, including h3_otherorganic and h3_madecost, and seed cost for all five crops
     """
     h3_soil
@@ -266,7 +264,7 @@ def calcualte_h3_costofcult(df):
     return df
 
 
-def calculate_h3_seedcosttotal(df):
+def calculate_h3_seedcosttotal(df) -> pd.DataFrame:
     # sum of all seed costs (five columns, one for each crop): h3_cropxseedcost
     # TODO: Replace with regex later
     df["h3_seedcosttotal"] = (
@@ -279,7 +277,7 @@ def calculate_h3_seedcosttotal(df):
     return df
 
 
-def calculate_h3_seedtreattotal(df):
+def calculate_h3_seedtreattotal(df) -> pd.DataFrame:
     # sum of all seed treatment costs (five columns, one for each crop): h3_cropxseedtreatcost
     # TODO: Replace with regex later
     df["h3_seedtreattotalcost"] = (
@@ -293,7 +291,7 @@ def calculate_h3_seedtreattotal(df):
     return df
 
 
-def calculate_h3_cropNland(df):
+def calculate_h3_cropNland(df) -> pd.DataFrame:
     # TODO: Make this a regex version for allowing N crops: h3_crop1_acre
 
     df["h3_crop1land"] = (
@@ -329,7 +327,7 @@ def calculate_h3_cropNland(df):
     return df
 
 
-def calculate_h3_cropN_yield_normalized(df):
+def calculate_h3_cropN_yield_normalized(df) -> pd.DataFrame:
     ## TODO: Wrap up the rield calculations
     # Unit = kg/acre/season
     # Step 1 . gather all the yeild variable
@@ -351,7 +349,7 @@ def calculate_h3_cropN_yield_normalized(df):
     return df
 
 
-def calculate_h3_plotNfert_synkg(df):
+def calculate_h3_plotNfert_synkg(df) -> pd.DataFrame:
     def calculate(df, N):
         output_column_template = f"h3_plot{N}fert_synkg"
         # First covert the weight column into numeric

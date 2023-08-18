@@ -1,3 +1,5 @@
+import json
+from pathlib import Path
 from pipeline.cleanup_a10 import calculate_work_totals
 from pipeline.cleanup_h1 import (
     add_exp_other_specify_to_h1_exp_substance_amt,
@@ -28,13 +30,37 @@ from pipeline.cleanup_s4 import (
 from pipeline.merge import merge_redcap_event_rows
 import pandas as pd
 
+from pipeline.utils import process_data_with_json, process_patch_files
+
+CURRENT_DIR = Path(__file__).parent
+
 
 def main():
     # merged_df = merge_redcap_event_rows('/root/sandbox/disa/data_v0004.tsv')
-    merged_df = pd.read_csv("/root/sandbox/disa/data_v0004.tsv", sep="\t", header=0)
+    raw_df = pd.read_csv("/root/sandbox/disa/data_v0005.tsv", sep="\t", header=0)
+
+    # Replace the data
+    json_dict = {}
+    with open(
+        CURRENT_DIR.parent.joinpath("lookup-table/JSON_fields.json"), "r"
+    ) as json_file_ptr:
+        temp_json_dict = json.load(json_file_ptr)
+        json_dict = {
+            key: {int(rkey): rvalue for rkey, rvalue in value.items()}
+            for key, value in temp_json_dict.items()
+        }
+
+    replaced_df = process_data_with_json(raw_df, json_dict)
+    replaced_df.to_csv("data_replaced_latest.tsv", sep="\t", index=False)
+
+    # Process the patches
+    patched_df = process_patch_files(
+        CURRENT_DIR.parent.joinpath("patches"), replaced_df
+    )
+    patched_df.to_csv("data_patcched_latest.tsv", sep="\t", index=False)
 
     # s4 Study
-    cleaned_df = cleanup_s4_hhcategory(merged_df)
+    cleaned_df = cleanup_s4_hhcategory(patched_df)
     cleaned_df = merge_s4_cluster(cleaned_df)
     cleaned_df = merge_s4_gp(cleaned_df)
     cleaned_df = merge_s4_village(cleaned_df)

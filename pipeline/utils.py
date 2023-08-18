@@ -1,22 +1,57 @@
+from pathlib import Path
+from typing import Any, Dict
 import pandas as pd
 
-def process_data_with_json(data_file_path, json_file_path):
-    df = pd.read_csv(data_file_path, sep='\t', header=0)
-    df_json = pd.read_json(json_file_path)
 
-    for column_name in df:
-        if column_name in df_json:
-            column_mapping = dict([(value, key) for key, value in df_json[column_name].items()])
-            df.replace({column_name: column_mapping}, inplace=True)
-    
-    return df
+def process_data_with_json(
+    raw_df: pd.DataFrame, column_name_dict: Dict
+) -> pd.DataFrame:
+    processed_df = (
+        raw_df.copy()
+    )  # Create a copy to avoid modifying the original DataFrame
 
-def update_cell(df, column_name, row_index, new_value):
-    df.loc[df['hhid'] == row_index, column_name] = new_value
+    for column_name, value_mapping in column_name_dict.items():
+        if column_name in processed_df.columns:
+            processed_df[column_name] = processed_df[column_name].replace(value_mapping)
 
-def apply_patch(main_df, patch_df):
-    for index, patch_row in patch_df.iterrows():
+    return processed_df
+
+
+def apply_patch(main_df: pd.DataFrame, patch_df: pd.DataFrame) -> None:
+    def update_cell(
+        df: pd.DataFrame,
+        column_name: str,
+        row_hhid: str,
+        row_redcap_event: str,
+        new_value: Any,
+    ):
+        df.loc[
+            ((df["hhid"] == row_hhid) & (df["redcap_event_name"] == row_redcap_event)),
+            column_name,
+        ] = new_value
+
+    for _, patch_row in patch_df.iterrows():
         for column_name, new_value in patch_row.items():
-          if column_name != 'hhid':
-              update_cell(main_df, column_name, index + 1, new_value)
-    return main_df
+            if column_name != "hhid" and column_name != "redcap_event_name":
+                update_cell(
+                    main_df,
+                    column_name,
+                    patch_row["hhid"],
+                    patch_row["redcap_event_name"],
+                    new_value,
+                )
+
+
+def process_patch_files(
+    patches_path: Path, main_dataframe: pd.DataFrame
+) -> pd.DataFrame:
+    patch_files_list = patches_path.glob("*.csv")
+    temp_df = main_dataframe.copy()
+
+    # Apply all the patches sequentially
+    for patch_file in patch_files_list:
+        print(f"Processing Patch File: {patch_file.name} ...")
+        patch_df = pd.read_csv(patch_file.absolute(), sep=",", header=0)
+        apply_patch(temp_df, patch_df)
+
+    return temp_df

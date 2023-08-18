@@ -1,14 +1,14 @@
 import re
 from typing import Dict
-import pandas
+import pandas as pd
 
 
-def cleanup_s4_hhcategory(df):
+def cleanup_s4_hhcategory(df) -> pd.DataFrame:
     # 7 responses are 'Used to be organic, but no longer'. There are also some blank responses. Both should be categorized as 'conventional'
     condition = (
         (df["s4_hhcategory"] == "")
         | (df["s4_hhcategory"] == "Used to be organic, but no longer")
-        | (pandas.isna(df["s4_hhcategory"]))
+        | (pd.isna(df["s4_hhcategory"]))
     )
 
     # Print the count
@@ -20,7 +20,7 @@ def cleanup_s4_hhcategory(df):
     return df
 
 
-def merge_s4_cluster(df):
+def merge_s4_cluster(df) -> pd.DataFrame:
     # Collapse cluster names from below three rows into a single column
     df["s4_cluster"] = df["s4_cluster_ka"].fillna(
         df["s4_cluster_an"].fillna(df["s4_cluster_ku"])
@@ -31,7 +31,7 @@ def merge_s4_cluster(df):
     return new_df
 
 
-def merge_s4_gp(df):
+def merge_s4_gp(df) -> pd.DataFrame:
     # Collapse gp names into a single column
     df["s4_gp"] = df["s4_gp_ka1"].fillna(
         df["s4_gp_ka2"].fillna(
@@ -46,7 +46,7 @@ def merge_s4_gp(df):
     return new_df
 
 
-def merge_s4_village(df):
+def merge_s4_village(df) -> pd.DataFrame:
     # Collapse village names into a single column
 
     """Columns to merge
