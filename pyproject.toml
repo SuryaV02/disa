@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "disa"
+name = "pipeline"
 version = "0.1.0"
 description = ""
 authors = ["Radhakrishna Sanka <rkrishnasanka@gmail.com>"]

@@ -2,7 +2,7 @@ import re
 import sys
 from typing import Dict, List
 import pandas as pd
-
+from pipeline import main_logger
 
 TIME_USE_DICT: Dict[str, str] = {
     "Agriculture": "agri_work",
@@ -29,8 +29,8 @@ def eliminate_undocumented_work_columns(df, column_names) -> pd.DataFrame:
             drop_list.append(column)
 
     df = df.drop(drop_list, axis=1)
-    print(f"Dropping column since its full of empty cells:")
-    print(drop_list)
+    main_logger.info(f"Dropping column since its full of empty cells:")
+    main_logger.info(drop_list)
     return df
 
 
@@ -48,7 +48,7 @@ def calculate_work_totals(df) -> pd.DataFrame:
     ):
         # Now check for each event and all the corresponding columns if the values are valid or if needs to be skipped
         if row[filtered_columns].isna().any():
-            print(
+            main_logger.info(
                 f"Found missing time use data for: HHID - {row['hhid']} event - {row['redcap_event_name']}. Missing Count - {row[filtered_columns].isna().count()}"
             )
             timeuse_row = {
@@ -75,7 +75,7 @@ def calculate_work_totals(df) -> pd.DataFrame:
 
             for work_type, value in totals_dict.items():
                 row[f"total_{work_type}"] = value
-            print(
+            main_logger.info(
                 f"Computed total time use data for: HHID - {row['hhid']} event - {row['redcap_event_name']}",
                 totals_dict,
             )
@@ -99,8 +99,8 @@ def calculate_work_totals(df) -> pd.DataFrame:
     for category in list(categories_set):
         summation_headers.append(f"total_{category}")
 
-    print("summation headers:")
-    print(summation_headers)
+    main_logger.info("summation headers:")
+    main_logger.info(summation_headers)
 
     # Extend the columns
     # Create an empty DataFrame with the new column names
@@ -111,7 +111,7 @@ def calculate_work_totals(df) -> pd.DataFrame:
     # Concatenate the empty DataFrame with the original DataFrame
     extended_df = pd.concat([df, empty_df], axis=1)
 
-    print(filtered_columns)
+    main_logger.info(filtered_columns)
 
     timeuse_column_list = [
         "hhid",
@@ -120,11 +120,11 @@ def calculate_work_totals(df) -> pd.DataFrame:
     ]
     timeuse_column_list.extend(filtered_columns)
 
-    print(timeuse_column_list)
+    main_logger.info(timeuse_column_list)
     # Create timeuse data
     timeuse_df = pd.DataFrame({key: [] for key in timeuse_column_list})
 
-    print(filtered_columns)
+    main_logger.info(filtered_columns)
     df = extended_df.apply(
         calculate_totals,
         filtered_columns=filtered_columns,
@@ -134,7 +134,7 @@ def calculate_work_totals(df) -> pd.DataFrame:
         axis=1,
     )
 
-    print("Final Dataframe:")
-    print(timeuse_df)
+    main_logger.info("Final Dataframe:")
+    main_logger.info(timeuse_df)
 
     return df

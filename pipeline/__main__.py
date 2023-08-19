@@ -30,16 +30,27 @@ from pipeline.cleanup_s4 import (
 from pipeline.merge import merge_redcap_event_rows
 import pandas as pd
 
-from pipeline.utils import process_data_with_json, process_patch_files
+from pipeline.utils import (
+    process_data_with_json,
+    process_patch_files,
+    generate_timestamp,
+)
+
+from pipeline import main_logger
 
 CURRENT_DIR = Path(__file__).parent
 
 
 def main():
-    # merged_df = merge_redcap_event_rows('/root/sandbox/disa/data_v0004.tsv')
-    raw_df = pd.read_csv("/root/sandbox/disa/data_v0005.tsv", sep="\t", header=0)
+    # Setup Logging
+
+    raw_inputs_file = Path("/root/sandbox/disa/data_v0005.tsv")
+
+    main_logger.info(f"Reading the raw inputs file: {raw_inputs_file} ...")
+    raw_df = pd.read_csv(raw_inputs_file.absolute(), sep="\t", header=0)
 
     # Replace the data
+    main_logger.info("Replacing the data values using the lookup table...")
     json_dict = {}
     with open(
         CURRENT_DIR.parent.joinpath("lookup-table/JSON_fields.json"), "r"
@@ -54,24 +65,27 @@ def main():
     replaced_df.to_csv("data_replaced_latest.tsv", sep="\t", index=False)
 
     # Process the patches
+    main_logger.info("Applying the patches to the data...")
     patched_df = process_patch_files(
         CURRENT_DIR.parent.joinpath("patches"), replaced_df
     )
     patched_df.to_csv("data_patcched_latest.tsv", sep="\t", index=False)
 
     # s4 Study
+    main_logger.info("Cleaning study s4...")
     cleaned_df = cleanup_s4_hhcategory(patched_df)
     cleaned_df = merge_s4_cluster(cleaned_df)
     cleaned_df = merge_s4_gp(cleaned_df)
     cleaned_df = merge_s4_village(cleaned_df)
 
     # h1 Study
+    main_logger.info("Cleaning study h1...")
     cleaned_df = calculate_h1_income_total(cleaned_df)
     cleaned_df = update_h1_exp_food(cleaned_df)
     cleaned_df = update_h1_exp_water_amt(cleaned_df)
     cleaned_df = update_h1_exp_healthcare_amt(cleaned_df)
 
-    # Blanking out the exp_phone_unit when 'Other' is encountered
+    # Blanking out the exp_phone_unit when 'other' is encountered
     cleaned_df = blank_ht_exp_phone_unit(cleaned_df)
 
     cleaned_df = update_h1_exp_phone_amt(cleaned_df)

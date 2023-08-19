@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+from pipeline import main_logger
 
 
 def purge_h3_outliers(df) -> pd.DataFrame:
@@ -7,7 +8,7 @@ def purge_h3_outliers(df) -> pd.DataFrame:
     filtered_df = df[~mask]
     dropped_ids = df[mask]["hhid"].unique()
     for d_id in dropped_ids:
-        print(f"Dropped HHID : {d_id}")
+        main_logger.info(f"Dropped HHID : {d_id}")
     return filtered_df
 
 
@@ -158,7 +159,7 @@ def calculate_h3_plotNorganic_calc(df) -> pd.DataFrame:
             .isnull()
             .all()
         ):
-            print(
+            main_logger.info(
                 f"Skipping row for organic classification: {row['hhid']}, event: {row['redcap_event_name']} since all values are null"
             )
             return row

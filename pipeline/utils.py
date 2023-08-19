@@ -1,6 +1,12 @@
 from pathlib import Path
 from typing import Any, Dict
 import pandas as pd
+from datetime import datetime
+from pipeline import main_logger
+
+
+def generate_timestamp() -> str:
+    return datetime.now().strftime("%d-%m-%Y-%H:%M:%S")
 
 
 def process_data_with_json(
@@ -50,7 +56,7 @@ def process_patch_files(
 
     # Apply all the patches sequentially
     for patch_file in patch_files_list:
-        print(f"Processing Patch File: {patch_file.name} ...")
+        main_logger.info(f"Processing Patch File: {patch_file.name} ...")
         patch_df = pd.read_csv(patch_file.absolute(), sep=",", header=0)
         apply_patch(temp_df, patch_df)
 

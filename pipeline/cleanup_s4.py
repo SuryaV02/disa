@@ -1,6 +1,7 @@
 import re
 from typing import Dict
 import pandas as pd
+from pipeline import main_logger
 
 
 def cleanup_s4_hhcategory(df) -> pd.DataFrame:
@@ -13,7 +14,7 @@ def cleanup_s4_hhcategory(df) -> pd.DataFrame:
 
     # Print the count
     count = len(df[condition])
-    print(f"Cleanup affecting {count} rows")
+    main_logger.info(f"Cleanup affecting {count} rows")
 
     # Do the replacement
     df.loc[condition, "s4_current_hhcategory"] = "S2S (organic in at least one plot)"

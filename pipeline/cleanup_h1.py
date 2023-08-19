@@ -1,7 +1,7 @@
 import re
 import numpy as np
 import pandas as pd
-import logging
+from pipeline import main_logger
 
 
 def calculate_h1_income_total(df) -> pd.DataFrame:
@@ -70,9 +70,11 @@ def update_h1_exp_healthcare_amt(df) -> pd.DataFrame:
 
 
 def blank_ht_exp_phone_unit(df) -> pd.DataFrame:
-    # Blank out the phone amount values where we see an 'Other'
-    print("Blanking out: \n", df[df["h1_exp_phone_unit"] == "Other"]["hhid"])
-    df.loc[df["h1_exp_phone_unit"] == "Other", "h1_exp_phone_amt"] = np.nan
+    # Blank out the phone amount values where we see an 'other'
+    main_logger.info(
+        f'Blanking out: \n {df[df["h1_exp_phone_unit"] == "other"]["hhid"]}'
+    )
+    df.loc[df["h1_exp_phone_unit"] == "other", "h1_exp_phone_amt"] = np.nan
     return df
 
 
@@ -190,7 +192,7 @@ def reassign_h1_income_other_specify(df) -> pd.DataFrame:
             row["h1_income_other_specify"] = np.nan
             row["h1_income_other"] = False
 
-            print(
+            main_logger.info(
                 f"Moved income_other_amt to {reassignment_amount_column_name} for HHID: {row['hhid']}"
             )
 
@@ -204,10 +206,10 @@ def reassign_h1_income_other_specify(df) -> pd.DataFrame:
     )
 
     # Drop all rows with the following HHIDs
-    print(
+    main_logger.info(
         "Dropping the following rows becuase income_other_specify is not found in reassignment lookup table:",
-        drop_list,
     )
+    main_logger.info(drop_list)
     df = df[~df["hhid"].isin(drop_list)]
 
     return df
