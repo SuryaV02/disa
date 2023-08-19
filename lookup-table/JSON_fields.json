@@ -1134,7 +1134,7 @@
     "3": "PublicTapStandPipe",
     "4": "tubewellorbore",
     "5": "waterplantathome",
-    "777": "Misc"
+    "777": "other"
   },
   "h1_exp_phone_unit": {
     "1": "about 1 month",
@@ -1149,7 +1149,7 @@
     "3": "Polished stone/marble/granite",
     "4": "Ceramic tiles",
     "5": "clay",
-    "777": "Misc"
+    "777": "other"
   },
   "h1_interviewer": {
     "1": "Jyoti",
@@ -1165,21 +1165,21 @@
     "5": "Slate",
     "6": "metal",
     "7": "grass/palm leaf",
-    "777": "Misc"
+    "777": "other"
   },
   "h1_toilet": {
     "1": "flush to the sewer system of pipes",
     "2": "Flush the septic tank",
     "3": "Single pit latrine with slab",
     "4": "Nofacility/in open space",
-    "777": "Misc"
+    "777": "other"
   },
   "h1_walls": {
     "1": "Cement/Concrete",
     "2": "lime/cement stone",
     "3": "clay stone (brick)",
     "4": "mud",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop1": {
     "1": "Paddy",
@@ -1263,7 +1263,7 @@
     "1": "money handed over",
     "4": "in the form of any object",
     "23": "deposited in the bank Debt payment",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop1_process": {
     "1": "to entice",
@@ -1277,7 +1277,7 @@
     "2": "75",
     "3": "80",
     "4": "44",
-    "777": "Otherspecify"
+    "777": "other"
   },
   "h3_crop1_store": {
     "1": "at home",
@@ -1285,7 +1285,7 @@
     "3": "Government Warehouse",
     "4": "FPO/NGO Warehouse",
     "5": "in the field",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop1_storepest": {
     "0": "None",
@@ -1303,7 +1303,7 @@
     "2": "per week",
     "3": "season",
     "4": "total",
-    "5": "sacks"
+    "5": "bags"
   },
   "h3_crop1_whensell": {
     "1": "immediately sold",
@@ -1320,7 +1320,7 @@
     "7": "direct to consumers",
     "8": "Purchase agreement with shopkeeper or contractor",
     "9": "factory or mill",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop1_year": {
     "1": "2020",
@@ -1361,7 +1361,7 @@
     "6": "Bavestan Chemical",
     "7": "Imidiacloprid",
     "8": "Hexacovazole",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop1cashew": {
     "1": "VRL-3",
@@ -1606,7 +1606,7 @@
     "6": "stored for later sale",
     "7": "hidden for seed",
     "8": "the crop is not yet fully sold",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop1oilseed": {
     "1": "Groundnut",
@@ -1787,8 +1787,8 @@
     "1": "kg",
     "2": "quintal",
     "3": "tons",
-    "4": "sacks",
-    "777": "Otherspecify"
+    "4": "bags",
+    "777": "other"
   },
   "h3_crop1sunflower": {
     "1": "Kaveri",
@@ -1879,7 +1879,7 @@
     "2": "75",
     "3": "80",
     "4": "44",
-    "777": "Otherspecify"
+    "777": "other"
   },
   "h3_crop2_kgquintal": {
     "1": "kg",
@@ -1914,7 +1914,7 @@
     "1": "money handed over",
     "4": "in the form of any object",
     "23": "deposited in the bank Debt payment",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop2_process": {
     "1": "to entice",
@@ -1928,7 +1928,7 @@
     "2": "75",
     "3": "80",
     "4": "44",
-    "777": "Otherspecify"
+    "777": "other"
   },
   "h3_crop2_store": {
     "1": "at home",
@@ -1936,7 +1936,7 @@
     "3": "Government Warehouse",
     "4": "FPO/NGO Warehouse",
     "5": "in the field",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop2_storepest": {
     "0": "None",
@@ -1954,7 +1954,7 @@
     "2": "per week",
     "3": "season",
     "4": "total",
-    "5": "sacks"
+    "5": "bags"
   },
   "h3_crop2_whensell": {
     "1": "immediately sold",
@@ -1971,7 +1971,7 @@
     "7": "direct to consumers",
     "8": "Purchase agreement with shopkeeper or contractor",
     "9": "factory or mill",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop2_year": {
     "1": "2020",
@@ -2012,7 +2012,7 @@
     "6": "Bavestan Chemical",
     "7": "Imidiacloprid",
     "8": "Hexacovazole",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop2cashew": {
     "1": "VRL-3",
@@ -2257,7 +2257,7 @@
     "6": "stored for later sale",
     "7": "hidden for seed",
     "8": "the crop is not yet fully sold",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop2oilseed": {
     "1": "Groundnut",
@@ -2438,8 +2438,8 @@
     "1": "kg",
     "2": "quintal",
     "3": "tons",
-    "4": "sacks",
-    "777": "Otherspecify"
+    "4": "bags",
+    "777": "other"
   },
   "h3_crop2sunflower": {
     "1": "Kaveri",
@@ -2530,7 +2530,7 @@
     "2": "75",
     "3": "80",
     "4": "44",
-    "777": "Otherspecify"
+    "777": "other"
   },
   "h3_crop3_kgquintal": {
     "1": "kg",
@@ -2566,7 +2566,7 @@
     "1": "money handed over",
     "4": "in the form of any object",
     "23": "deposited in the bank Debt payment",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop3_process": {
     "1": "to entice",
@@ -2580,7 +2580,7 @@
     "2": "75",
     "3": "80",
     "4": "44",
-    "777": "Otherspecify"
+    "777": "other"
   },
   "h3_crop3_store": {
     "1": "at home",
@@ -2588,7 +2588,7 @@
     "3": "Government Warehouse",
     "4": "FPO/NGO Warehouse",
     "5": "in the field",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop3_storepest": {
     "0": "None",
@@ -2606,7 +2606,7 @@
     "2": "per week",
     "3": "season",
     "4": "total",
-    "5": "sacks"
+    "5": "bags"
   },
   "h3_crop3_whensell": {
     "1": "immediately sold",
@@ -2623,7 +2623,7 @@
     "7": "direct to consumers",
     "8": "Purchase agreement with shopkeeper or contractor",
     "9": "factory or mill",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop3_year": {
     "1": "2020",
@@ -2664,7 +2664,7 @@
     "6": "Bavestan Chemical",
     "7": "Imidiacloprid",
     "8": "Hexacovazole",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop3cashew": {
     "1": "VRL-3",
@@ -2913,7 +2913,7 @@
     "6": "stored for later sale",
     "7": "hidden for seed",
     "8": "the crop is not yet fully sold",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop3oilseed": {
     "1": "Groundnut",
@@ -3094,8 +3094,8 @@
     "1": "kg",
     "2": "quintal",
     "3": "tons",
-    "4": "sacks",
-    "777": "Otherspecify"
+    "4": "bags",
+    "777": "other"
   },
   "h3_crop3sunflower": {
     "1": "Kaveri",
@@ -3186,7 +3186,7 @@
     "2": "75",
     "3": "80",
     "4": "44",
-    "777": "Otherspecify"
+    "777": "other"
   },
   "h3_crop4_kgquintal": {
     "1": "kg",
@@ -3222,7 +3222,7 @@
     "1": "money handed over",
     "4": "in the form of any object",
     "23": "deposited in the bank Debt payment",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop4_process": {
     "1": "to entice",
@@ -3236,7 +3236,7 @@
     "2": "75",
     "3": "80",
     "4": "44",
-    "777": "Otherspecify"
+    "777": "other"
   },
   "h3_crop4_store": {
     "1": "at home",
@@ -3244,7 +3244,7 @@
     "3": "Government Warehouse",
     "4": "FPO/NGO Warehouse",
     "5": "in the field",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop4_storepest": {
     "0": "None",
@@ -3262,7 +3262,7 @@
     "2": "per week",
     "3": "season",
     "4": "total",
-    "5": "sacks"
+    "5": "bags"
   },
   "h3_crop4_whensell": {
     "1": "immediately sold",
@@ -3279,7 +3279,7 @@
     "7": "direct to consumers",
     "8": "Purchase agreement with shopkeeper or contractor",
     "9": "factory or mill",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop4_year": {
     "1": "2020",
@@ -3320,7 +3320,7 @@
     "6": "Bavestan Chemical",
     "7": "Imidiacloprid",
     "8": "Hexacovazole",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop4cashew": {
     "1": "VRL-3",
@@ -3565,7 +3565,7 @@
     "6": "stored for later sale",
     "7": "hidden for seed",
     "8": "the crop is not yet fully sold",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop4oilseed": {
     "1": "Groundnut",
@@ -3746,8 +3746,8 @@
     "1": "kg",
     "2": "quintal",
     "3": "tons",
-    "4": "sacks",
-    "777": "Otherspecify"
+    "4": "bags",
+    "777": "other"
   },
   "h3_crop4sunflower": {
     "1": "Kaveri",
@@ -3838,7 +3838,7 @@
     "2": "75",
     "3": "80",
     "4": "44",
-    "777": "Otherspecify"
+    "777": "other"
   },
   "h3_crop5_kgquintal": {
     "1": "kg",
@@ -3874,7 +3874,7 @@
     "1": "money handed over",
     "4": "in the form of any object",
     "23": "deposited in the bank Debt payment",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop5_process": {
     "1": "to entice",
@@ -3888,7 +3888,7 @@
     "2": "75",
     "3": "80",
     "4": "44",
-    "777": "Otherspecify"
+    "777": "other"
   },
   "h3_crop5_store": {
     "1": "at home",
@@ -3896,7 +3896,7 @@
     "3": "Government Warehouse",
     "4": "FPO/NGO Warehouse",
     "5": "in the field",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop5_storepest": {
     "0": "None",
@@ -3914,7 +3914,7 @@
     "2": "per week",
     "3": "season",
     "4": "total",
-    "5": "sacks"
+    "5": "bags"
   },
   "h3_crop5_whensell": {
     "1": "immediately sold",
@@ -3931,7 +3931,7 @@
     "7": "direct to consumers",
     "8": "Purchase agreement with shopkeeper or contractor",
     "9": "factory or mill",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop5_year": {
     "1": "2020",
@@ -3972,7 +3972,7 @@
     "6": "Bavestan Chemical",
     "7": "Imidiacloprid",
     "8": "Hexacovazole",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop5cashew": {
     "1": "VRL-3",
@@ -4217,7 +4217,7 @@
     "6": "stored for later sale",
     "7": "hidden for seed",
     "8": "the crop is not yet fully sold",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_crop5oilseed": {
     "1": "Groundnut",
@@ -4398,8 +4398,8 @@
     "1": "kg",
     "2": "quintal",
     "3": "tons",
-    "4": "sacks",
-    "777": "Otherspecify"
+    "4": "bags",
+    "777": "other"
   },
   "h3_crop5sunflower": {
     "1": "Kaveri",
@@ -5888,7 +5888,7 @@
     "13": "saptadannamkurakashyam",
     "14": "neeminfusion",
     "15": "Panchgavya",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_organiclist": {
     "1": "Bijamrita",
@@ -5912,7 +5912,7 @@
     "19": "neemflour",
     "20": "neemoil",
     "21": "Azolla",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_plot1certstatus": {
     "1": "Fully organic",
@@ -5937,7 +5937,7 @@
     "8": "Vermi Compost",
     "9": "green manure",
     "10": "Waste Decomposer",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_plot1fert_synbagwt": {
     "1": "25",
@@ -5967,7 +5967,7 @@
     "3": "sex baskets",
     "4": "biopesticide, i.e. decoctions, solutions, neem oil, and bio-fungicide containing microorganisms used for insect control",
     "5": "friendly insects",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_plot1practices": {
     "1": "intercropping",
@@ -5984,7 +5984,7 @@
     "12": "half acre vegetable model (Kalpataru)",
     "13": "low tillage or no-till",
     "14": "Mulching (live or dry)",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_plot2certstatus": {
     "1": "Fully organic",
@@ -6009,7 +6009,7 @@
     "8": "Vermi Compost",
     "9": "green manure",
     "10": "Waste Decomposer",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_plot2fert_synbagwt": {
     "1": "25",
@@ -6038,7 +6038,7 @@
     "2": "sticky trap",
     "3": "sex baskets",
     "4": "biopesticide, i.e. decoctions, solutions, neem oil, and bio-fungicide containing microorganisms used for insect control",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_plot2practices": {
     "1": "intercropping",
@@ -6055,7 +6055,7 @@
     "12": "half acre vegetable model (Kalpataru)",
     "13": "low tillage or no-till",
     "14": "Mulching (live or dry)",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_plot3certstatus": {
     "1": "Fully organic",
@@ -6080,7 +6080,7 @@
     "8": "Vermi Compost",
     "9": "green manure",
     "10": "Waste Decomposer",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_plot3fert_synbagwt": {
     "1": "25",
@@ -6109,7 +6109,7 @@
     "2": "sticky trap",
     "3": "sex baskets",
     "4": "biopesticide, i.e. decoctions, solutions, neem oil, and bio-fungicide containing microorganisms used for insect control",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_plot3practices": {
     "1": "intercropping",
@@ -6126,7 +6126,7 @@
     "12": "half acre vegetable model (Kalpataru)",
     "13": "low tillage or no-till",
     "14": "Mulching (live or dry)",
-    "777": "Misc"
+    "777": "other"
   },
   "h3_plots": {
     "1": "one",
