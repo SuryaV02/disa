@@ -1,0 +1,19 @@
+{
+    "patches":[
+        {
+            "target":{
+                "column_name1": "id_value1",
+                "column_name2": "id_value2"
+            },
+            "deltas":{
+                "column_name3": "new_value1",
+                "column_name4": "new_value2"
+            }
+        }
+    ],
+    "version":1,
+    "meta":{
+        "notes":"Give the comments and other notes necessary for this. Each of the objects in the patches will be a single change we need to have"
+    }
+    
+}
