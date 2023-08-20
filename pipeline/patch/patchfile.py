@@ -91,7 +91,7 @@ def generate_patches(
     """
 
     # Check if the DataFrames have the same columns
-    if set(old_df.columns) != set(new_df.columns):
+    if not set(new_df.columns).issubset(set(old_df.columns)):
         raise ValueError("Source and target DataFrames must have the same columns")
 
     patches = []
@@ -99,7 +99,14 @@ def generate_patches(
     for _, new_row in new_df.iterrows():
         # target_row = new_df[new_df[id_columns] == old_row[id_columns]]
         # target_row = new_df.loc[new_df[id_columns] == old_df[id_columns]].iloc[0]
-        query = " & ".join([f"{col} == {new_row[col]}" for col in id_columns])
+        query = " & ".join(
+            [
+                f"{col} == '{new_row[col]}'"
+                if isinstance(new_row[col], str)
+                else f"{col} == {new_row[col]}"
+                for col in id_columns
+            ]
+        )
         old_row_query_result = old_df.query(query)
         old_row = old_row_query_result.iloc[0]
 
