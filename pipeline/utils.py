@@ -1,8 +1,10 @@
+import json
 from pathlib import Path
 from typing import Any, Dict
 import pandas as pd
 from datetime import datetime
 from pipeline import main_logger
+from pipeline.patch.patchfile import PatchFile
 
 
 def generate_timestamp() -> str:
@@ -51,13 +53,15 @@ def apply_patch(main_df: pd.DataFrame, patch_df: pd.DataFrame) -> None:
 def process_patch_files(
     patches_path: Path, main_dataframe: pd.DataFrame
 ) -> pd.DataFrame:
-    patch_files_list = patches_path.glob("*.csv")
+    patch_files_list = patches_path.glob("*.json")
     temp_df = main_dataframe.copy()
 
     # Apply all the patches sequentially
     for patch_file in patch_files_list:
         main_logger.info(f"Processing Patch File: {patch_file.name} ...")
-        patch_df = pd.read_csv(patch_file.absolute(), sep=",", header=0)
-        apply_patch(temp_df, patch_df)
+
+        patch_file = PatchFile.parse_patch_file_from_path(patch_file)
+
+        
 
     return temp_df

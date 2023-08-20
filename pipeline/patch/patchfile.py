@@ -66,6 +66,13 @@ class PatchFile:
 
         return ret
 
+    @staticmethod
+    def parse_patch_file_from_path(path: Path) -> PatchFile:
+        with open(path, "r") as file_ptr:
+            patch_json = json.load(file_ptr)
+            patch_file = PatchFile.parse_patch_file_json_dict(patch_json)
+            return patch_file
+
     def get_json(self) -> str:
         """Gets the JSON of the patch file"""
         ret = {
@@ -74,6 +81,10 @@ class PatchFile:
             "meta": self.meta,
         }
         return json.dumps(ret)
+
+    def apply_patches(self, df:pd.DataFrame):
+        for patch in self.patches:
+            patch.apply(df) 
 
 
 def generate_patches(
@@ -117,7 +128,9 @@ def generate_patches(
                 continue
 
             if new_row[column] != old_row[column]:
-                deltas[column] = new_row[column]
+                deltas[column] = (
+                    new_row[column] if not pd.isna(new_row[column]) else None
+                )
 
         if deltas:
             patch = Patch(
