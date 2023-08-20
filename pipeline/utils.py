@@ -62,6 +62,6 @@ def process_patch_files(
 
         patch_file = PatchFile.parse_patch_file_from_path(patch_file)
 
-        
+        patch_file.apply_update_patches(main_dataframe)
 
     return temp_df

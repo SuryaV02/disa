@@ -1,0 +1,30 @@
+{
+    "patches": [
+        {
+            "target": {
+                "hhid": "ka-tv-tv-gp-1066",
+                "redcap_event_name": "visit_1_arm_1"
+            },
+            "deltas": {
+                "h1_exp_phone_oth": null,
+                "h1_exp_phone_unit": "about 2 months",
+                "h1_exp_phone_amt": 2020.0
+            }
+        },
+        {
+            "target": {
+                "hhid": "KA-TP-SP-RP-3033",
+                "redcap_event_name": "visit_1_arm_1"
+            },
+            "deltas": {
+                "h1_exp_phone_oth": null,
+                "h1_exp_phone_unit": null,
+                "h1_exp_phone_amt": null
+            }
+        }
+    ],
+    "version": 1,
+    "meta": {
+        "notes": "This is the patch file for the Phone number amounts where the amount period is set to 'other'"
+    }
+}

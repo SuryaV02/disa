@@ -7,8 +7,13 @@ from typing import Any, Dict, List
 import pandas as pd
 
 
+class PatchInterface:
+    def apply(self, df: pd.DataFrame) -> None:
+        raise NotImplementedError()
+
+
 @dataclass
-class Patch:
+class UpdatePatch(PatchInterface):
     """
     Basic Patch object that stores the changes
     """
@@ -17,8 +22,8 @@ class Patch:
     deltas: Dict[str, Any]
 
     @staticmethod
-    def parse_patch_object_json_dict(patch_object_json_dict: Dict) -> Patch:
-        ret = Patch(
+    def parse_patch_object_json_dict(patch_object_json_dict: Dict) -> UpdatePatch:
+        ret = UpdatePatch(
             target=patch_object_json_dict["target"],
             deltas=patch_object_json_dict["deltas"],
         )
@@ -41,14 +46,51 @@ class Patch:
 
 
 @dataclass
+class CreatePatch(PatchInterface):
+    target: Dict[str, Any]
+    payload: Dict[str, Any]
+
+    def apply(self, df: pd.DataFrame) -> None:
+        raise NotImplementedError("Need to finish the implementation")
+        # First, check to ensure that the row doesn't already exist
+        match_mask = pd.Series(True, index=df.index)
+        for key, value in self.target.items():
+            match_mask &= df[key] == value
+
+        if match_mask.any():
+            raise ValueError("Row with target values already exists, cannot create.")
+
+        # Second, insert a new row with the payload data
+        new_row = self.target.copy()
+        new_row.update(self.payload)
+        df = df.append(new_row, ignore_index=True)
+
+
+@dataclass
+class DeletePatch(PatchInterface):
+    target: Dict[str, Any]
+
+    def apply(self, df: pd.DataFrame) -> None:
+        # Find the row(s) in the DataFrame that match the target keys and values
+        match_mask = pd.Series(True, index=df.index)
+        for key, value in self.target.items():
+            match_mask &= df[key] == value
+
+        # Delete the rows(s)
+        df.drop(df[match_mask].index, inplace=True)
+
+
+@dataclass
 class PatchFile:
     """
     Container for the patch file that stores all the patches
     """
 
-    patches: List[Patch]
+    patches: List[UpdatePatch]
     meta: Dict[str, Any]
     version: int
+    deletions: Dict[str, Any]  # TODO: Wrap Up Implementation
+    creations: Dict[str, Any]  # TODO: Wrap Up Implementation
 
     @staticmethod
     def parse_patch_file_json_dict(json_dict: Dict) -> PatchFile:
@@ -57,7 +99,7 @@ class PatchFile:
 
         ret = PatchFile(
             patches=[
-                Patch.parse_patch_object_json_dict(patch_object)
+                UpdatePatch.parse_patch_object_json_dict(patch_object)
                 for patch_object in json_dict["patches"]
             ],
             version=json_dict["version"],
@@ -82,14 +124,17 @@ class PatchFile:
         }
         return json.dumps(ret)
 
-    def apply_patches(self, df:pd.DataFrame):
+    def apply_update_patches(self, df: pd.DataFrame):
         for patch in self.patches:
-            patch.apply(df) 
+            patch.apply(df)
+
+    def apply(self):
+        raise NotImplementedError("Need to test and changes for all types of patches")
 
 
 def generate_patches(
     old_df: pd.DataFrame, new_df: pd.DataFrame, id_columns: List[str]
-) -> List[Patch]:
+) -> List[UpdatePatch]:
     """
     Generate patches representing changes between two DataFrames.
 
@@ -127,13 +172,16 @@ def generate_patches(
             if column in id_columns:
                 continue
 
+            if pd.isna(new_row[column]) and pd.isna(old_row[column]):
+                continue
+
             if new_row[column] != old_row[column]:
                 deltas[column] = (
                     new_row[column] if not pd.isna(new_row[column]) else None
                 )
 
         if deltas:
-            patch = Patch(
+            patch = UpdatePatch(
                 target={col: new_row[col] for col in id_columns}, deltas=deltas
             )
             patches.append(patch)
@@ -141,7 +189,7 @@ def generate_patches(
     return patches
 
 
-def apply_patches(df: pd.DataFrame, patches: List[Patch]) -> pd.DataFrame:
+def apply_patches(df: pd.DataFrame, patches: List[UpdatePatch]) -> pd.DataFrame:
     # Make a Copy
     temp_df = df.copy()
 
