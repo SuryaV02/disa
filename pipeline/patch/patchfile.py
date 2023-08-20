@@ -96,12 +96,12 @@ def generate_patches(
 
     patches = []
 
-    for _, old_row in old_df.iterrows():
+    for _, new_row in new_df.iterrows():
         # target_row = new_df[new_df[id_columns] == old_row[id_columns]]
         # target_row = new_df.loc[new_df[id_columns] == old_df[id_columns]].iloc[0]
-        query = " & ".join([f"{col} == {old_row[col]}" for col in id_columns])
-        target_row_query_result = new_df.query(query)
-        target_row = target_row_query_result.iloc[0]
+        query = " & ".join([f"{col} == {new_row[col]}" for col in id_columns])
+        old_row_query_result = old_df.query(query)
+        old_row = old_row_query_result.iloc[0]
 
         deltas = {}
         for column in new_df.columns:
@@ -109,12 +109,12 @@ def generate_patches(
             if column in id_columns:
                 continue
 
-            if old_row[column] != target_row[column]:
-                deltas[column] = target_row[column]
+            if new_row[column] != old_row[column]:
+                deltas[column] = new_row[column]
 
         if deltas:
             patch = Patch(
-                target={col: old_row[col] for col in id_columns}, deltas=deltas
+                target={col: new_row[col] for col in id_columns}, deltas=deltas
             )
             patches.append(patch)
 
