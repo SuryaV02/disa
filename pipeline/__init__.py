@@ -1,10 +1,11 @@
 from datetime import datetime
 import logging
+from pathlib import Path
 
 
 logging.basicConfig(
     level=logging.INFO,
-    filename=f'pipline_out_{datetime.now().strftime("%d-%m-%Y-%H:%M:%S")}.log',
+    filename=Path(f'./pipline_out_{datetime.now().strftime("%d-%m-%Y-%H-%M-%S")}.log'),
     filemode="a",
 )
 
